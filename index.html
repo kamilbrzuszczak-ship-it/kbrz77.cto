@@ -433,6 +433,400 @@
             fill: none;
         }
 
+        /* Inline Semi-transparent Tech Logos */
+        .tech-logo-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .tech-logo-item {
+            width: 16px;
+            height: 16px;
+            background-color: var(--text-muted);
+            opacity: 0.35;
+            transition: var(--transition-smooth);
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            mask-position: center;
+            display: inline-block;
+        }
+
+        .tech-logo-item:hover {
+            opacity: 0.9;
+        }
+
+        /* Hover brand colors for inline logos */
+        .tech-logo-item.logo-google:hover { background-color: var(--gold-light); }
+        .tech-logo-item.logo-openai:hover { background-color: var(--cyan-light); }
+        .tech-logo-item.logo-anthropic:hover { background-color: var(--violet-light); }
+        .tech-logo-item.logo-docker:hover { background-color: var(--cyan-light); }
+        .tech-logo-item.logo-python:hover { background-color: var(--emerald-light); }
+        .tech-logo-item.logo-linux:hover { background-color: var(--text-pure); }
+        .tech-logo-item.logo-git:hover { background-color: #f05032; }
+
+        /* TABBED DEPLOYMENTS STYLES */
+        .deploy-section-full {
+            margin-top: 30px;
+        }
+        .deploy-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .deploy-tabs::-webkit-scrollbar {
+            display: none;
+        }
+        .deploy-tab {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-muted);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-family: var(--font-head);
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition-smooth);
+            white-space: nowrap;
+        }
+        .deploy-tab:hover {
+            color: var(--text-pure);
+            background: rgba(255, 255, 255, 0.02);
+        }
+        .deploy-tab.active {
+            color: var(--cyan-light);
+            background: rgba(14, 165, 233, 0.08);
+            border-color: rgba(14, 165, 233, 0.2);
+            box-shadow: 0 0 12px rgba(14, 165, 233, 0.05);
+        }
+        
+        .deploy-card {
+            display: none !important;
+        }
+        .deploy-card.active {
+            display: grid !important;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 24px;
+            animation: deployFadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+        
+        @keyframes deployFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .deploy-visual-container {
+            background: rgba(10, 15, 30, 0.4);
+            border: 1px dashed rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 16px;
+            min-height: 240px;
+            transition: var(--transition-smooth);
+        }
+        .deploy-visual-container:hover {
+            border-color: rgba(14, 165, 233, 0.35);
+            background: rgba(10, 15, 30, 0.65);
+        }
+        .deploy-visual-container.image-loaded .deploy-mockup-ui,
+        .deploy-visual-container.image-loaded .deploy-visual-label {
+            display: none !important;
+        }
+        .deploy-visual-container.image-loaded {
+            border-style: solid;
+            padding: 0;
+            background: #060913;
+        }
+        
+        .deploy-actual-screenshot {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            inset: 0;
+            border-radius: 11px;
+            z-index: 2;
+            background: #060913;
+            transition: var(--transition-smooth);
+        }
+        
+        @keyframes imgFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .deploy-visual-container.image-loaded .deploy-actual-screenshot {
+            display: block;
+            animation: imgFadeIn 0.35s ease-in-out forwards;
+        }
+        
+        .deploy-visual-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-muted);
+            font-size: 0.72rem;
+            font-weight: 500;
+            pointer-events: none;
+        }
+
+        /* Mockup UI Stylings */
+        .deploy-mockup-ui {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+            font-family: var(--font-body);
+            pointer-events: none;
+            user-select: none;
+        }
+        
+        /* 1. ksmil mockup */
+        .mockup-ksmil {
+            flex-direction: column;
+            width: 90%;
+            background: #070913;
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        .mock-window-header {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 8px 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            width: 100%;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .mock-window-header .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .mock-window-header .dot.red { background: #ef4444; }
+        .mock-window-header .dot.yellow { background: #f59e0b; }
+        .mock-window-header .dot.green { background: #10b981; }
+        .mock-window-title {
+            color: var(--text-muted);
+            font-size: 0.7rem;
+            margin-left: 6px;
+            font-family: 'Fira Code', monospace;
+        }
+        .mock-window-body {
+            padding: 12px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 0.72rem;
+            font-family: 'Fira Code', monospace;
+            text-align: left;
+        }
+        .mock-line {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .mock-lbl {
+            color: var(--text-muted);
+        }
+        .mock-val {
+            color: var(--text-pure);
+        }
+        .mock-val.val-green { color: var(--emerald) !important; }
+        .mock-val.val-cyan { color: var(--cyan-light) !important; }
+        .mock-val.val-gold { color: var(--gold) !important; }
+        .mock-val.val-emerald { color: #34d399 !important; }
+        
+        /* 2. Offer Maker mockup */
+        .mockup-offermaker {
+            width: 80%;
+        }
+        .mock-pdf-page {
+            background: #ffffff;
+            width: 100%;
+            border-radius: 6px;
+            padding: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+            text-align: left;
+        }
+        .mock-pdf-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .mock-pdf-logo {
+            font-weight: 900;
+            font-size: 0.65rem;
+            color: #c50711;
+            font-family: var(--font-head);
+        }
+        .mock-pdf-doc-title {
+            font-weight: 700;
+            font-size: 0.55rem;
+            color: #1e293b;
+            letter-spacing: 0.05em;
+        }
+        .mock-pdf-divider {
+            height: 1px;
+            background: #e2e8f0;
+            width: 100%;
+        }
+        .mock-pdf-product {
+            display: flex;
+            gap: 8px;
+            margin: 4px 0;
+            width: 100%;
+        }
+        .mock-pdf-img-placeholder {
+            width: 32px;
+            height: 32px;
+            background: #f1f5f9;
+            border-radius: 4px;
+            border: 1px dashed #cbd5e1;
+        }
+        .mock-pdf-text-lines {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            justify-content: center;
+        }
+        .mock-pdf-line {
+            height: 4px;
+            background: #e2e8f0;
+            border-radius: 2px;
+            width: 85%;
+        }
+        .mock-pdf-line.long { width: 100%; }
+        .mock-pdf-line.short { width: 60%; }
+        .mock-pdf-price-box {
+            background: #f8fafc;
+            border-radius: 4px;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            border: 1px solid #e2e8f0;
+            width: 100%;
+        }
+        .mock-pdf-price-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.52rem;
+            color: #64748b;
+        }
+        .mock-pdf-price-row.highlight {
+            color: #c50711;
+            font-weight: 700;
+            border-top: 0.5px solid #e2e8f0;
+            padding-top: 2px;
+            margin-top: 1px;
+        }
+        
+        /* 3. Web Tools mockup */
+        .mockup-webtools {
+            width: 90%;
+            background: #0b0f19;
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 8px;
+            padding: 10px;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        .mock-dash-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            padding-bottom: 6px;
+        }
+        .mock-dash-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 6px #10b981;
+        }
+        .mock-dash-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--text-pure);
+        }
+        .mock-dash-badge {
+            margin-left: auto;
+            font-size: 0.55rem;
+            background: rgba(14, 165, 233, 0.12);
+            color: var(--cyan-light);
+            padding: 1px 5px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .mock-dash-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+            width: 100%;
+        }
+        .mock-dash-card {
+            background: rgba(255,255,255,0.01);
+            border: 0.5px solid rgba(255,255,255,0.04);
+            border-radius: 4px;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: var(--text-muted);
+        }
+        .mock-dash-card i {
+            font-size: 0.75rem;
+        }
+        .mock-dash-card span {
+            font-size: 0.52rem;
+            font-weight: 500;
+        }
+        .mock-dash-card.active {
+            background: rgba(14, 165, 233, 0.08);
+            border-color: rgba(14, 165, 233, 0.15);
+            color: var(--cyan-light);
+        }
+
         /* TIMELINE DESIGN */
         .timeline {
             position: relative;
@@ -795,6 +1189,20 @@
                 gap: 25px;
             }
             
+            .deploy-card.active {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .deploy-visual-container {
+                height: auto;
+                aspect-ratio: 4 / 3;
+                min-height: 280px;
+                max-width: 500px;
+                margin: 0 auto;
+                width: 100%;
+            }
+            
             header {
                 padding: 35px;
                 flex-direction: column;
@@ -981,6 +1389,10 @@
                 height: 12px !important;
             }
 
+            .tech-logo-row {
+                display: none !important;
+            }
+
             .timeline::before {
                 background: #e2e8f0 !important;
                 width: 1px !important;
@@ -1096,6 +1508,24 @@
                 font-size: 6.5pt !important;
                 color: #64748b !important;
             }
+
+            /* Print layout for deployments */
+            .deploy-tabs {
+                display: none !important;
+            }
+            .deploy-card {
+                display: block !important;
+                opacity: 1 !important;
+                transform: none !important;
+                margin-bottom: 20px !important;
+                page-break-inside: avoid;
+            }
+            .deploy-card.active {
+                display: block !important;
+            }
+            .deploy-visual-container {
+                display: none !important;
+            }
         }
     </style>
 </head>
@@ -1174,6 +1604,14 @@
                             Wdrażam nowoczesną automatyzację contentu SEO i struktur słów kluczowych w oparciu o modele LLM oraz analizę trendów rynkowych.
                         </li>
                     </ul>
+                    
+                    <!-- Integrated Tech Logos for SEO/Ads Card -->
+                    <div class="tech-logo-row">
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg');" title="Google Ads"></span>
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg');" title="Google Analytics"></span>
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg');" title="Google Tag Manager"></span>
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg');" title="Google Search Console & Merchant Center"></span>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -1189,6 +1627,14 @@
                             <strong>Wewnętrzne bazy wiedzy (RAG):</strong> Przekształcam umowy deweloperskie, regulaminy i procedury w inteligentny system, w którym pracownik dostaje odpowiedź w 3 sekundy.
                         </li>
                     </ul>
+                    
+                    <!-- Integrated Tech Logos for AI Card -->
+                    <div class="tech-logo-row">
+                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg');" title="OpenAI API"></span>
+                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="Claude / Anthropic API"></span>
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg');" title="Google API"></span>
+                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Python 3"></span>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -1204,9 +1650,18 @@
                             Konteneryzacja aplikacji (Docker) gwarantująca bezpieczeństwo danych klientów.
                         </li>
                     </ul>
+                    
+                    <!-- Integrated Tech Logos for Infra Card -->
+                    <div class="tech-logo-row">
+                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Docker"></span>
+                        <span class="tech-logo-item logo-linux" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg');" title="Zorin OS / Linux"></span>
+                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg');" title="3CX VoIP System"></span>
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/raspberrypi.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/raspberrypi.svg');" title="Raspberry Pi Hardware"></span>
+                    </div>
                 </div>
             </section>
 
+            <!-- DOŚWIADCZENIE BIZNESOWE -->
             <section>
                 <h2>Doświadczenie Biznesowe & Operacyjne</h2>
                 <div class="timeline">
@@ -1226,6 +1681,12 @@
                                 <div class="sub-role-date">Od 01.2026</div>
                                 <div class="sub-role-header">Chief Technology Officer (CTO)</div>
                                 <div class="sub-role-desc">Nadzór nad całością architektury technologicznej przedsiębiorstwa. Zarządzanie infrastrukturą serwerową, bezpieczeństwem sieci, optymalizacją baz danych oraz wdrożeniami nowoczesnych systemów telekomunikacyjnych VoIP (3CX / SIP Trunking). Projektowanie i integracja wewnętrznych systemów automatyzacji operacji i przepływu danych z użyciem Google API oraz narzędzi AI.</div>
+                                <div class="tech-logo-row" style="margin-top: 8px;">
+                                    <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Docker"></span>
+                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg');" title="Google API"></span>
+                                    <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg');" title="3CX VoIP"></span>
+                                    <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Python Backend"></span>
+                                </div>
                             </div>
                             <div class="sub-role-item">
                                 <div class="sub-role-date">Od 2021</div>
@@ -1236,6 +1697,11 @@
                                 <div class="sub-role-date">Od 2018</div>
                                 <div class="sub-role-header">Kreator Marketingu, SEO & E-commerce Visibility</div>
                                 <div class="sub-role-desc">Odpowiedzialność za strategiczną widoczność sklepu internetowego w wyszukiwarkach. Kompleksowe zarządzanie ekosystemem Google (Ads, Merchant Center, profil Google Moja Firma). Architektura analityki konwersji i śledzenia ruchu w oparciu o Google Tag Manager, Analytics oraz Search Console w celu maksymalizacji ROI.</div>
+                                <div class="tech-logo-row" style="margin-top: 8px;">
+                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg');" title="Google Ads"></span>
+                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg');" title="Google Analytics"></span>
+                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg');" title="Google Tag Manager"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1249,10 +1715,17 @@
                             <span>Działalność Doradcza i Wdrożeniowa dla Sektora MŚP</span>
                         </div>
                         <p>Dostarczanie kompetencji Dyrektora Technologicznego na żądanie. Tworzenie i wdrażanie lokalnych bram AI (OpenClaw AI Gateway), konfiguracja ekosystemów opartych o standardy MCP oraz dostarczanie dedykowanych automatyzacji, które realnie eliminują zbędne koszty etatów biurowych.</p>
+                        <div class="tech-logo-row">
+                            <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg');" title="OpenAI API"></span>
+                            <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="Claude Code & Anthropic API"></span>
+                            <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Docker Containerization"></span>
+                            <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Python FastAPI"></span>
+                        </div>
                     </div>
 
                 </div>
             </section>
+
         </main>
 
         <!-- RIGHT COLUMN: SKILLS, WARSZTAT, EDU -->
@@ -1383,6 +1856,12 @@
                         <br><br>
                         Zamiast tradycyjnego, wielomiesięcznego pisania aplikacji, wykorzystuję użytkujących architektury agentowe narzędzi AI (<strong>Claude Code, OpenAI API, Antigravity</strong>) współpracujących z środowiskiem <strong>Visual Studio</strong> i <strong>GitHub / Git</strong>. Wynik? Gotowe automatyzacje wdrażam <strong>w kilka dni, a nie miesięcy</strong>.
                     </p>
+                    <div class="tech-logo-row" style="margin-top: 15px; justify-content: flex-end;">
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg');" title="Google Search Console"></span>
+                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg');" title="OpenAI"></span>
+                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="Claude / Anthropic"></span>
+                        <span class="tech-logo-item logo-github" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg');" title="GitHub"></span>
+                    </div>
                 </div>
             </section>
 
@@ -1436,8 +1915,244 @@
                 </div>
             </section>
         </aside>
-
     </div>
+
+    <!-- EXAMPLES OF DEPLOYMENTS (PRZYKŁADY WDROŻEŃ) -->
+    <section class="deploy-section-full">
+        <h2>Przykłady wdrożeń</h2>
+        
+        <!-- Tabs Navigation -->
+        <div class="deploy-tabs">
+            <button class="deploy-tab active" onclick="switchTab(0)">
+                <i class="fa-solid fa-server"></i> ksmil 2.0
+            </button>
+            <button class="deploy-tab" onclick="switchTab(1)">
+                <i class="fa-solid fa-file-invoice"></i> Offer Maker
+            </button>
+            <button class="deploy-tab" onclick="switchTab(2)">
+                <i class="fa-solid fa-cubes"></i> Web Tools Portal
+            </button>
+        </div>
+
+        <!-- Cards Wrapper -->
+        <div class="deploy-cards">
+            
+            <!-- CARD 1: ksmil 2.0 -->
+            <div class="deploy-card card active">
+                <div class="deploy-text-col">
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie dedykowanego ekosystemu ksmil 2.0</h3>
+                    <p>
+                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie i stworzenie od zera, według indywidualnych specyfikacji klienta, kompleksowego systemu automatyzacji procesów biznesowych i operacyjnych back-office. Głównym celem było wyeliminowanie powtarzalnych zadań manualnych, ujednolicenie obiegu dokumentów handlowych oraz pełna, bezpieczna integracja z Krajowym Systemem E-Faktur (KSeF), gwarantująca firmie płynność operacyjną i niezależność od gotowych, pudełkowych rozwiązań.
+                    </p>
+                    <p>
+                        <strong>Kluczowe innowacje i obszary usprawnień:</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Intuicyjny asystent wdrożenia (Setup Wizard):</strong> Przyjazny graficznie panel pierwszej konfiguracji. Pozwala on pracownikom bez wiedzy informatycznej na błyskawiczne podłączenie drukarek biurowych oraz bezpieczne powiązanie autoryzacji rządowej z systemem KSeF za pomocą kilku prostych kroków.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Autonomiczny, bezobsługowy obieg dokumentów:</strong> Inteligentne procesy działające dyskretnie w tle, które czuwają nad prawidłowym generowaniem, przesyłaniem oraz automatycznym wydrukiem dokumentacji sprzedażowej bez jakiejkolwiek ingerencji człowieka.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Inteligentny monitoring cen i alerty anomalii:</strong> Specjalistyczny moduł dbający o rentowność biznesu. System na bieżąco analizuje politykę cenową rynkową oraz poprawność danych transakcyjnych, natychmiastowo alarmując zespół o nietypowych wahaniach cen, rozbieżnościach czy potencjalnych błędach finansowych przed zatwierdzeniem dokumentu.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Bezpieczna instalacja jednym kliknięciem:</strong> Cały ekosystem został zintegrowany w jeden spójny program dla systemów Windows. Pozwala to na bezproblemowe uruchomienie oprogramowania na dowolnym stanowisku pracy bez skomplikowanej konfiguracji środowisk IT.
+                        </li>
+                    </ul>
+                    <p style="margin-top: 15px; margin-bottom: 0;">
+                        <strong>Mierzalny efekt biznesowy:</strong> Klient zyskał w pełni zautomatyzowane, stabilne środowisko pracy o zerowym progu wejścia dla personelu biurowego. Czas uruchomienia nowego stanowiska operacyjnego w oddziałach firmy został skrócony <strong>z kilku godzin do zaledwie 30 minut</strong>, co trwale zabezpieczyło marże przedsiębiorstwa i przyniosło ogromne oszczędności czasu pracy zespołu.
+                    </p>
+                    
+                    <div class="tech-logo-row" style="margin-top: 15px;">
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg');" title="System Windows"></span>
+                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/fastapi.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/fastapi.svg');" title="FastAPI Backend"></span>
+                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg');" title="Interfejs React"></span>
+                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Konteneryzacja Docker"></span>
+                    </div>
+                </div>
+                <div class="deploy-visual-col">
+                    <div class="deploy-visual-container">
+                        <!-- High-fidelity CSS Mockup -->
+                        <div class="deploy-mockup-ui mockup-ksmil">
+                            <div class="mock-window-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                <span class="mock-window-title">ksmil-service.exe</span>
+                            </div>
+                            <div class="mock-window-body">
+                                <div class="mock-line"><span class="mock-lbl">Status:</span> <span class="mock-val val-green">Uruchomiony</span></div>
+                                <div class="mock-line"><span class="mock-lbl">KSeF:</span> <span class="mock-val val-cyan">Połączono (Prod)</span></div>
+                                <div class="mock-line"><span class="mock-lbl">Drukarki:</span> <span class="mock-val">Magazyn_Główny</span></div>
+                                <div class="mock-line"><span class="mock-lbl">Monitor cen:</span> <span class="mock-val val-gold">Skanowanie...</span></div>
+                                <div class="mock-line"><span class="mock-lbl">Alerty:</span> <span class="mock-val val-emerald">0 Anomalii</span></div>
+                            </div>
+                        </div>
+                        <!-- Real screenshot image generated from prompt -->
+                        <img class="deploy-actual-screenshot" src="ksmil_screenshot.png" alt="Podgląd wdrożenia ksmil 2.0" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
+                        <div class="deploy-visual-label">
+                            <i class="fa-regular fa-image"></i>
+                            <span>Podgląd wdrożenia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: Offer Maker (Generator Ofert) -->
+            <div class="deploy-card card">
+                <div class="deploy-text-col">
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie inteligentnego kreatora ofert handlowych Premium (Offer Maker)</h3>
+                    <p>
+                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie i stworzenie od podstaw dedykowanego, interaktywnego systemu generowania spersonalizowanych, wielostronicowych ofert handlowych w formacie PDF dla doradców handlowych. Narzędzie zostało w pełni zsynchronizowane z platformą e-commerce, co pozwala na błyskawiczne przekładanie zapytań klientów na luksusowe, dopracowane wizualnie broszury sprzedażowe z zachowaniem absolutnej spójności tożsamości marki.
+                    </p>
+                    <p>
+                        <strong>Kluczowe innowacje i obszary usprawnień:</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Błyskawiczne pozyskiwanie danych produktów:</strong> Handlowiec może wkleić bezpośredni odnośnik do produktu ze sklepu internetowego lub wpisać jego uproszczoną nazwę handlową, a system automatycznie pobierze pełne opisy, szczegółową specyfikację techniczną, ceny oraz powiązane zdjęcia.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Automatyczna optymalizacja obrazów w tle:</strong> Zintegrowany mechanizm w locie przetwarza, przycina i kompresuje pobrane z internetu grafiki. Dzięki temu wygenerowana oferta PDF zachowuje bezkompromisową, studyjną jakość, a plik pozostaje niezwykle lekki i szybki do przesłania e-mailem.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Dynamiczna pętla edycji cenowej (Live Edit Loop):</strong> Intuicyjny panel sterowania umożliwia doradcy elastyczne modyfikowanie cen, weryfikowanie progów rabatowych i natychmiastowe generowanie podglądu dokumentu w czasie rzeczywistym bezpośrednio w locie.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Wielostronicowe, ekskluzywne wydania broszurowe:</strong> Automatyczne formatowanie układu pod kątem wydruków biurowych A4 oraz prezentacji na tabletach (karty specyfikacji, dynamiczne tabele podsumowujące, plastyczne moduły konfiguracyjne do wnętrz).
+                        </li>
+                    </ul>
+                    <p style="margin-top: 15px; margin-bottom: 0;">
+                        <strong>Mierzalny efekt biznesowy:</strong> Czas przygotowania kompletnej, spersonalizowanej oferty dla wymagającego klienta segmentu premium skrócił się <strong>z kilkunastu minut do zaledwie 30 sekund</strong>. Doradcy zyskali możliwość natychmiastowego generowania prestiżowych dokumentów na tabletach podczas rozmowy w salonie, co wydatnie zwiększyło konwersję i poprawiło wizerunek marki.
+                    </p>
+                    
+                    <div class="tech-logo-row" style="margin-top: 15px;">
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg');" title="Środowisko Node.js"></span>
+                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg');" title="Silnik JavaScript"></span>
+                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg');" title="Interfejs HTML5"></span>
+                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
+                    </div>
+                </div>
+                <div class="deploy-visual-col">
+                    <div class="deploy-visual-container">
+                        <!-- High-fidelity CSS Mockup -->
+                        <div class="deploy-mockup-ui mockup-offermaker">
+                            <div class="mock-pdf-page">
+                                <div class="mock-pdf-header">
+                                    <span class="mock-pdf-logo">audioplaza.pl</span>
+                                    <span class="mock-pdf-doc-title">OFERTA HANDLOWA</span>
+                                </div>
+                                <div class="mock-pdf-divider"></div>
+                                <div class="mock-pdf-product">
+                                    <div class="mock-pdf-img-placeholder"></div>
+                                    <div class="mock-pdf-text-lines">
+                                        <div class="mock-pdf-line long"></div>
+                                        <div class="mock-pdf-line short"></div>
+                                    </div>
+                                </div>
+                                <div class="mock-pdf-price-box">
+                                    <div class="mock-pdf-price-row"><span>Cena katalogowa:</span><span>24 990 zł</span></div>
+                                    <div class="mock-pdf-price-row highlight"><span>Oszczędzasz:</span><span>-3 500 zł</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Real screenshot image generated from prompt -->
+                        <img class="deploy-actual-screenshot" src="offermaker_screenshot.png" alt="Podgląd wdrożenia Offer Maker" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
+                        <div class="deploy-visual-label">
+                            <i class="fa-regular fa-image"></i>
+                            <span>Podgląd wdrożenia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: Web Tools (Portal Integracji) -->
+            <div class="deploy-card card">
+                <div class="deploy-text-col">
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie Portalu Integracji Systemowych (Web Tools)</h3>
+                    <p>
+                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie i wdrożenie centralnej, responsywnej platformy zarządzania (System Integration Portal), która konsoliduje rozproszone systemy e-commerce, telekomunikacyjne i finansowe w jeden spójny, bezpieczny pulpit nawigacyjny (Glassmorphism Dashboard). Portal został przystosowany do stabilnego i szybkiego uruchomienia na tabletach i smartfonach doradców handlowych wewnątrz zamkniętego, szyfrowanego tunelu wirtualnej sieci prywatnej, gwarantując pełną mobilność pracy.
+                    </p>
+                    <p>
+                        <strong>Kluczowe innowacje i obszary usprawnień:</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Konsolidacja rozproszonej architektury:</strong> Scentralizowałem i spiąłem pod jednym adresem sieciowym wszystkie autorskie podnarzędzia (kreator ofert handlowych, kalkulatory akustyczne, rozliczenia kasy sklepowej oraz proxy do rządowych baz KSeF).
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Mobilny, szyfrowany dostęp (Tailscale VPN):</strong> Zintegrowałem platformę z architekturą wirtualnych połączeń punkt-punkt. Pozwala to doradcom handlowym na bezpieczny i szybki dostęp do zasobów lokalnych (drukarki sieciowe, systemy magazynowe) z dowolnego miejsca w kraju bez ryzyka utraty poufności danych.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Błyskawiczna synchronizacja wizualna (Style Sync):</strong> Wdrożyłem wysuwany panel ustawień pozwalający na dynamiczną modyfikację motywu kolorystycznego, poziomu kontrastu (w tym tryb Midnight OLED) oraz animacji tła, automatycznie propagowanych na wszystkie podstrony portalu.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Monitorowanie usług w czasie rzeczywistym:</strong> Zaimplementowałem aktywne wskaźniki statusu sieciowego, sprawdzające w tle dostępność domeny sklepu, gotowość połączenia VPN oraz sprawność komunikacji z rządowymi API KSeF.
+                        </li>
+                    </ul>
+                    <p style="margin-top: 15px; margin-bottom: 0;">
+                        <strong>Mierzalny efekt biznesowy:</strong> Wszystkie wewnętrzne systemy firmy zostały zunifikowane pod jednym, intuicyjnym interfejsem. Doradcy zyskali w pełni mobilną kontrolę nad narzędziami ze swoich telefonów i tabletów. Czas potrzebny na diagnozę awarii łączności spadł do zera, a proces wdrożenia nowego personelu w obsługę systemów skrócił się o 50%.
+                    </p>
+                    
+                    <div class="tech-logo-row" style="margin-top: 15px;">
+                        <span class="tech-logo-item logo-linux" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg');" title="System Zorin OS / Linux"></span>
+                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailscale.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailscale.svg');" title="Sieć Tailscale VPN"></span>
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg');" title="Express.js Gateway"></span>
+                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Konteneryzacja Docker"></span>
+                    </div>
+                </div>
+                <div class="deploy-visual-col">
+                    <div class="deploy-visual-container">
+                        <!-- High-fidelity CSS Mockup -->
+                        <div class="deploy-mockup-ui mockup-webtools">
+                            <div class="mock-dash-header">
+                                <span class="mock-dash-dot"></span>
+                                <span class="mock-dash-title">Audioplaza Portal</span>
+                                <span class="mock-dash-badge">VPN Active</span>
+                            </div>
+                            <div class="mock-dash-grid">
+                                <div class="mock-dash-card active">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                    <span>OfferMaker</span>
+                                </div>
+                                <div class="mock-dash-card">
+                                    <i class="fa-solid fa-cash-register"></i>
+                                    <span>Rozliczenia</span>
+                                </div>
+                                <div class="mock-dash-card">
+                                    <i class="fa-solid fa-calculator"></i>
+                                    <span>AcousticLab</span>
+                                </div>
+                                <div class="mock-dash-card">
+                                    <i class="fa-solid fa-envelope-open"></i>
+                                    <span>KSeF Gov</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Real screenshot image generated from prompt -->
+                        <img class="deploy-actual-screenshot" src="webtools_screenshot.png" alt="Podgląd wdrożenia Web Tools Portal" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
+                        <div class="deploy-visual-label">
+                            <i class="fa-regular fa-image"></i>
+                            <span>Podgląd wdrożenia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2026 Kamil Brzuszczak. Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji i nawiązania współpracy biznesowej.</p>
@@ -1456,6 +2171,22 @@
                 tooltip.style.opacity = '0';
                 tooltip.style.transform = 'translateX(-50%) translateY(5px)';
             }, 1500);
+        });
+    }
+
+    // Tabs switcher utility
+    function switchTab(idx) {
+        const tabs = document.querySelectorAll('.deploy-tab');
+        const cards = document.querySelectorAll('.deploy-card');
+        
+        tabs.forEach((tab, i) => {
+            if (i === idx) {
+                tab.classList.add('active');
+                cards[i].classList.add('active');
+            } else {
+                tab.classList.remove('active');
+                cards[i].classList.remove('active');
+            }
         });
     }
 
