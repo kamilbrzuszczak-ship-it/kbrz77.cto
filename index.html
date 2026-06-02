@@ -6,7 +6,26 @@
     <title>Kamil Brzuszczak - Fractional CTO & AI Integrator</title>
     <meta name="description" content="Kamil Brzuszczak - Doświadczony Fractional CTO i AI Integrator. Transformacja technologiczna MŚP, automatyzacja procesów AI, audyt SEO/Ads oraz optymalizacja infrastruktury.">
     <meta name="keywords" content="CTO, Fractional CTO, AI Integrator, automatyzacja AI, audyt SEO, Google Ads, VoIP, RAG, Python, Docker, Poznań">
-    
+
+    <link rel="canonical" href="https://kbrz77.pl/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kamil Brzuszczak",
+      "jobTitle": "Fractional CTO & AI Integrator",
+      "url": "https://kbrz77.pl",
+      "email": "kbrz77@proton.me",
+      "telephone": "+48796579480",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Poznań",
+        "addressCountry": "PL"
+      }
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -620,7 +639,7 @@
             user-select: none;
         }
         
-        /* 1. ksmil mockup */
+        /* 1. KsEF InterGracja mockup */
         .mockup-ksmil {
             flex-direction: column;
             width: 90%;
@@ -937,6 +956,169 @@
             border-radius: 2px;
         }
 
+        /* 5. Cash Integrator Mockup */
+        .mockup-cashintegrator {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .mockup-cashintegrator .mock-cli-panel {
+            position: absolute;
+            bottom: 10px;
+            left: 5%;
+            width: 70%;
+            background: #090d16;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            z-index: 1;
+            font-family: 'Fira Code', monospace;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .mockup-cashintegrator .mock-web-panel {
+            position: absolute;
+            top: 10px;
+            right: 5%;
+            width: 65%;
+            background: #111827;
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            border-radius: 8px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            z-index: 2;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .mock-cli-header, .mock-web-header {
+            background: rgba(255,255,255,0.03);
+            padding: 6px 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .mock-cli-title {
+            color: rgba(56, 189, 248, 0.8);
+            font-size: 0.6rem;
+            margin-left: 5px;
+        }
+        .mock-web-title {
+            color: rgba(245, 158, 11, 0.8);
+            font-size: 0.6rem;
+            margin-left: 5px;
+            font-family: var(--font-head);
+            font-weight: 600;
+        }
+        .mock-web-badge {
+            margin-left: auto;
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--gold);
+            font-size: 0.55rem;
+            padding: 1px 6px;
+            border-radius: 10px;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            font-weight: 600;
+        }
+        .mock-cli-body {
+            padding: 10px;
+            color: #e2e8f0;
+            font-size: 0.58rem;
+            text-align: left;
+        }
+        .mock-cli-line.cmd {
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+        .mock-cli-line.cmd::before {
+            content: "$ ";
+            color: #38bdf8;
+        }
+        .mock-cli-line.title {
+            color: #fbbf24;
+            font-weight: bold;
+            margin-bottom: 6px;
+            font-size: 0.55rem;
+        }
+        .mock-cli-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        .mock-cli-row.header {
+            border-bottom: 1px dashed rgba(255,255,255,0.15);
+            color: #94a3b8;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        .mock-cli-row.ok {
+            background: rgba(16, 185, 129, 0.05);
+        }
+        .mock-cli-row.manko {
+            background: rgba(239, 68, 68, 0.05);
+        }
+        .mock-cli-row .val-green {
+            color: #10b981;
+            font-weight: bold;
+        }
+        .mock-cli-row .val-red {
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .mock-web-body {
+            padding: 8px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 0.58rem;
+            color: #e2e8f0;
+            text-align: left;
+        }
+        .mock-web-form {
+            display: flex;
+            gap: 8px;
+        }
+        .mock-web-field {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 3px 6px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .mock-web-val {
+            color: #ffffff;
+            font-weight: 500;
+        }
+        .mock-web-val.val-bold {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+        .mock-web-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            margin-top: 2px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 4px;
+        }
+        .mock-chart-bar {
+            height: 12px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+            font-size: 0.5rem;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
         /* Vertical Stack for dual images (stock1 and stock2) */
         .screenshot-cascade {
             position: absolute;
@@ -1087,6 +1269,14 @@
 
         html.dark .company-logo {
             filter: brightness(1.2);
+        }
+
+        .company-logo-featured {
+            height: 100px !important;
+            max-width: 100% !important;
+            padding: 25px !important;
+            margin: 0 auto !important;
+            display: block !important;
         }
 
         .timeline-block p {
@@ -1299,6 +1489,70 @@
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             pointer-events: none;
+        }
+
+        .aside-box.billing-box {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.15) 0%, var(--bg-card) 50%, #1a040b 100%) !important;
+            border-color: rgba(14, 165, 233, 0.4) !important;
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.15) !important;
+        }
+
+        .aside-box.billing-box::before {
+            background: linear-gradient(to bottom right, rgba(14, 165, 233, 0.3), transparent) !important;
+        }
+
+        html.light .aside-box.billing-box {
+            background: linear-gradient(135deg, rgba(2, 132, 199, 0.12) 0%, var(--bg-card) 50%, #fae6ec 100%) !important;
+            border-color: rgba(2, 132, 199, 0.35) !important;
+            box-shadow: 0 10px 30px rgba(2, 132, 199, 0.12) !important;
+        }
+
+        .aside-box.efficiency-box {
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.08) 0%, var(--bg-card) 50%, #1c040d 100%) !important;
+            border-color: rgba(220, 38, 38, 0.25) !important;
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.08) !important;
+        }
+
+        .aside-box.efficiency-box::before {
+            background: linear-gradient(to bottom right, rgba(220, 38, 38, 0.2), transparent) !important;
+        }
+
+        html.light .aside-box.efficiency-box {
+            background: linear-gradient(135deg, rgba(219, 39, 119, 0.08) 0%, var(--bg-card) 50%, #fae6ec 100%) !important;
+            border-color: rgba(219, 39, 119, 0.2) !important;
+            box-shadow: 0 10px 30px rgba(219, 39, 119, 0.08) !important;
+        }
+
+        .badge-project-own {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--cyan-light);
+            background-color: var(--cyan-glow);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            padding: 3px 10px;
+            border-radius: 30px;
+            vertical-align: middle;
+            margin-left: 10px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            box-shadow: 0 0 12px rgba(14, 165, 233, 0.1);
+            display: inline-block;
+            transition: var(--transition-smooth);
+            font-family: var(--font-head);
+        }
+
+        .badge-project-own:hover {
+            background-color: rgba(14, 165, 233, 0.25);
+            border-color: var(--cyan);
+            color: var(--text-pure);
+            box-shadow: 0 0 15px rgba(14, 165, 233, 0.2);
+        }
+
+        html.light .badge-project-own {
+            color: var(--cyan-light);
+            background-color: var(--cyan-glow);
+            border-color: rgba(2, 132, 199, 0.25);
+            box-shadow: 0 0 10px rgba(2, 132, 199, 0.1);
         }
 
         .aside-box p {
@@ -1745,10 +1999,10 @@
                 <a href="tel:+48796579480">+48 796 579 480</a>
                 <span class="contact-tooltip">Skopiowano!</span>
             </div>
-            <div class="contact-item" onclick="copyValue('kbrz77@poroton.me', this)" title="Kliknij, aby skopiować">
+            <div class="contact-item" onclick="copyValue('kbrz77@proton.me', this)" title="Kliknij, aby skopiować">
                 <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <strong>E-mail</strong>
-                <a href="mailto:kbrz77@poroton.me">kbrz77@poroton.me</a>
+                <a href="mailto:kbrz77@proton.me">kbrz77@proton.me</a>
                 <span class="contact-tooltip">Skopiowano!</span>
             </div>
             <div class="contact-item">
@@ -1860,8 +2114,7 @@
                         <div class="time-badge">2015 - OBECNIE</div>
                         <div class="role-title">Strateg Technologiczny & E-commerce Director</div>
                         <div class="company-name">
-                            <img src="logo-audioplaza.png" alt="audioplaza.pl" class="company-logo">
-                            <span>audioplaza.pl — Sektor Premium High-End Audio</span>
+                            <img src="logo-audioplaza.png" alt="audioplaza.pl" class="company-logo company-logo-featured">
                         </div>
                         <p>Ponad dekada współtworzenia sukcesu rynkowego jednej z czołowych marek premium e-commerce w Polsce. Ewolucja od zaawansowanych strategii marketingowych opartych na danych Google do pełnej odpowiedzialności za technologię.</p>
                         
@@ -2099,7 +2352,7 @@
 
             <section>
                 <h2>Model Rozliczeń (Fractional)</h2>
-                <div class="aside-box" style="border-left: 3px solid var(--cyan);">
+                <div class="aside-box billing-box" style="border-left: 3px solid var(--cyan);">
                     <p>
                         Nie szukam etatu. Działam jako zewnętrzny Dyrektor Technologiczny na godziny lub w oparciu o budżet konkretnego projektu. Wchodzę do Twojej firmy, robię czystki w marketingu, projektuję automatyzację AI, wdrażam ją i przekazuję system w ręce Twojego biura. Koszt ułamka etatu, zysk na poziomie korporacyjnym.
                     </p>
@@ -2115,7 +2368,7 @@
         <!-- Tabs Navigation -->
         <div class="deploy-tabs">
             <button class="deploy-tab active" onclick="switchTab(0)">
-                <i class="fa-solid fa-server"></i> ksmil 2.0
+                <i class="fa-solid fa-server"></i> KsEF InterGracja
             </button>
             <button class="deploy-tab" onclick="switchTab(1)">
                 <i class="fa-solid fa-file-invoice"></i> Offer Maker
@@ -2126,15 +2379,21 @@
             <button class="deploy-tab" onclick="switchTab(3)">
                 <i class="fa-solid fa-chart-line"></i> Stock analyzer
             </button>
+            <button class="deploy-tab" onclick="switchTab(4)">
+                <i class="fa-solid fa-cash-register"></i> Integrator Kasowy
+            </button>
+            <button class="deploy-tab" onclick="switchTab(5)">
+                <i class="fa-solid fa-headphones"></i> audiozorro.pl
+            </button>
         </div>
 
         <!-- Cards Wrapper -->
         <div class="deploy-cards">
             
-            <!-- CARD 1: ksmil 2.0 -->
+            <!-- CARD 1: KsEF InterGracja -->
             <div class="deploy-card card active">
                 <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie dedykowanego ekosystemu ksmil 2.0</h3>
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie dedykowanego ekosystemu KsEF InterGracja</h3>
                     <p>
                         <strong>Koncepcja i realizacja:</strong> Zaprojektowanie i stworzenie od zera, według indywidualnych specyfikacji klienta, kompleksowego systemu automatyzacji procesów biznesowych i operacyjnych back-office. Głównym celem było wyeliminowanie powtarzalnych zadań manualnych, ujednolicenie obiegu dokumentów handlowych oraz pełna, bezpieczna integracja z Krajowym Systemem E-Faktur (KSeF), gwarantująca firmie płynność operacyjną i niezależność od gotowych, pudełkowych rozwiązań.
                     </p>
@@ -2176,7 +2435,7 @@
                         <div class="deploy-mockup-ui mockup-ksmil">
                             <div class="mock-window-header">
                                 <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                                <span class="mock-window-title">ksmil-service.exe</span>
+                                <span class="mock-window-title">ksef-intergracja-service.exe</span>
                             </div>
                             <div class="mock-window-body">
                                 <div class="mock-line"><span class="mock-lbl">Status:</span> <span class="mock-val val-green">Uruchomiony</span></div>
@@ -2187,7 +2446,7 @@
                             </div>
                         </div>
                         <!-- Real screenshot image generated from prompt -->
-                        <img class="deploy-actual-screenshot" src="ksmil_screenshot.png" alt="Podgląd wdrożenia ksmil 2.0" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
+                        <img class="deploy-actual-screenshot" src="ksmil_screenshot.png" alt="Podgląd wdrożenia KsEF InterGracja" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
                         <div class="deploy-visual-label">
                             <i class="fa-regular fa-image"></i>
                             <span>Podgląd wdrożenia</span>
@@ -2348,7 +2607,7 @@
             <!-- CARD 4: Stock analyzer (Projekt własny) -->
             <div class="deploy-card card">
                 <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja retro terminala do analizy amerykańskich spółek wzrostowych (Stock analyzer) <span style="font-size: 0.75rem; font-weight: normal; color: var(--text-muted); vertical-align: middle; margin-left: 8px; border: 1px solid rgba(255,255,255,0.15); padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.03);">Projekt własny</span></h3>
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja retro terminala do analizy amerykańskich spółek wzrostowych (Stock analyzer) <span class="badge-project-own">Projekt własny</span></h3>
                     <p>
                         <strong>Koncepcja i realizacja:</strong> Zaprojektowanie i wdrożenie zaawansowanego narzędzia analitycznego w stylu retro terminala (TUI) do precyzyjnej oceny potencjału wzrostowego spółek notowanych na giełdach w USA (NASDAQ/NYSE). System bazuje na autorskim algorytmie oceny punktowej GPS (Growth Potential Scale) w przedziale 0–100. Kluczowym elementem wdrożenia było zintegrowanie agenta sztucznej inteligencji (Claude AI), który automatycznie przeprowadza wieloczynnikowe analizy rynkowe w czasie rzeczywistym, pobierając dane z sieci oraz sprawozdań finansowych.
                     </p>
@@ -2433,11 +2692,189 @@
                 </div>
             </div>
 
+            <!-- CARD 5: Integrator Kasowy -->
+            <div class="deploy-card card">
+                <div class="deploy-text-col">
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie Dwuoddziałowego Integratora Kasowego (Raport Kasowy)</h3>
+                    <p>
+                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie i wdrożenie kompleksowego systemu weryfikacji i synchronizacji dobowych raportów kasowych dla dwóch oddziałów firmy (Oddział Główny oraz Oddział Wrocław). System tworzy spójny pomost technologiczny między stanem finansowym zadeklarowanym w ERP (Subiekt GT) a faktyczną ilością gotówki w fizycznych kasetkach i sejfach. Rozwiązanie łączy szybkość obsługi w dedykowanej konsoli CLI z analitycznymi możliwościami webowego panelu zarządczego (Gradio).
+                    </p>
+                    <p>
+                        <strong>Kluczowe innowacje i obszary usprawnień:</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Podwójny interfejs (TUI & GUI):</strong> Dedykowana konsola CLI dla kasjerów z autoryzacją kodem PIN zapewniająca natychmiastowe wprowadzanie danych na koniec zmiany oraz nowoczesny portal webowy (Gradio Soft Theme) dla kadry menedżerskiej umożliwiający szczegółowy podgląd historii i analitykę wydatków.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Bezpieczeństwo i rozliczalność (PIN System):</strong> Wbudowany mechanizm logowania inicjałami powiązanymi z 4-cyfrowym hasłem PIN dla kasjerów. Każdy wpis w bazie jest przypisany do konkretnego pracownika, co umożliwia łatwy audyt i identyfikację odpowiedzialności za stany kasowe.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Dynamiczne przeliczanie i wykrywanie manka/nadpłaty:</strong> Zastosowanie bezkompromisowej zasady dynamicznej rekalkulacji stanów kasy i sejfu na podstawie historii transakcji. System automatycznie wykrywa i sygnalizuje ujemne salda kasy, sejfu lub rozbieżności z systemem ERP, generując wyraźne alerty (MANKO / NADPLATA) w kolorach ANSI oraz webowych powiadomieniach.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Zintegrowana analityka wydatków:</strong> Silnik analityczny oparty o bibliotekę Pandas automatycznie grupuje wydatki operacyjne (Biuro, Transport, Wynagrodzenia, itp.) i prezentuje je w postaci posortowanych zestawień struktury kosztów firmy.
+                        </li>
+                    </ul>
+                    <p style="margin-top: 15px; margin-bottom: 0;">
+                        <strong>Mierzalny efekt biznesowy:</strong> Zbudowanie w pełni bezpiecznego, bezserwerowego (opartego o pliki CSV) systemu kontroli gotówkowej o zerowych kosztach licencyjnych. Czas dobowego rozliczenia i audytu kasowego w obu oddziałach skrócił się <strong>o 75%</strong>, a błędy rachunkowe wynikające z ręcznego przepisywania danych do arkuszy kalkulacyjnych zostały całkowicie wyeliminowane.
+                    </p>
+                    
+                    <div class="tech-logo-row" style="margin-top: 15px;">
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg');" title="System Windows / start.bat"></span>
+                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Język Python 3"></span>
+                        <span class="tech-logo-item logo-pandas" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg');" title="Biblioteka Pandas"></span>
+                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
+                    </div>
+                </div>
+                <div class="deploy-visual-col">
+                    <div class="deploy-visual-container">
+                        <!-- High-fidelity CSS Mockup -->
+                        <div class="deploy-mockup-ui mockup-cashintegrator">
+                            <!-- Web Panel (Gradio Mockup) -->
+                            <div class="mock-web-panel">
+                                <div class="mock-web-header">
+                                    <span class="mock-web-dot" style="background:#f59e0b; width:6px; height:6px; border-radius:50%; display:inline-block;"></span>
+                                    <span class="mock-web-title">Gradio: System Kasowy</span>
+                                    <span class="mock-web-badge">Wrocław</span>
+                                </div>
+                                <div class="mock-web-body">
+                                    <div class="mock-web-form">
+                                        <div class="mock-web-field">
+                                            <span style="font-size:0.45rem; color:rgba(255,255,255,0.4);">Typ</span>
+                                            <span class="mock-web-val">Wydatek</span>
+                                        </div>
+                                        <div class="mock-web-field">
+                                            <span style="font-size:0.45rem; color:rgba(255,255,255,0.4);">Kwota</span>
+                                            <span class="mock-web-val val-bold">120.00 PLN</span>
+                                        </div>
+                                    </div>
+                                    <div class="mock-web-chart">
+                                        <div class="mock-chart-bar" style="width: 80%; background: #38bdf8;"><span>Biuro (80%)</span></div>
+                                        <div class="mock-chart-bar" style="width: 20%; background: #fbbf24;"><span>Transport (20%)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CLI Panel (Terminal Mockup) -->
+                            <div class="mock-cli-panel">
+                                <div class="mock-cli-header">
+                                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                                    <span class="mock-cli-title">kamil@terminal: ~/raport-kasowy</span>
+                                </div>
+                                <div class="mock-cli-body">
+                                    <div class="mock-cli-line cmd">python raport_kasowy.py</div>
+                                <div class="mock-cli-line title">RAPORT KASOWY | ODDZIAŁ: WROCŁAW</div>
+                                <div class="mock-cli-row header">
+                                    <span>DATA</span><span>USER</span><span>ROZNICA</span><span>STAN</span>
+                                </div>
+                                <div class="mock-cli-row ok" style="display:flex; justify-content:space-between; width:100%;">
+                                    <span>30.05</span><span>KB</span><span class="val-green">0.00</span><span>700.00</span>
+                                </div>
+                                <div class="mock-cli-row manko" style="display:flex; justify-content:space-between; width:100%;">
+                                    <span>29.05</span><span>AZ</span><span class="val-red">-20.00</span><span>480.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="deploy-visual-label">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Podgląd interfejsów (TUI / Web)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6: audiozorro.pl (Projekt własny) -->
+            <div class="deploy-card card">
+                <div class="deploy-text-col">
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja platformy e-commerce audiozorro.pl <span class="badge-project-own">Projekt własny</span></h3>
+                    <p>
+                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie, oprogramowanie i wdrożenie od zera nowoczesnego sklepu internetowego audiozorro.pl dla branży audio premium. Głównym celem było stworzenie ultra-szybkiej, zoptymalizowanej pod kątem wyszukiwarki Google (SEO/PageSpeed) platformy sprzedażowej z zautomatyzowanym procesem obsługi zamówień, płatności online oraz logistyki kurierskiej.
+                    </p>
+                    <p>
+                        <strong>Kluczowe innowacje i obszary usprawnień:</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Wydajność PageSpeed Insights (98/100):</strong> Zastosowanie nowoczesnych formatów grafik (WebP/AVIF), asynchronicznego ładowania zasobów oraz minimalizacji kodu. Przełożyło się to na natychmiastowe ładowanie witryny i wysokie pozycje w wynikach organicznych.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Pełna automatyacja fakturowania i wysyłek:</strong> Bezpośrednia integracja z API InPost (automatyczne generowanie etykiet na paczkomaty) oraz kurierów DPD/DHL. Moduł płatności automatycznie księguje wpłaty i generuje faktury PDF bez udziału administratora.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Autonomiczny integrator magazynowy (XML/JSON):</strong> Skrypt cyklicznie importujący stany magazynowe i ceny od kluczowych dystrybutorów sprzętu audio w Polsce, dbający o to, by oferta sklepu była zawsze aktualna i zgodna z rzeczywistym stanem magazynowym.
+                        </li>
+                    </ul>
+                    <p style="margin-top: 15px; margin-bottom: 0;">
+                        <strong>Mierzalny efekt biznesowy:</strong> Stworzenie stabilnej, w pełni zautomatyzowanej maszyny sprzedażowej. Czas potrzebny na realizację pojedynczego zamówienia spadł <strong>o 60%</strong> (z 15 do poniżej 6 minut), a koszty obsługi błędów adresowych zostały zredukowane do zera.
+                    </p>
+                    
+                    <div class="tech-logo-row" style="margin-top: 15px;">
+                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Skrypty Python Backend"></span>
+                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg');" title="Google Analytics & Tag Manager"></span>
+                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Konteneryzacja Docker"></span>
+                    </div>
+                </div>
+                <div class="deploy-visual-col">
+                    <div class="deploy-visual-container">
+                        <!-- High-fidelity CSS Mockup -->
+                        <div class="deploy-mockup-ui mockup-webtools" style="border-color: rgba(220, 38, 38, 0.15); background: #0b0c10;">
+                            <div class="mock-dash-header" style="border-bottom-color: rgba(220, 38, 38, 0.1);">
+                                <span class="mock-dash-dot" style="background: #b91c1c;"></span>
+                                <span class="mock-dash-title">audiozorro.pl Dashboard</span>
+                                <span class="mock-dash-badge" style="background: rgba(220,38,38,0.1); color: #f87171; border-color: rgba(220,38,38,0.2);">Active</span>
+                            </div>
+                            <div class="mock-dash-grid">
+                                <div class="mock-dash-card active" style="border-color: rgba(220,38,38,0.3); background: rgba(220,38,38,0.02);">
+                                    <i class="fa-solid fa-cart-shopping" style="color: #f87171;"></i>
+                                    <span style="color: var(--text-pure);">Sklep Live</span>
+                                </div>
+                                <div class="mock-dash-card">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    <span>InPost API</span>
+                                </div>
+                                <div class="mock-dash-card">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <span>Płatności OK</span>
+                                </div>
+                                <div class="mock-dash-card">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    <span>XML Import</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Real screenshot image -->
+                        <img class="deploy-actual-screenshot" src="audiozorro_screenshot.png" alt="Podgląd wdrożenia audiozorro.pl" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
+                        <div class="deploy-visual-label">
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>Podgląd panelu audiozorro.pl</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="efficiency-section-full" style="margin-top: 30px;">
+        <h2>Efektywność Pracy (AI Co-pilot)</h2>
+        <div class="aside-box efficiency-box" style="border-left: 3px solid #b91c1c; margin-bottom: 0;">
+            <p>
+                <strong>Ciekawostka:</strong> Nad stworzeniem, oprogramowaniem wdrożeń i dopracowaniem wizualnym tego CV pracowałem w duecie z AI przez łącznie <strong>17 godzin i 6 minut</strong> w ciągu zaledwie <strong>31 godzin</strong> od startu projektu.
+                <br><br>
+                To namacalny dowód na moją skuteczność – potrafię błyskawicznie wdrażać i wykorzystywać zaawansowane narzędzia AI w codziennej pracy projektowej, oszczędzając czas i optymalizując procesy.
+            </p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Kamil Brzuszczak. Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji i nawiązania współpracy biznesowej.</p>
+        <p>&copy; 2026 Kamil Brzuszczak. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
 </div>
