@@ -2389,32 +2389,26 @@
         </aside>
     </div>
 
-    <!-- EXAMPLES OF DEPLOYMENTS (PRZYKŁADY WDROŻEŃ) -->
+    <!-- EXAMPLES OF DEPLOYMENTS (PRZYKŁADY WDROŻEŃ AI/IT) -->
     <section class="deploy-section-full">
-        <h2>Przykłady wdrożeń</h2>
+        <h2>Przykłady wdrożeń AI/IT</h2>
         
         <!-- Tabs Navigation -->
         <div class="deploy-tabs">
-            <button class="deploy-tab active" onclick="switchTab(0)">
+            <button class="deploy-tab deploy-tab-it active" onclick="switchTabIT(0)">
                 <i class="fa-solid fa-server"></i> KsEF InterGracja
             </button>
-            <button class="deploy-tab" onclick="switchTab(1)">
+            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(1)">
                 <i class="fa-solid fa-file-invoice"></i> Offer Maker
             </button>
-            <button class="deploy-tab" onclick="switchTab(2)">
+            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(2)">
                 <i class="fa-solid fa-cubes"></i> Web Tools Portal
             </button>
-            <button class="deploy-tab" onclick="switchTab(3)">
+            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(3)">
                 <i class="fa-solid fa-chart-line"></i> Stock analyzer
             </button>
-            <button class="deploy-tab" onclick="switchTab(4)">
+            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(4)">
                 <i class="fa-solid fa-cash-register"></i> Integrator Kasowy
-            </button>
-            <button class="deploy-tab" onclick="switchTab(5)">
-                <i class="fa-solid fa-headphones"></i> audiozorro.pl
-            </button>
-            <button class="deploy-tab" onclick="switchTab(6)">
-                <i class="fa-solid fa-sliders"></i> kalibracjadirac.pl
             </button>
         </div>
 
@@ -2422,7 +2416,7 @@
         <div class="deploy-cards">
             
             <!-- CARD 1: KsEF InterGracja -->
-            <div class="deploy-card card active">
+            <div class="deploy-card card deploy-card-it active">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie dedykowanego ekosystemu KsEF InterGracja</h3>
                     <p>
@@ -2487,7 +2481,7 @@
             </div>
 
             <!-- CARD 2: Offer Maker (Generator Ofert) -->
-            <div class="deploy-card card">
+            <div class="deploy-card card deploy-card-it">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie inteligentnego kreatora ofert handlowych Premium (Offer Maker)</h3>
                     <p>
@@ -2559,7 +2553,7 @@
             </div>
 
             <!-- CARD 3: Web Tools (Portal Integracji) -->
-            <div class="deploy-card card">
+            <div class="deploy-card card deploy-card-it">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie Portalu Integracji Systemowych (Web Tools)</h3>
                     <p>
@@ -2636,7 +2630,7 @@
             </div>
 
             <!-- CARD 4: Stock analyzer (Projekt własny) -->
-            <div class="deploy-card card">
+            <div class="deploy-card card deploy-card-it">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja retro terminala do analizy amerykańskich spółek wzrostowych (Stock analyzer) <span class="badge-project-own">Projekt własny</span></h3>
                     <p>
@@ -2724,7 +2718,7 @@
             </div>
 
             <!-- CARD 5: Integrator Kasowy -->
-            <div class="deploy-card card">
+            <div class="deploy-card card deploy-card-it">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie Dwuoddziałowego Integratora Kasowego (Raport Kasowy)</h3>
                     <p>
@@ -2817,9 +2811,28 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- EXAMPLES OF SITES (PRZYKŁADY STRON) -->
+    <section class="deploy-section-full" style="margin-top: 50px;">
+        <h2>Przykłady stron</h2>
+        
+        <!-- Tabs Navigation -->
+        <div class="deploy-tabs">
+            <button class="deploy-tab deploy-tab-web active" onclick="switchTabWeb(0)">
+                <i class="fa-solid fa-headphones"></i> audiozorro.pl
+            </button>
+            <button class="deploy-tab deploy-tab-web" onclick="switchTabWeb(1)">
+                <i class="fa-solid fa-sliders"></i> kalibracjadirac.pl
+            </button>
+        </div>
+
+        <!-- Cards Wrapper -->
+        <div class="deploy-cards">
 
             <!-- CARD 6: audiozorro.pl (Projekt własny) -->
-            <div class="deploy-card card">
+            <div class="deploy-card card deploy-card-web active">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja platformy e-commerce audiozorro.pl <span class="badge-project-own">Projekt własny</span></h3>
                     <p>
@@ -2891,7 +2904,7 @@
             </div>
 
             <!-- CARD 7: kalibracjadirac.pl (Projekt własny) -->
-            <div class="deploy-card card">
+            <div class="deploy-card card deploy-card-web">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja platformy resellerskiej kalibracjadirac.pl <span class="badge-project-own">Projekt własny</span></h3>
                     <p>
@@ -2997,9 +3010,24 @@
     }
 
     // Tabs switcher utility
-    function switchTab(idx) {
-        const tabs = document.querySelectorAll('.deploy-tab');
-        const cards = document.querySelectorAll('.deploy-card');
+    function switchTabIT(idx) {
+        const tabs = document.querySelectorAll('.deploy-tab-it');
+        const cards = document.querySelectorAll('.deploy-card-it');
+        
+        tabs.forEach((tab, i) => {
+            if (i === idx) {
+                tab.classList.add('active');
+                cards[i].classList.add('active');
+            } else {
+                tab.classList.remove('active');
+                cards[i].classList.remove('active');
+            }
+        });
+    }
+
+    function switchTabWeb(idx) {
+        const tabs = document.querySelectorAll('.deploy-tab-web');
+        const cards = document.querySelectorAll('.deploy-card-web');
         
         tabs.forEach((tab, i) => {
             if (i === idx) {
