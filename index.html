@@ -644,6 +644,34 @@
             display: block;
             animation: imgFadeIn 0.35s ease-in-out forwards;
         }
+
+        .deploy-live-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            font-family: var(--font-head);
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--cyan-light);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            border-bottom: 1px dashed rgba(14, 165, 233, 0.4);
+            padding-bottom: 2px;
+        }
+        .deploy-live-link:hover {
+            color: var(--text-pure);
+            border-bottom-color: var(--cyan-light);
+            text-shadow: 0 0 8px rgba(14, 165, 233, 0.4);
+        }
+        html.light .deploy-live-link {
+            color: #0284c7;
+            border-bottom-color: rgba(2, 132, 199, 0.4);
+        }
+        html.light .deploy-live-link:hover {
+            color: var(--text-pure);
+            border-bottom-color: #0284c7;
+        }
         
         .deploy-visual-label {
             display: flex;
@@ -1556,49 +1584,50 @@
             align-items: center;
             justify-content: center;
             gap: 6px;
-            font-size: 0.7rem;
-            font-weight: 700;
+            font-size: 0.65rem;
+            font-weight: 800;
             color: var(--cyan-light);
-            background-color: rgba(14, 165, 233, 0.08);
-            border: 1px solid rgba(14, 165, 233, 0.3);
-            padding: 4px 10px;
-            border-radius: 20px;
+            background-color: rgba(14, 165, 233, 0.04);
+            border: 1px solid rgba(14, 165, 233, 0.45);
+            padding: 2px 8px;
+            border-radius: 0;
             vertical-align: middle;
             margin-left: 10px;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
-            box-shadow: 0 0 10px rgba(14, 165, 233, 0.1);
+            box-shadow: 0 0 8px rgba(14, 165, 233, 0.05);
             transition: var(--transition-smooth);
             font-family: var(--font-head);
+            line-height: 1.2;
         }
 
         .badge-project-own::before {
             content: "";
             display: inline-block;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
+            width: 5px;
+            height: 5px;
+            border-radius: 0;
             background-color: var(--cyan-light);
-            box-shadow: 0 0 8px var(--cyan-light);
+            box-shadow: 0 0 6px var(--cyan-light);
         }
 
         .badge-project-own:hover {
-            background-color: rgba(14, 165, 233, 0.15);
+            background-color: rgba(14, 165, 233, 0.12);
             border-color: var(--cyan-light);
             color: var(--text-pure);
-            box-shadow: 0 0 15px rgba(14, 165, 233, 0.2);
+            box-shadow: 0 0 12px rgba(14, 165, 233, 0.25);
         }
 
         html.light .badge-project-own {
-            color: #0284c7;
-            background-color: rgba(2, 132, 199, 0.08);
-            border-color: rgba(2, 132, 199, 0.3);
-            box-shadow: 0 0 10px rgba(2, 132, 199, 0.1);
+            color: #0369a1;
+            background-color: rgba(3, 105, 161, 0.04);
+            border-color: rgba(3, 105, 161, 0.5);
+            box-shadow: 0 0 8px rgba(3, 105, 161, 0.05);
         }
 
         html.light .badge-project-own::before {
-            background-color: #0284c7;
-            box-shadow: 0 0 8px #0284c7;
+            background-color: #0369a1;
+            box-shadow: 0 0 6px #0369a1;
         }
 
         .aside-box p {
@@ -2918,6 +2947,11 @@
                             <span>Podgląd panelu audiozorro.pl</span>
                         </div>
                     </div>
+                    <div style="text-align: center;">
+                        <a href="https://audiozorro.pl" target="_blank" class="deploy-live-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Zobacz stronę na żywo: audiozorro.pl
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -2989,6 +3023,11 @@
                             <i class="fa-solid fa-desktop"></i>
                             <span>Podgląd panelu kalibracjadirac.pl</span>
                         </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="https://kalibracjadirac.pl" target="_blank" class="deploy-live-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Zobacz stronę na żywo: kalibracjadirac.pl
+                        </a>
                     </div>
                 </div>
             </div>
