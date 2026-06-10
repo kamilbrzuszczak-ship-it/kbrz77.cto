@@ -1552,35 +1552,53 @@
         }
 
         .badge-project-own {
-            font-size: 0.72rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 0.7rem;
             font-weight: 700;
             color: var(--cyan-light);
-            background-color: var(--cyan-glow);
-            border: 1px solid rgba(14, 165, 233, 0.2);
-            padding: 3px 10px;
-            border-radius: 30px;
+            background-color: rgba(14, 165, 233, 0.08);
+            border: 1px solid rgba(14, 165, 233, 0.3);
+            padding: 4px 10px;
+            border-radius: 20px;
             vertical-align: middle;
             margin-left: 10px;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.06em;
             text-transform: uppercase;
-            box-shadow: 0 0 12px rgba(14, 165, 233, 0.1);
-            display: inline-block;
+            box-shadow: 0 0 10px rgba(14, 165, 233, 0.1);
             transition: var(--transition-smooth);
             font-family: var(--font-head);
         }
 
+        .badge-project-own::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--cyan-light);
+            box-shadow: 0 0 8px var(--cyan-light);
+        }
+
         .badge-project-own:hover {
-            background-color: rgba(14, 165, 233, 0.25);
-            border-color: var(--cyan);
+            background-color: rgba(14, 165, 233, 0.15);
+            border-color: var(--cyan-light);
             color: var(--text-pure);
             box-shadow: 0 0 15px rgba(14, 165, 233, 0.2);
         }
 
         html.light .badge-project-own {
-            color: var(--cyan-light);
-            background-color: var(--cyan-glow);
-            border-color: rgba(2, 132, 199, 0.25);
+            color: #0284c7;
+            background-color: rgba(2, 132, 199, 0.08);
+            border-color: rgba(2, 132, 199, 0.3);
             box-shadow: 0 0 10px rgba(2, 132, 199, 0.1);
+        }
+
+        html.light .badge-project-own::before {
+            background-color: #0284c7;
+            box-shadow: 0 0 8px #0284c7;
         }
 
         .aside-box p {
@@ -2634,7 +2652,7 @@
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja retro terminala do analizy amerykańskich spółek wzrostowych (Stock analyzer) <span class="badge-project-own">Projekt własny</span></h3>
                     <p>
-                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie i wdrożenie zaawansowanego narzędzia analitycznego w stylu retro terminala (TUI) do precyzyjnej oceny potencjału wzrostowego spółek notowanych na giełdach w USA (NASDAQ/NYSE). System bazuje na autorskim algorytmie oceny punktowej GPS (Growth Potential Scale) w przedziale 0–100. Kluczowym elementem wdrożenia było zintegrowanie agenta sztucznej inteligencji (Claude AI), który automatycznie przeprowadza wieloczynnikowe analizy rynkowe w czasie rzeczywistym, pobierając dane z sieci oraz sprawozdań finansowych.
+                        <strong>Koncepcja i realizacja:</strong> W pełni autorska inicjatywa biznesowo-techniczna – projekt stworzony całkowicie od samej idei w mojej głowie, przez szybkie prototypowanie mechaniki analitycznej, aż po ostateczne wdrożenie kodu retro terminala (TUI). Powstał jako niezależne narzędzie do przesiewania danych finansowych spółek giełdowych w USA (NASDAQ/NYSE), eliminując potrzebę opłacania zewnętrznych platform.
                     </p>
                     <p>
                         <strong>Kluczowe innowacje i obszary usprawnień:</strong>
@@ -2836,7 +2854,7 @@
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja platformy e-commerce audiozorro.pl <span class="badge-project-own">Projekt własny</span></h3>
                     <p>
-                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie, oprogramowanie i wdrożenie od zera nowoczesnego sklepu internetowego audiozorro.pl dla branży audio premium. Głównym celem było stworzenie ultra-szybkiej, zoptymalizowanej pod kątem wyszukiwarki Google (SEO/PageSpeed) platformy sprzedażowej z zautomatyzowanym procesem obsługi zamówień, płatności online oraz logistyki kurierskiej.
+                        <strong>Koncepcja i realizacja:</strong> Autorskie przedsięwzięcie e-commerce – projekt zrealizowany od czystej koncepcji biznesowej w mojej głowie, przez błyskawiczne makietowanie, aż po pełne oprogramowanie i wdrożenie produkcyjne sklepu dla branży audio premium. Powstanie sklepu miało na celu stworzenie ultra-wydajnej, zautomatyzowanej maszyny sprzedażowej działającej bez udziału administratora przy codziennych operacjach.
                     </p>
                     <p>
                         <strong>Kluczowe innowacje i obszary usprawnień:</strong>
@@ -2844,15 +2862,15 @@
                     <ul>
                         <li>
                             <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Wydajność PageSpeed Insights (98/100):</strong> Zastosowanie nowoczesnych formatów grafik (WebP/AVIF), asynchronicznego ładowania zasobów oraz minimalizacji kodu. Przełożyło się to na natychmiastowe ładowanie witryny i wysokie pozycje w wynikach organicznych.
+                            <strong>Znakomita wydajność i PageSpeed:</strong> Zastosowanie asynchronicznego ładowania zasobów, nowoczesnych formatów grafik oraz agresywnej minifikacji kodu, co przekłada się na natychmiastowe renderowanie strony.
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Pełna automatyacja fakturowania i wysyłek:</strong> Bezpośrednia integracja z API InPost (automatyczne generowanie etykiet na paczkomaty) oraz kurierów DPD/DHL. Moduł płatności automatycznie księguje wpłaty i generuje faktury PDF bez udziału administratora.
+                            <strong>Automatyzacja procesów back-office:</strong> Integracje z bramkami płatności online oraz systemami kurierskimi (InPost) pozwalające na automatyczne księgowanie wpłat i generowanie etykiet nadawczych.
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Autonomiczny integrator magazynowy (XML/JSON):</strong> Skrypt cyklicznie importujący stany magazynowe i ceny od kluczowych dystrybutorów sprzętu audio w Polsce, dbający o to, by oferta sklepu była zawsze aktualna i zgodna z rzeczywistym stanem magazynowym.
+                            <strong>Synchronizacja stanów magazynowych:</strong> Moduł cyklicznego importu danych dostawców (XML/JSON), dbający o stałą aktualność oferty i cen na stronie.
                         </li>
                     </ul>
                     <p style="margin-top: 15px; margin-bottom: 0;">
@@ -2908,7 +2926,7 @@
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja platformy resellerskiej kalibracjadirac.pl <span class="badge-project-own">Projekt własny</span></h3>
                     <p>
-                        <strong>Koncepcja i realizacja:</strong> Zaprojektowanie, oprogramowanie i wdrożenie od zera nowoczesnej i responsywnej witryny landing page dla oficjalnego polskiego resellera oprogramowania do cyfrowej korekcji akustyki pomieszczeń Dirac Live. Głównym celem było stworzenie eleganckiej i szybkiej platformy informacyjno-sprzedażowej dla klientów z segmentu audio premium.
+                        <strong>Koncepcja i realizacja:</strong> Autorski projekt komercyjny – od narodzin pomysłu w mojej głowie na stworzenie oficjalnego, polskiego kanału dystrybucji Dirac Live, przez szybkie zaplanowanie lejka sprzedażowego, aż po pełną realizację kodu landing page'a. Projekt powstał z chęci zapełnienia niszy w obszarze profesjonalnej kalibracji akustyki w Polsce i jest wizerunkową wizytówką tej działalności.
                     </p>
                     <p>
                         <strong>Kluczowe innowacje i obszary usprawnień:</strong>
@@ -2916,15 +2934,15 @@
                     <ul>
                         <li>
                             <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Estetyka klasy Premium:</strong> Unikalna, ciemna oprawa graficzna z luksusowymi złotymi akcentami oraz wyrafinowaną typografią, w pełni odzwierciedlająca prestiżowy charakter oferowanej technologii audiofilskiej.
+                            <strong>Luksusowa estetyka (Dark Mode):</strong> Ciemna oprawa graficzna z luksusowymi złotymi akcentami, elegancką typografią oraz minimalistycznym układem, idealnie budująca zaufanie u odbiorców produktów klasy premium.
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Płynne animacje Canvas:</strong> Dynamicznie generowane w czasie rzeczywistym wykresy fal dźwiękowych na elemencie HTML5 Canvas, które dodają witrynie interaktywności i nowoczesnego, technologicznego wyrazu.
+                            <strong>Znakomita optymalizacja UX/UI:</strong> Intuicyjna prezentacja planów licencyjnych oraz uproszczona ścieżka kontaktu, co bezpośrednio przekłada się na wyższy współczynnik konwersji zapytań.
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Optymalizacja wydajności:</strong> Ultra-lekki kod oparty na czystym HTML, CSS i Vanilla JS, co pozwoliło uzyskać wynik ładowania rzędu 99/100 punktów w Google PageSpeed Insights.
+                            <strong>Szybkość i responsywność:</strong> Czysty, semantyczny kod HTML, CSS i JS zoptymalizowany pod kątem mobilnym oraz szybkości renderowania w przeglądarce.
                         </li>
                     </ul>
                     <p style="margin-top: 15px; margin-bottom: 0;">
