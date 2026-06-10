@@ -2443,16 +2443,16 @@
         <!-- Tabs Navigation -->
         <div class="deploy-tabs">
             <button class="deploy-tab deploy-tab-it active" onclick="switchTabIT(0)">
-                <i class="fa-solid fa-server"></i> KsEF InterGracja
+                <i class="fa-solid fa-chart-line"></i> Stock analyzer
             </button>
             <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(1)">
-                <i class="fa-solid fa-file-invoice"></i> Offer Maker
+                <i class="fa-solid fa-server"></i> KsEF InterGracja
             </button>
             <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(2)">
-                <i class="fa-solid fa-cubes"></i> Web Tools Portal
+                <i class="fa-solid fa-file-invoice"></i> Offer Maker
             </button>
             <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(3)">
-                <i class="fa-solid fa-chart-line"></i> Stock analyzer
+                <i class="fa-solid fa-cubes"></i> Web Tools Portal
             </button>
             <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(4)">
                 <i class="fa-solid fa-cash-register"></i> Integrator Kasowy
@@ -2462,8 +2462,65 @@
         <!-- Cards Wrapper -->
         <div class="deploy-cards">
             
-            <!-- CARD 1: KsEF InterGracja -->
+            <!-- CARD 1: Stock analyzer (Projekt własny) -->
             <div class="deploy-card card deploy-card-it active">
+                <div class="deploy-text-col">
+                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja retro terminala do analizy amerykańskich spółek wzrostowych (Stock analyzer) <span class="badge-project-own">Projekt własny</span></h3>
+                    <p>
+                        <strong>Koncepcja i realizacja:</strong> W pełni autorska inicjatywa biznesowo-techniczna – projekt stworzony całkowicie od samej idei w mojej głowie, przez szybkie prototypowanie mechaniki analitycznej, aż po ostateczne wdrożenie kodu retro terminala (TUI). Powstał jako niezależne narzędzie do przesiewania danych finansowych spółek giełdowych w USA (NASDAQ/NYSE), eliminując potrzebę opłacania zewnętrznych platform.
+                    </p>
+                    <p>
+                        <strong>Kluczowe innowacje i obszary usprawnień:</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Autorski model punktacji GPS (Growth Potential Scale):</strong> Kompleksowa ocena każdej spółki na podstawie 6 strategicznych, ważonych czynników: dynamiki przychodów (25%), pokrycia backlogu/pipeline (20%), ekspansji rynku TAM (20%), siły katalizatorów wzrostu (15%), płynności finansowej runway (10%) oraz przewagi konkurencyjnej moat (10%).
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Automatyczna analiza AI (Claude Auto-Analysis):</strong> Wdrożenie zaawansowanej integracji z API Anthropic (Claude) oraz biblioteką <code>yfinance</code>. Użytkownik podaje jedynie ticker spółki (np. MU.US), a system w tle przeszukuje internet, pobiera sprawozdania finansowe i samodzielnie uzupełnia kartę oceny GPS wraz z tezą inwestycyjną i notatką o ryzykach.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Interfejs TUI klasy premium w stylu retro:</strong> Lekki, wysoce responsywny interfejs konsolowy obsługujący kodowanie UTF-8, paletę 256 barw ANSI oraz dynamiczne tabele i wykresy paskowe postępu. System działa płynnie na systemach Windows, macOS i Linux.
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <strong>Baza danych i personalizacja (JSON Integration):</strong> Prosty i elastyczny format zapisu danych w strukturze JSON (<code>stocks_extra.json</code>), pozwalający na łatwe dodawanie własnych analiz, ręczne modyfikacje ocen oraz natychmiastowe aktualizowanie globalnego rankingu liderów (Leaderboard).
+                        </li>
+                    </ul>
+                    <p style="margin-top: 15px; margin-bottom: 0;">
+                        <strong>Mierzalny efekt biznesowy:</strong> Zbudowanie kompletnego, niezależnego i ultraszybkiego stanowiska analitycznego o zerowych kosztach abonamentowych za dane giełdowe. Czas potrzebny na dogłębną analizę nowej spółki spadł <strong>z 2-3 godzin do poniżej 45 sekund</strong>. Narzędzie pozwala na błyskawiczne przesiewanie rynku pod kątem anomalii i okazji inwestycyjnych, dając przewagę informacyjną przy budowaniu portfela spółek wzrostowych.
+                    </p>
+                    
+                    <div class="tech-logo-row" style="margin-top: 15px;">
+                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Język Python"></span>
+                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="API Anthropic (Claude)"></span>
+                        <span class="tech-logo-item logo-pandas" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg');" title="Biblioteka Pandas"></span>
+                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
+                    </div>
+                </div>
+                <div class="deploy-visual-col">
+                    <div class="project-screenshots" style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
+                        <div>
+                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 600; font-family: var(--font-head);">Zrzut 1: Leaderboard giełdowy (TUI)</p>
+                            <img src="stock1.webp" alt="Stock analyzer - Leaderboard" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: block;">
+                        </div>
+                        <div>
+                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 600; font-family: var(--font-head);">Zrzut 2: Szczegółowa analiza i teza AI</p>
+                            <img src="stock2.webp" alt="Stock analyzer - Szczegóły" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: block;">
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px; text-align: center; font-size: 0.8rem; color: #94a3b8; line-height: 1.4; font-family: var(--font-head); font-weight: 500; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; width: 100%;">
+                        <i class="fa-solid fa-circle-check" style="color: var(--cyan-light); margin-right: 4px;"></i>
+                        Wyniki programu osiągnęły stopy zwrotu, które zyskały szerokie wsparcie społecznościowe, dzięki czemu projekt w pełni na siebie zarabia.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2: KsEF InterGracja -->
+            <div class="deploy-card card deploy-card-it">
                 <div class="deploy-text-col">
                     <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i wdrożenie dedykowanego ekosystemu KsEF InterGracja</h3>
                     <p>
@@ -2676,93 +2733,7 @@
                 </div>
             </div>
 
-            <!-- CARD 4: Stock analyzer (Projekt własny) -->
-            <div class="deploy-card card deploy-card-it">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Projekt i realizacja retro terminala do analizy amerykańskich spółek wzrostowych (Stock analyzer) <span class="badge-project-own">Projekt własny</span></h3>
-                    <p>
-                        <strong>Koncepcja i realizacja:</strong> W pełni autorska inicjatywa biznesowo-techniczna – projekt stworzony całkowicie od samej idei w mojej głowie, przez szybkie prototypowanie mechaniki analitycznej, aż po ostateczne wdrożenie kodu retro terminala (TUI). Powstał jako niezależne narzędzie do przesiewania danych finansowych spółek giełdowych w USA (NASDAQ/NYSE), eliminując potrzebę opłacania zewnętrznych platform.
-                    </p>
-                    <p>
-                        <strong>Kluczowe innowacje i obszary usprawnień:</strong>
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Autorski model punktacji GPS (Growth Potential Scale):</strong> Kompleksowa ocena każdej spółki na podstawie 6 strategicznych, ważonych czynników: dynamiki przychodów (25%), pokrycia backlogu/pipeline (20%), ekspansji rynku TAM (20%), siły katalizatorów wzrostu (15%), płynności finansowej runway (10%) oraz przewagi konkurencyjnej moat (10%).
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Automatyczna analiza AI (Claude Auto-Analysis):</strong> Wdrożenie zaawansowanej integracji z API Anthropic (Claude) oraz biblioteką <code>yfinance</code>. Użytkownik podaje jedynie ticker spółki (np. MU.US), a system w tle przeszukuje internet, pobiera sprawozdania finansowe i samodzielnie uzupełnia kartę oceny GPS wraz z tezą inwestycyjną i notatką o ryzykach.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Interfejs TUI klasy premium w stylu retro:</strong> Lekki, wysoce responsywny interfejs konsolowy obsługujący kodowanie UTF-8, paletę 256 barw ANSI oraz dynamiczne tabele i wykresy paskowe postępu. System działa płynnie na systemach Windows, macOS i Linux.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Baza danych i personalizacja (JSON Integration):</strong> Prosty i elastyczny format zapisu danych w strukturze JSON (<code>stocks_extra.json</code>), pozwalający na łatwe dodawanie własnych analiz, ręczne modyfikacje ocen oraz natychmiastowe aktualizowanie globalnego rankingu liderów (Leaderboard).
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        <strong>Mierzalny efekt biznesowy:</strong> Zbudowanie kompletnego, niezależnego i ultraszybkiego stanowiska analitycznego o zerowych kosztach abonamentowych za dane giełdowe. Czas potrzebny na dogłębną analizę nowej spółki spadł <strong>z 2-3 godzin do poniżej 45 sekund</strong>. Narzędzie pozwala na błyskawiczne przesiewanie rynku pod kątem anomalii i okazji inwestycyjnych, dając przewagę informacyjną przy budowaniu portfela spółek wzrostowych.
-                    </p>
 
-                    <!-- Zrzuty ekranu osadzone bezpośrednio w opisie -->
-                    <div class="project-screenshots" style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;">
-                        <div>
-                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 600; font-family: var(--font-head);">Zrzut 1: Leaderboard giełdowy (TUI)</p>
-                            <img src="stock1.webp" alt="Stock analyzer - Leaderboard" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: block;">
-                        </div>
-                        <div>
-                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 600; font-family: var(--font-head);">Zrzut 2: Szczegółowa analiza i teza AI</p>
-                            <img src="stock2.webp" alt="Stock analyzer - Szczegóły" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: block;">
-                        </div>
-                    </div>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Język Python"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="API Anthropic (Claude)"></span>
-                        <span class="tech-logo-item logo-pandas" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg');" title="Biblioteka Pandas"></span>
-                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <!-- High-fidelity CSS Mockup -->
-                        <div class="deploy-mockup-ui mockup-stockanalyzer">
-                            <div class="mock-terminal-header">
-                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                                <span class="mock-terminal-title">kamil@terminal: ~/stock-analyzer</span>
-                            </div>
-                            <div class="mock-terminal-body">
-                                <div class="mock-term-line cmd">python dashboard.py</div>
-                                <div class="mock-term-line title">=== STOCK ANALYZER v1.0 ===</div>
-                                <div class="mock-term-line subtitle">Growth Potential Scale (GPS) Leaderboard</div>
-                                <div class="mock-term-divider">-----------------------------------------</div>
-                                <div class="mock-term-row header">
-                                    <span>TICKER</span><span>GPS SCORE</span><span>SECTOR</span>
-                                </div>
-                                <div class="mock-term-row highlight">
-                                    <span>PLTR.US</span><span class="val-cyan">94 / 100</span><span>AI Infra</span>
-                                </div>
-                                <div class="mock-term-row">
-                                    <span>NVDA.US</span><span class="val-green">85 / 100</span><span>Semiconductors</span>
-                                </div>
-                                <div class="mock-term-row">
-                                    <span>LMT.US</span><span class="val-gold">81 / 100</span><span>Defense / Aero</span>
-                                </div>
-                                <div class="mock-term-divider">-----------------------------------------</div>
-                                <div class="mock-term-footer">[Enter] Szczegóły  |  [A] AI Skaner  |  [Q] Wyjdź</div>
-                            </div>
-                        </div>
-                        <div class="deploy-visual-label">
-                            <i class="fa-solid fa-code"></i>
-                            <span>Podgląd interfejsu TUI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- CARD 5: Integrator Kasowy -->
             <div class="deploy-card card deploy-card-it">
