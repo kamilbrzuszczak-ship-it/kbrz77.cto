@@ -14,6 +14,14 @@
     <meta property="og:title" content="Audyt Agencji SEO i Google Ads | Kamil Brzuszczak">
     <meta property="og:description" content="Czy Twoja agencja SEO/Ads działa efektywnie? Sprawdź i oblicz ryzyko przepalania budżetu za pomocą naszego darmowego interaktywnego kalkulatora.">
     <meta property="og:locale" content="pl_PL">
+    <meta property="og:image" content="https://kbrz77.pl/og-audyt.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Audyt agencji SEO i Google Ads – sprawdź, czy nie przepalasz budżetu">
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://kbrz77.pl/og-audyt.png">
 
     <link rel="canonical" href="https://kbrz77.pl/audyt-agencji.html">
 
@@ -27,6 +35,71 @@
     
     <!-- Shared stylesheet link -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data: Service + Breadcrumb -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Audyt agencji marketingowej (SEO / Google Ads)",
+        "name": "Audyt agencji SEO i Google Ads",
+        "description": "Niezależny audyt agencji marketingowych (SEO i Google Ads) dla firm: weryfikacja realnych efektów, wykrywanie przepalania budżetu i kontrola jakości prowadzonych kampanii.",
+        "url": "https://kbrz77.pl/audyt-agencji.html",
+        "areaServed": { "@type": "Country", "name": "Polska" },
+        "provider": {
+          "@type": "Person",
+          "name": "Kamil Brzuszczak",
+          "url": "https://kbrz77.pl",
+          "jobTitle": "Fractional CTO & AI Integrator"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://kbrz77.pl/" },
+          { "@type": "ListItem", "position": 2, "name": "Audyt agencji SEO i Google Ads", "item": "https://kbrz77.pl/audyt-agencji.html" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Jak sprawdzić, czy agencja SEO realnie działa?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nie patrz na liczbę „wykonanych czynności” w raporcie, tylko na twarde dane: pozycje na frazy sprzedażowe, ruch organiczny z Google Analytics 4, liczbę zapytań i realne przychody. Jeśli rosną raporty, a nie rośnie ruch ani leady – to sygnał, że płacisz za pozorowane działania." }
+          },
+          {
+            "@type": "Question",
+            "name": "Po czym poznać przepalanie budżetu w Google Ads?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Typowe objawy to reklamy na ogólne, niesprzedażowe frazy, brak wykluczających słów kluczowych, kierowanie ruchu na stronę główną zamiast na dedykowane strony ofert oraz brak poprawnie skonfigurowanych konwersji. Efekt: budżet się wyczerpuje, a wartościowych zapytań nie przybywa." }
+          },
+          {
+            "@type": "Question",
+            "name": "Co obejmuje audyt agencji marketingowej?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Audyt obejmuje weryfikację realnych efektów SEO i kampanii Google Ads, analizę konfiguracji analityki (GA4, Tag Manager, Search Console), kontrolę profilu linków (backlink audit) oraz ocenę, czy raporty agencji odpowiadają faktycznym wynikom biznesowym." }
+          },
+          {
+            "@type": "Question",
+            "name": "Ile trwa audyt agencji?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Standardowy audyt zajmuje zwykle od kilku dni do dwóch tygodni – w zależności od skali kont i liczby kampanii. Otrzymujesz konkretny raport z listą nieprawidłowości i rekomendacjami, a nie ogólnikowe wnioski." }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy audyt to donos na moją agencję?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Nie. Audyt to niezależna, techniczna weryfikacja stanu faktycznego. Dobrej agencji audyt nie zaszkodzi – potwierdzi jej pracę. Problem pojawia się tylko tam, gdzie efekty są pozorowane. Celem jest ochrona Twojego budżetu, nie zrywanie współpracy." }
+          },
+          {
+            "@type": "Question",
+            "name": "Co dostaję po zakończeniu audytu?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Otrzymujesz raport z konkretnymi ustaleniami, priorytetową listą działań naprawczych oraz rekomendacją, czy kontynuować współpracę z agencją, renegocjować warunki, czy przejąć nadzór w modelu Fractional CTO." }
+          }
+        ]
+      }
+    ]
+    </script>
 </head>
 <body style="--subpage-color: var(--gold-light);">
     <!-- PREMIUM GLOBAL NAVBAR -->
@@ -40,6 +113,7 @@
             <!-- Desktop Navigation Menu -->
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link" id="nav-home">Główna</a></li>
+                <li><a href="uslugi.html" class="nav-link" id="nav-uslugi">Usługi</a></li>
                 <li><a href="fractional-cto.html" class="nav-link" id="nav-cto">Fractional CTO</a></li>
                 <li><a href="integracje-ai-automatyzacja.html" class="nav-link" id="nav-ai">Integracje AI</a></li>
                 <li><a href="audyt-agencji.html" class="nav-link active" id="nav-audit">Audyt Agencji</a></li>
@@ -66,6 +140,7 @@
         <div class="nav-mobile-drawer">
             <ul>
                 <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Główna</a></li>
+                <li><a href="uslugi.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Usługi</a></li>
                 <li><a href="fractional-cto.html" class="mobile-nav-link"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
                 <li><a href="integracje-ai-automatyzacja.html" class="mobile-nav-link"><i class="fa-solid fa-robot"></i> Integracje AI</a></li>
                 <li><a href="audyt-agencji.html" class="mobile-nav-link"><i class="fa-solid fa-gauge-high"></i> Audyt Agencji</a></li>
@@ -79,10 +154,18 @@
 
 <div class="container">
 
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumb" aria-label="Ścieżka nawigacji">
+        <ol>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><span class="sep">/</span> <span aria-current="page">Audyt agencji SEO i Google Ads</span></li>
+        </ol>
+    </nav>
+
     <!-- HERO HEADER -->
     <header>
         <div class="header-title">
-            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">Fractional CTO & AI Integrator</span></h1>
+            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">Audyt agencji SEO i Google Ads — sprawdź, czy nie przepalasz budżetu</span></h1>
         </div>
         <div class="contact-grid">
             <div class="contact-item" onclick="copyValue('+48 796 579 480', this)" title="Kliknij, aby skopiować">
@@ -121,6 +204,14 @@
                     <strong>Niezależny Audyt Technologiczny to jedyny sposób na poznanie prawdy.</strong> Jako Fractional CTO nie prowadzę kampanii marketingowych, dzięki czemu nie mam interesu w maskowaniu błędów. Sprawdzam Twoje konta analityczne (Google Analytics 4, Tag Manager, Search Console) i czarno na białym pokazuję, gdzie Twoje pieniądze są przepalane.
                 </p>
             </div>
+
+            <h2>Jak rozpoznać przepalanie budżetu marketingowego?</h2>
+            <p>
+                Przepalanie budżetu marketingowego rzadko wygląda spektakularnie – zwykle to powolny wyciek pieniędzy, którego nie widać w miesięcznym raporcie. Najczęstsze sygnały ostrzegawcze to: brak pełnego dostępu właścicielskiego do kont Google Ads i Analytics, reklamy wyświetlane na własne frazy brandowe (za które płacisz niepotrzebnie), brak poprawnie skonfigurowanych konwersji oraz raporty skupione na ogólnych frazach zamiast na hasłach sprowadzających klientów.
+            </p>
+            <p>
+                Poniższy kalkulator pozwala szybko oszacować ryzyko nieefektywności Twojej obecnej współpracy. Odpowiadasz na 8 pytań dotyczących dostępu do kont, konfiguracji analityki, jakości raportowania i zakresu realnie wdrażanych zmian. Im więcej odpowiedzi „nie”, tym wyższe ryzyko, że część budżetu jest marnowana. Wynik nie zastępuje pełnego audytu, ale jasno pokazuje, czy warto przyjrzeć się współpracy z agencją bliżej.
+            </p>
 
             <!-- INTERACTIVE CALCULATOR (LEAD MAGNET) -->
             <div class="calculator-box">
@@ -225,6 +316,67 @@
                 </li>
             </ol>
 
+            <h2>Audyt kampanii Google Ads – co dokładnie sprawdzam</h2>
+            <p>
+                Google Ads to obszar, w którym budżet znika najszybciej i najmniej zauważalnie. Audyt kampanii Google Ads koncentruję na tym, czy każda złotówka pracuje na pozyskanie realnego klienta, a nie na „ładne” statystyki. Sprawdzam między innymi:
+            </p>
+            <ul>
+                <li><strong>Strukturę kont i kampanii</strong> – czy podział na kampanie i grupy reklam odpowiada realnej ofercie, czy raczej ułatwia agencji ukrycie nieefektywnych wydatków.</li>
+                <li><strong>Dopasowanie i wykluczenia słów kluczowych</strong> – czy reklamy nie wyświetlają się na przypadkowe, niesprzedażowe zapytania i czy lista wykluczeń jest realnie prowadzona.</li>
+                <li><strong>Ruch brandowy</strong> – czy agencja nie „podkręca” wyników, płacąc za kliknięcia osób, które i tak trafiłyby do Ciebie z wyników organicznych.</li>
+                <li><strong>Pomiar konwersji</strong> – czy śledzone są faktyczne działania klienta (formularz, telefon, zakup), a nie samo wyświetlenie strony.</li>
+                <li><strong>Strony docelowe</strong> – czy reklama prowadzi na dedykowaną, dopasowaną stronę oferty, czy na ogólną stronę główną, która obniża konwersję.</li>
+            </ul>
+            <p>
+                Efektem jest jasny obraz tego, ile realnie kosztuje Cię pozyskanie klienta z Google Ads i gdzie tkwią rezerwy do odzyskania.
+            </p>
+
+            <h2>Kontrola agencji marketingowej i przejęcie nadzoru</h2>
+            <p>
+                Audyt to punkt wyjścia – najważniejsze jest to, co dzieje się później. Wielu przedsiębiorców po otrzymaniu wyników staje przed pytaniem: renegocjować warunki, zmienić agencję, czy przejąć nad nią kontrolę. Jako <a href="fractional-cto.html">Fractional CTO</a> mogę pełnić rolę Twojego technicznego reprezentanta w rozmowach z agencją: ustalam mierzalne cele (KPI), weryfikuję comiesięczne raporty i pilnuję, by deklaracje przekładały się na realne wdrożenia.
+            </p>
+            <p>
+                Taka stała kontrola agencji marketingowej sprawia, że przestajesz płacić za pozorowane działania, a Twój dostawca wie, że jego praca jest weryfikowana przez osobę rozumiejącą zarówno marketing, jak i technologię. Jeśli okaże się to bardziej opłacalne, pomagam też przenieść wybrane działania (np. techniczne SEO czy automatyzacje) do wewnątrz firmy i wesprzeć je <a href="integracje-ai-automatyzacja.html">automatyzacją AI</a>.
+            </p>
+
+            <h2>Kiedy warto zlecić audyt agencji marketingowej?</h2>
+            <p>
+                Nie trzeba czekać na spadek sprzedaży, żeby sprawdzić, czy budżet marketingowy pracuje. Audyt agencji SEO lub Google Ads jest szczególnie uzasadniony, gdy:
+            </p>
+            <ul>
+                <li>płacisz stały abonament od wielu miesięcy, ale <strong>nie widzisz wzrostu zapytań ani sprzedaży</strong>;</li>
+                <li>raporty są pełne wykresów, ale <strong>nie potrafisz z nich wyczytać, ile kosztuje pozyskanie jednego klienta</strong>;</li>
+                <li>nie masz <strong>pełnego dostępu właścicielskiego</strong> do kont Google Ads, Analytics i Search Console;</li>
+                <li>kontaktujesz się głównie z opiekunem handlowym, a <strong>nie ze specjalistą technicznym</strong>;</li>
+                <li>rozważasz <strong>zmianę agencji lub przejęcie działań do wewnątrz</strong> i potrzebujesz obiektywnego punktu wyjścia.</li>
+            </ul>
+            <p>
+                Wczesny audyt zwykle kosztuje ułamek tego, co można odzyskać na przepalanym budżecie. A nawet jeśli okaże się, że agencja pracuje dobrze – zyskujesz spokój i twarde dane do dalszych rozmów.
+            </p>
+            <p>
+                Audyt nie musi też oznaczać końca współpracy z obecną agencją. Często jego efektem jest po prostu lepiej ułożona współpraca: jasne cele (KPI), przejrzyste raporty i realny nadzór nad tym, za co płacisz. Traktuj go jak okresowy przegląd techniczny – zdecydowanie tańszy niż konsekwencje jego pominięcia.
+            </p>
+
+            <h2>Audyt agencji SEO i Google Ads – najczęściej zadawane pytania (FAQ)</h2>
+
+            <h3>Jak sprawdzić, czy agencja SEO realnie działa?</h3>
+            <p>Nie patrz na liczbę „wykonanych czynności” w raporcie, tylko na twarde dane: pozycje na frazy sprzedażowe, ruch organiczny z Google Analytics 4, liczbę zapytań i realne przychody. Jeśli rosną raporty, a nie rośnie ruch ani leady – to sygnał, że płacisz za pozorowane działania.</p>
+
+            <h3>Po czym poznać przepalanie budżetu w Google Ads?</h3>
+            <p>Typowe objawy to reklamy na ogólne, niesprzedażowe frazy, brak wykluczających słów kluczowych, kierowanie ruchu na stronę główną zamiast na dedykowane strony ofert oraz brak poprawnie skonfigurowanych konwersji. Efekt: budżet się wyczerpuje, a wartościowych zapytań nie przybywa.</p>
+
+            <h3>Co obejmuje audyt agencji marketingowej?</h3>
+            <p>Audyt obejmuje weryfikację realnych efektów SEO i kampanii Google Ads, analizę konfiguracji analityki (GA4, Tag Manager, Search Console), kontrolę profilu linków (backlink audit) oraz ocenę, czy raporty agencji odpowiadają faktycznym wynikom biznesowym.</p>
+
+            <h3>Ile trwa audyt agencji?</h3>
+            <p>Standardowy audyt zajmuje zwykle od kilku dni do dwóch tygodni – w zależności od skali kont i liczby kampanii. Otrzymujesz konkretny raport z listą nieprawidłowości i rekomendacjami, a nie ogólnikowe wnioski.</p>
+
+            <h3>Czy audyt to „donos” na moją agencję?</h3>
+            <p>Nie. Audyt to niezależna, techniczna weryfikacja stanu faktycznego. Dobrej agencji audyt nie zaszkodzi – potwierdzi jej pracę. Problem pojawia się tylko tam, gdzie efekty są pozorowane. Celem jest ochrona Twojego budżetu, nie zrywanie współpracy.</p>
+
+            <h3>Co dostaję po zakończeniu audytu?</h3>
+            <p>Otrzymujesz raport z konkretnymi ustaleniami, priorytetową listą działań naprawczych oraz rekomendacją, czy kontynuować współpracę z agencją, renegocjować warunki, czy przejąć nadzór w modelu <a href="fractional-cto.html">Fractional CTO</a>.</p>
+
             <div style="text-align: center; margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 30px;">
                 <h3 style="font-family: var(--font-head); color: var(--text-pure); margin-bottom: 15px;">Podejrzewasz, że Twój budżet marketingowy przecieka?</h3>
                 <p style="font-size: 0.95rem; color: var(--text-muted);">Zleć niezależny audyt i odzyskaj kontrolę nad wydatkami na reklamę i SEO.</p>
@@ -250,6 +402,7 @@
                     <li><a href="projekty/aegis-seo-core.html"><i class="fa-solid fa-bolt"></i> SEO aIdeas</a></li>
                     <li><a href="projekty/ksef-integracja.html"><i class="fa-solid fa-server"></i> KsEF InterGracja</a></li>
                     <li><a href="projekty/stocks-tui.html"><i class="fa-solid fa-chart-line"></i> Stocks TUI Analyzer</a></li>
+                    <li><a href="projekty/voip-3cx.html"><i class="fa-solid fa-phone-volume"></i> Integracja VoIP 3CX</a></li>
                 </ul>
             </div>
             

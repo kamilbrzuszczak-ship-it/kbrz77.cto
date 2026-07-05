@@ -146,10 +146,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    requestAnimationFrame((time) => {
-        lastTime = time;
-        draw(time);
-    });
+    // Respect users who prefer reduced motion: render one static frame, skip the animation loop
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduceMotion) {
+        const isDark = document.documentElement.classList.contains('dark');
+        ctx.clearRect(0, 0, width, height);
+        for (let i = 0; i < columnsList.length; i++) {
+            columnsList[i].draw(isDark);
+        }
+    } else {
+        requestAnimationFrame((time) => {
+            lastTime = time;
+            draw(time);
+        });
+    }
     
     // Handle window resizing dynamically
     window.addEventListener('resize', () => {

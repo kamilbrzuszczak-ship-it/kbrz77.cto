@@ -1835,6 +1835,41 @@
         .nav-link.active::after {
             width: 100%;
         }
+        /* Breadcrumbs (visible, matches BreadcrumbList schema) */
+        .breadcrumb {
+            padding: 22px 0 2px;
+            font-family: var(--font-head);
+            font-size: 0.8rem;
+        }
+        .breadcrumb ol {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 9px;
+            margin: 0;
+            padding: 0;
+        }
+        .breadcrumb li {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--text-muted);
+        }
+        .breadcrumb a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+        .breadcrumb a:hover {
+            color: var(--subpage-color, var(--cyan-light));
+        }
+        .breadcrumb [aria-current="page"] {
+            color: var(--text-pure);
+        }
+        .breadcrumb .sep {
+            opacity: 0.45;
+        }
         .nav-cta {
             text-decoration: none;
             background: linear-gradient(135deg, var(--cyan), var(--cyan-light));
