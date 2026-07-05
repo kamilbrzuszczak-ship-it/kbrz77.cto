@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Integracja systemów VoIP 3CX – Sekretarka AI i Kolejkowanie | Kamil Brzuszczak</title>
+    <meta name="description" content="Case study integracji VoIP 3CX: migracja ze zwykłej linii na 3CX PRO self-hosted z SIP trunk, sekretarką AI i kolejkowaniem dla salonów w Poznaniu i Wrocławiu.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <!-- Open Graph SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kbrz77.pl/projekty/voip-3cx.html">
+    <meta property="og:title" content="Case Study: Integracja systemów VoIP 3CX | Kamil Brzuszczak">
+    <meta property="og:description" content="Migracja ze zwykłej linii telefonicznej na 3CX PRO self-hosted: SIP trunk, sekretarka AI i kolejkowanie połączeń łączące dwa salony w Poznaniu i Wrocławiu.">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:image" content="https://kbrz77.pl/og-voip-3cx.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Integracja systemów VoIP 3CX – sekretarka AI i kolejkowanie (case study)">
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://kbrz77.pl/og-voip-3cx.png">
+
+    <link rel="canonical" href="https://kbrz77.pl/projekty/voip-3cx.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Shared stylesheet link -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Structured Data: CreativeWork + Breadcrumb -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Integracja systemów VoIP 3CX — sekretarka AI i kolejkowanie (Case Study)",
+        "description": "Studium przypadku integracji systemów VoIP 3CX: migracja ze zwykłej linii telefonicznej na 3CX PRO self-hosted z SIP trunk, sekretarką AI i kolejkowaniem połączeń łączącym dwa salony w Poznaniu i Wrocławiu.",
+        "url": "https://kbrz77.pl/projekty/voip-3cx.html",
+        "author": {
+          "@type": "Person",
+          "name": "Kamil Brzuszczak",
+          "url": "https://kbrz77.pl"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://kbrz77.pl/" },
+          { "@type": "ListItem", "position": 2, "name": "Integracja systemów VoIP 3CX", "item": "https://kbrz77.pl/projekty/voip-3cx.html" }
+        ]
+      }
+    ]
+    </script>
+
+
+</head>
+<body style="--subpage-color: var(--cyan-light);">
+    <!-- PREMIUM GLOBAL NAVBAR -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-kbd">KB</span>
+                <span class="logo-text">Kamil <span>Brzuszczak</span></span>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link" id="nav-home">Główna</a></li>
+                <li><a href="../uslugi.html" class="nav-link" id="nav-uslugi">Usługi</a></li>
+                <li><a href="../fractional-cto.html" class="nav-link" id="nav-cto">Fractional CTO</a></li>
+                <li><a href="../integracje-ai-automatyzacja.html" class="nav-link" id="nav-ai">Integracje AI</a></li>
+                <li><a href="../audyt-agencji.html" class="nav-link" id="nav-audit">Audyt Agencji</a></li>
+                <li><a href="mailto:kbrz77@proton.me" class="nav-cta"><i class="fa-solid fa-calendar-days"></i> Konsultacja</a></li>
+            </ul>
+
+            <!-- Controls (Theme & Mobile Toggle) -->
+            <div class="nav-controls">
+                <button id="theme-toggle" class="btn-control" title="Przełącz tryb jasny/ciemny">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button onclick="window.print()" class="btn-control print-hide" title="Zapisz do PDF / Drukuj">
+                    <i class="fa-solid fa-print"></i>
+                </button>
+                <button class="btn-mobile-toggle" aria-label="Otwórz menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Drawer -->
+        <div class="nav-mobile-drawer">
+            <ul>
+                <li><a href="../index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Główna</a></li>
+                <li><a href="../uslugi.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Usługi</a></li>
+                <li><a href="../fractional-cto.html" class="mobile-nav-link"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
+                <li><a href="../integracje-ai-automatyzacja.html" class="mobile-nav-link"><i class="fa-solid fa-robot"></i> Integracje AI</a></li>
+                <li><a href="../audyt-agencji.html" class="mobile-nav-link"><i class="fa-solid fa-gauge-high"></i> Audyt Agencji</a></li>
+                <li><a href="mailto:kbrz77@proton.me" class="mobile-nav-cta"><i class="fa-solid fa-calendar-days"></i> Darmowa Konsultacja</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Matrix Rain Background Canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+<div class="container">
+
+    <!-- BREADCRUMBS -->
+    <nav class="breadcrumb" aria-label="Ścieżka nawigacji">
+        <ol>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li><span class="sep">/</span> <span aria-current="page">Integracja VoIP 3CX</span></li>
+        </ol>
+    </nav>
+
+    <!-- HERO HEADER -->
+    <header>
+        <div class="header-title">
+            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">Case Study: Integracja systemów VoIP 3CX – sekretarka AI i kolejkowanie</span></h1>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-item" onclick="copyValue('+48 796 579 480', this)" title="Kliknij, aby skopiować">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <strong>Telefon</strong>
+                <a href="tel:+48796579480">+48 796 579 480</a>
+                <span class="contact-tooltip">Skopiowano!</span>
+            </div>
+            <div class="contact-item" onclick="copyValue('kbrz77@proton.me', this)" title="Kliknij, aby skopiować">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <strong>E-mail</strong>
+                <a href="mailto:kbrz77@proton.me">kbrz77@proton.me</a>
+                <span class="contact-tooltip">Skopiowano!</span>
+            </div>
+            <div class="contact-item">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <strong>Obszar</strong>
+                <span>Poznań / Cała Polska (Zdalnie)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="subpage-layout">
+        <main class="article-card">
+            <h2>Case Study: Integracja systemów VoIP 3CX dla firmy z dwoma salonami</h2>
+            <p>
+                Klient prowadził działalność w oparciu o zwykłą, tradycyjną linię telefoniczną. Wraz z otwarciem nowej lokalizacji pojawiła się potrzeba, której klasyczna telefonia nie była w stanie zaspokoić: połączenia dwóch salonów – w Poznaniu i we Wrocławiu – w jeden spójny system, z profesjonalną obsługą przychodzących połączeń i możliwością pracy niezależnej od fizycznego aparatu.
+            </p>
+
+            <div class="highlight-box">
+                <p>
+                    <strong>Cel projektu:</strong> Kompleksowe przeprowadzenie firmy przez proces migracji ze zwykłej linii telefonicznej na nowoczesny system VoIP oparty o 3CX – od doboru operatora SIP trunk i właściwej licencji, przez wdrożenie i konfigurację, aż po przeszkolenie zespołu. Efektem miał być jeden system telefoniczny łączący obie lokalizacje, z inteligentną obsługą połączeń.
+                </p>
+            </div>
+
+            <h2>1. Punkt wyjścia i wyzwania</h2>
+            <p>
+                Migracja telefonii to projekt, w którym łatwo o kosztowne błędy – od doboru niewłaściwej licencji po problemy z ciągłością połączeń w trakcie przenosin. Kluczowe wyzwania w tym wdrożeniu to:
+            </p>
+            <ul>
+                <li><strong>Zwykła linia nie skaluje się na dwie lokalizacje:</strong> tradycyjna telefonia nie pozwalała połączyć salonów w Poznaniu i Wrocławiu w jeden numer i wspólną obsługę połączeń.</li>
+                <li><strong>Przeniesienie modelu na nową lokalizację:</strong> należało zapewnić ciągłość telefoniczną firmy przy jednoczesnym uruchomieniu telefonii w nowym miejscu.</li>
+                <li><strong>Wybór właściwej licencji:</strong> 3CX oferuje różne plany, a przepłacenie za funkcje, których firma nie wykorzysta, to typowe źródło przepalania budżetu IT.</li>
+                <li><strong>Profesjonalna obsługa połączeń:</strong> firma potrzebowała rozwiązania, które nie zgubi żadnego klienta i inteligentnie pokieruje ruchem przychodzącym pomiędzy oba salony.</li>
+            </ul>
+
+            <h2>2. Proces wdrożenia integracji VoIP 3CX</h2>
+            <p>
+                Przeprowadziłem klienta przez cały proces – od decyzji technologicznych po uruchomienie produkcyjne:
+            </p>
+            <ol>
+                <li><strong>Dobór operatora i SIP trunk:</strong> załatwiłem łącze SIP trunk stanowiące podstawę nowej telefonii VoIP, dopasowane do potrzeb i numeracji firmy.</li>
+                <li><strong>Wybór platformy i testy licencji:</strong> na centralę wybraliśmy 3CX. Przed ostateczną decyzją przeprowadziliśmy testy licencji w wariantach Enterprise oraz PRO, aby zweryfikować, które funkcje są firmie realnie potrzebne.</li>
+                <li><strong>Wybór planu 3CX PRO (self-hosted):</strong> na podstawie testów dla klienta wybrany został plan <strong>PRO w modelu self-hosted</strong> – optymalny stosunek możliwości do kosztu, z pełną kontrolą nad własnym środowiskiem.</li>
+                <li><strong>Konfiguracja systemu:</strong> skonfigurowałem centralę, numerację wewnętrzną, reguły przekierowań oraz obsługę połączeń dla obu salonów.</li>
+                <li><strong>Przeszkolenie zespołu:</strong> przeprowadziłem szkolenie pracowników, aby korzystanie z nowego systemu było dla nich naturalne od pierwszego dnia.</li>
+            </ol>
+
+            <h2>3. Wdrożone rozwiązania i funkcje</h2>
+            <ul>
+                <li><strong>Integracja dwóch salonów (Poznań + Wrocław):</strong> obie lokalizacje działają w ramach jednego, spójnego systemu telefonicznego zamiast dwóch niezależnych linii.</li>
+                <li><strong>Sekretarka AI:</strong> inteligentna obsługa połączeń przychodzących, która wita dzwoniących i kieruje ich do właściwego salonu lub działu, odciążając personel.</li>
+                <li><strong>Kolejkowanie połączeń:</strong> ruch przychodzący jest porządkowany w kolejki, dzięki czemu firma nie traci klientów w godzinach największego obciążenia.</li>
+            </ul>
+
+            <h2>4. Efekt biznesowy</h2>
+            <p>
+                Firma przeszła ze zwykłej linii telefonicznej na skalowalny system VoIP, który spina obie lokalizacje w jedną całość. Dzięki sekretarce AI i kolejkowaniu połączenia przychodzące są obsługiwane profesjonalnie i bez utraconych kontaktów, a model self-hosted daje klientowi pełną kontrolę nad kosztami i własnym środowiskiem telekomunikacyjnym. To rozwiązanie, które rośnie razem z firmą – dołożenie kolejnej lokalizacji czy stanowiska nie wymaga już przebudowy telefonii od zera.
+            </p>
+
+            <p>
+                Tego typu wdrożenia realizuję jako element szerszego wsparcia w roli <a href="../fractional-cto.html">Fractional CTO</a>, często łącząc telefonię z <a href="../integracje-ai-automatyzacja.html">automatyzacją i integracją AI</a> w obsłudze klienta.
+            </p>
+
+            <div style="text-align: center; margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 30px;">
+                <h3 style="font-family: var(--font-head); color: var(--text-pure); margin-bottom: 15px;">Planujesz migrację telefonii lub integrację VoIP 3CX?</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted);">Przeprowadzę Twoją firmę przez cały proces – od doboru SIP trunk i licencji po konfigurację i szkolenie zespołu.</p>
+                <a href="mailto:kbrz77@proton.me" class="btn-more" style="margin-top: 10px;">
+                    <i class="fa-solid fa-phone-volume"></i> Skonsultuj wdrożenie VoIP 3CX
+                </a>
+            </div>
+        </main>
+
+        <aside class="subpage-sidebar">
+            <div class="sidebar-box">
+                <h3><i class="fa-solid fa-gears"></i> Usługi</h3>
+                <ul>
+                    <li><a href="../fractional-cto.html"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
+                    <li><a href="../integracje-ai-automatyzacja.html"><i class="fa-solid fa-robot"></i> Integracja AI & Auto</a></li>
+                    <li><a href="../audyt-agencji.html"><i class="fa-solid fa-gauge-high"></i> Audyt Marketingu</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <h3><i class="fa-solid fa-folder-open"></i> Case Studies</h3>
+                <ul>
+                    <li><a href="aegis-seo-core.html"><i class="fa-solid fa-bolt"></i> SEO aIdeas</a></li>
+                    <li><a href="ksef-integracja.html"><i class="fa-solid fa-server"></i> KsEF InterGracja</a></li>
+                    <li><a href="stocks-tui.html"><i class="fa-solid fa-chart-line"></i> Stocks TUI Analyzer</a></li>
+                    <li><a href="voip-3cx.html"><i class="fa-solid fa-phone-volume"></i> Integracja VoIP 3CX</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box contact-box">
+                <h3><i class="fa-solid fa-comments"></i> Kontakt</h3>
+                <p>Porozmawiajmy o wyzwaniach technologicznych w Twoim biznesie.</p>
+                <a href="mailto:kbrz77@proton.me" class="btn-sidebar-cta">Darmowa Konsultacja</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="text-align: center; margin-top: 50px; padding: 20px 0; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-muted);">
+        &copy; 2026 Kamil Brzuszczak. Wszelkie prawa zastrzeżone. Fractional CTO & AI Integrator.
+    </footer>
+
+</div>
+
+<!-- Theme toggle & Mobile menu script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlEl = document.documentElement;
+
+        const updateIcon = () => {
+            const isDark = htmlEl.classList.contains('dark');
+            if (themeToggle && themeToggle.querySelector('i')) {
+                themeToggle.querySelector('i').className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+            }
+        };
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                htmlEl.classList.toggle('dark');
+                htmlEl.classList.toggle('light');
+                updateIcon();
+            });
+        }
+        updateIcon();
+
+        // Mobile drawer toggle
+        const mobileToggle = document.querySelector('.btn-mobile-toggle');
+        const mobileDrawer = document.querySelector('.nav-mobile-drawer');
+
+        if (mobileToggle && mobileDrawer) {
+            mobileToggle.addEventListener('click', () => {
+                mobileToggle.classList.toggle('active');
+                const isOpen = mobileToggle.classList.contains('active');
+                mobileDrawer.style.display = isOpen ? 'block' : 'none';
+            });
+
+            const mobileLinks = mobileDrawer.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileToggle.classList.remove('active');
+                    mobileDrawer.style.display = 'none';
+                });
+            });
+        }
+    });
+
+    // Copy clipboard utility
+    function copyValue(text, element) {
+        navigator.clipboard.writeText(text).then(() => {
+            const tooltip = element.querySelector('.contact-tooltip');
+            tooltip.style.opacity = '1';
+            tooltip.style.transform = 'translateX(-50%) translateY(0)';
+            setTimeout(() => {
+                tooltip.style.opacity = '0';
+                tooltip.style.transform = 'translateX(-50%) translateY(5px)';
+            }, 1500);
+        });
+    }
+</script>
+
+<!-- Premium 3D Parallax Matrix Rain Background Animation -->
+<script src="../matrix.js"></script>
+
+</body>
+</html>
