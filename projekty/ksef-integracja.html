@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="pl" class="dark">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: KsEF InterGracja – Automatyzacja Obiegu Dokumentów | Kamil Brzuszczak</title>
-    <meta name="description" content="Studium przypadku (Case Study) wdrożenia ekosystemu KsEF InterGracja. Dowiedz się, jak zintegrowano systemy ERP z Krajowym Systemem E-Faktur (KSeF).">
+    <title>Case Study: KsEF InterGracja – Document Flow Automation | Kamil Brzuszczak</title>
+    <meta name="description" content="KsEF InterGracja integration case study: how ERP systems were integrated with the National e-Invoicing System (KSeF) for seamless document automation.">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     
     <!-- Open Graph SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kbrz77.pl/projekty/ksef-integracja.html">
     <meta property="og:title" content="Case Study: KsEF InterGracja | Kamil Brzuszczak">
-    <meta property="og:description" content="Integracja ERP z Krajowym Systemem E-Faktur (KSeF). Bezpieczny obieg faktur, Setup Wizard i automatyczne wykrywanie anomalii.">
-    <meta property="og:locale" content="pl_PL">
+    <meta property="og:description" content="Integrating ERP with the National e-Invoicing System (KSeF). Secure document flow, Setup Wizard, and automatic price anomaly detection.">
+    <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://kbrz77.pl/og-ksef.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="KSeF InterGracja – automatyzacja obiegu dokumentów (case study)">
+    <meta property="og:image:alt" content="KSeF InterGracja – document flow automation (case study)">
 
     <!-- Twitter SEO -->
     <meta name="twitter:card" content="summary_large_image">
@@ -41,27 +41,25 @@
       {
         "@context": "https://schema.org",
         "@type": "CreativeWork",
-        "name": "KSeF InterGracja — automatyzacja obiegu dokumentów (Case Study)",
-        "description": "Studium przypadku wdrożenia ekosystemu KSeF InterGracja: integracja systemów ERP z Krajowym Systemem e-Faktur (KSeF).",
+        "name": "KSeF InterGracja — document flow automation (Case Study)",
+        "description": "KsEF InterGracja integration case study: how ERP systems were integrated with the National e-Invoicing System (KSeF).",
         "url": "https://kbrz77.pl/projekty/ksef-integracja.html",
         "author": {
           "@type": "Person",
           "name": "Kamil Brzuszczak",
-          "url": "https://kbrz77.pl"
+          "url": "https://kbrz77.pl/en"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://kbrz77.pl/" },
-          { "@type": "ListItem", "position": 2, "name": "KSeF InterGracja — automatyzacja obiegu dokumentów", "item": "https://kbrz77.pl/projekty/ksef-integracja.html" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://kbrz77.pl/" },
+          { "@type": "ListItem", "position": 2, "name": "KSeF InterGracja — document flow automation", "item": "https://kbrz77.pl/projekty/ksef-integracja.html" }
         ]
       }
     ]
     </script>
-
-
 </head>
 <body style="--subpage-color: var(--cyan-light);">
     <!-- PREMIUM GLOBAL NAVBAR -->
@@ -74,23 +72,22 @@
             
             <!-- Desktop Navigation Menu -->
             <ul class="nav-menu">
-                <li><a href="../index.html" class="nav-link" id="nav-home">Główna</a></li>
-                <li><a href="../uslugi.html" class="nav-link" id="nav-uslugi">Usługi</a></li>
+                <li><a href="../index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li><a href="../uslugi.html" class="nav-link" id="nav-uslugi">Services</a></li>
                 <li><a href="../fractional-cto.html" class="nav-link" id="nav-cto">Fractional CTO</a></li>
-                <li><a href="../integracje-ai-automatyzacja.html" class="nav-link" id="nav-ai">Integracje AI</a></li>
-                <li><a href="../audyt-agencji.html" class="nav-link" id="nav-audit">Audyt Agencji</a></li>
-                <li><a href="mailto:kbrz77@proton.me" class="nav-cta"><i class="fa-solid fa-calendar-days"></i> Konsultacja</a></li>
+                <li><a href="../integracje-ai-automatyzacja.html" class="nav-link" id="nav-ai">AI Integrations</a></li>
+                <li><a href="../audyt-agencji.html" class="nav-link" id="nav-audit">Agency Audit</a></li>
+                <li><a href="mailto:kbrz77@proton.me" class="nav-cta"><i class="fa-solid fa-calendar-days"></i> Consultation</a></li>
             </ul>
 
             <!-- Controls (Theme & Mobile Toggle) -->
             <div class="nav-controls">
-                <button id="theme-toggle" class="btn-control" title="Przełącz tryb jasny/ciemny">
-                    <i class="fa-solid fa-sun"></i>
-                </button>
-                <button onclick="window.print()" class="btn-control print-hide" title="Zapisz do PDF / Drukuj">
+                
+                <a href="../pl/projekty/ksef-integracja.html" class="btn-control btn-pl print-hide" title="Wersja polska">PL</a>
+                <button onclick="window.print()" class="btn-control print-hide" title="Save to PDF / Print">
                     <i class="fa-solid fa-print"></i>
                 </button>
-                <button class="btn-mobile-toggle" aria-label="Otwórz menu">
+                <button class="btn-mobile-toggle" aria-label="Open menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
@@ -101,12 +98,13 @@
         <!-- Mobile Dropdown Drawer -->
         <div class="nav-mobile-drawer">
             <ul>
-                <li><a href="../index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Główna</a></li>
-                <li><a href="../uslugi.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Usługi</a></li>
+                <li><a href="../index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="../uslugi.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Services</a></li>
                 <li><a href="../fractional-cto.html" class="mobile-nav-link"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
-                <li><a href="../integracje-ai-automatyzacja.html" class="mobile-nav-link"><i class="fa-solid fa-robot"></i> Integracje AI</a></li>
-                <li><a href="../audyt-agencji.html" class="mobile-nav-link"><i class="fa-solid fa-gauge-high"></i> Audyt Agencji</a></li>
-                <li><a href="mailto:kbrz77@proton.me" class="mobile-nav-cta"><i class="fa-solid fa-calendar-days"></i> Darmowa Konsultacja</a></li>
+                <li><a href="../integracje-ai-automatyzacja.html" class="mobile-nav-link"><i class="fa-solid fa-robot"></i> AI Integrations</a></li>
+                <li><a href="../audyt-agencji.html" class="mobile-nav-link"><i class="fa-solid fa-gauge-high"></i> Agency Audit</a></li>
+                <li><a href="../pl/projekty/ksef-integracja.html" class="mobile-nav-link"><i class="fa-solid fa-globe"></i> Polska wersja (PL)</a></li>
+                <li><a href="mailto:kbrz77@proton.me" class="mobile-nav-cta"><i class="fa-solid fa-calendar-days"></i> Free Consultation</a></li>
             </ul>
         </div>
     </nav>
@@ -117,9 +115,9 @@
 <div class="container">
 
     <!-- BREADCRUMBS -->
-    <nav class="breadcrumb" aria-label="Ścieżka nawigacji">
+    <nav class="breadcrumb" aria-label="Breadcrumb navigation path">
         <ol>
-            <li><a href="../index.html">Strona główna</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><span class="sep">/</span> <span aria-current="page">KSeF InterGracja</span></li>
         </ol>
     </nav>
@@ -127,25 +125,25 @@
     <!-- HERO HEADER -->
     <header>
         <div class="header-title">
-            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">Case Study: KSeF — automatyzacja obiegu dokumentów</span></h1>
+            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">Case Study: KSeF — Document Flow Automation</span></h1>
         </div>
         <div class="contact-grid">
-            <div class="contact-item" onclick="copyValue('+48 796 579 480', this)" title="Kliknij, aby skopiować">
+            <div class="contact-item" onclick="copyValue('+48 796 579 480', this)" title="Click to copy">
                 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <strong>Telefon</strong>
+                <strong>Phone</strong>
                 <a href="tel:+48796579480">+48 796 579 480</a>
-                <span class="contact-tooltip">Skopiowano!</span>
+                <span class="contact-tooltip">Copied!</span>
             </div>
-            <div class="contact-item" onclick="copyValue('kbrz77@proton.me', this)" title="Kliknij, aby skopiować">
+            <div class="contact-item" onclick="copyValue('kbrz77@proton.me', this)" title="Click to copy">
                 <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <strong>E-mail</strong>
                 <a href="mailto:kbrz77@proton.me">kbrz77@proton.me</a>
-                <span class="contact-tooltip">Skopiowano!</span>
+                <span class="contact-tooltip">Copied!</span>
             </div>
             <div class="contact-item">
                 <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <strong>Obszar</strong>
-                <span>Poznań / Cała Polska (Zdalnie)</span>
+                <strong>Location</strong>
+                <span>Poznań / Poland (Remote)</span>
             </div>
         </div>
     </header>
@@ -153,58 +151,58 @@
     <!-- CONTENT -->
     <div class="subpage-layout">
         <main class="article-card">
-            <h2>Case Study: KsEF InterGracja – Bezpieczne wdrożenie rządowego standardu w MŚP</h2>
+            <h2>Case Study: KsEF InterGracja – Secure deployment of government standards in SMEs</h2>
             <p>
-                Wprowadzenie Krajowego Systemu E-Faktur (KSeF) to jedno z największych wyzwań operacyjnych dla polskich przedsiębiorstw handlowych i e-commerce w ostatnich latach. Gotowe, "pudełkowe" rozwiązania oferowane przez dostawców oprogramowania ERP są często drogie, skomplikowane i zmuszają pracowników do wykonywania dziesiątek kliknięć przy wysyłce każdego dokumentu.
+                The introduction of the National e-Invoicing System (KSeF) is one of the biggest operational challenges for Polish trading and e-commerce enterprises in recent years. Ready-made, off-the-shelf solutions offered by ERP software providers are often expensive, complex, and force employees to perform dozens of clicks when sending each document.
             </p>
             
             <div class="highlight-box">
                 <p>
-                    <strong>Cel projektu:</strong> Zaprojektowanie i stworzenie od zera, według indywidualnych specyfikacji klienta, bezobsługowego ekosystemu automatyzacji back-office, integrującego system ERP (Subiekt GT) z rządową bazą danych KSeF przy zachowaniu 100% płynności operacyjnej i braku zaangażowania personelu.
+                    <strong>Project Goal:</strong> Designing and building from scratch, according to custom client specifications, a zero-touch back-office automation ecosystem integrating the ERP system (Subiekt GT) with the governmental KSeF database while maintaining 100% operational continuity and requiring zero staff involvement.
                 </p>
             </div>
 
-            <h2>1. Wyzwania wdrożeniowe</h2>
+            <h2>1. Implementation Challenges</h2>
             <p>
-                Główne problemy, które musieliśmy rozwiązać podczas integracji systemu back-office:
+                The main problems we had to solve during back-office system integration:
             </p>
             <ul>
-                <li><strong>Trudności konfiguracyjne:</strong> Pracownicy administracyjni nie posiadają wiedzy technicznej niezbędnej do konfiguracji certyfikatów SSL, kluczy kryptograficznych i powiązań z serwerami gov.pl.</li>
-                <li><strong>Czasochłonność:</strong> Wprowadzanie i wysyłanie kilkudziesięciu faktur dziennie ręcznie przez rządowy portal zajmuje ponad 2 godziny pracy dziennie.</li>
-                <li><strong>Ryzyko finansowe (błędy w cenach):</strong> Brak weryfikacji poprawności cen i marż na fakturach przed ich nieodwołalnym zatwierdzeniem w KSeF (błędna faktura w KSeF wymaga skomplikowanej procedury korygowania).</li>
+                <li><strong>Configuration difficulties:</strong> Administrative staff lack the technical knowledge required to configure SSL certificates, cryptographic keys, and links with gov.pl servers.</li>
+                <li><strong>Time consumption:</strong> Manually entering and sending dozens of invoices daily through the government portal takes over 2 hours of work per day.</li>
+                <li><strong>Financial risk (pricing errors):</strong> Lack of price and margin validation on invoices before their irreversible submission to KSeF (a wrong invoice in KSeF requires a complex correction procedure).</li>
             </ul>
 
-            <h2>2. Wdrożone Rozwiązania Techniczne</h2>
+            <h2>2. Implemented Technical Solutions</h2>
             <p>
-                Zaprojektowałem i wdrożyłem architekturę opartą o mikrousługi uruchomione lokalnie, składającą się z:
+                I designed and deployed an architecture based on locally run microservices, consisting of:
             </p>
             <ul>
-                <li><strong>Setup Wizard (Asystent Konfiguracji):</strong> Prosty graficznie kreator pierwszej instalacji. Pozwala pracownikom bez wiedzy IT na błyskawiczne zmapowanie drukarek fiskalnych i biurowych oraz bezpieczne powiązanie tokenu autoryzacji KSeF w 4 krokach.</li>
-                <li><strong>Bezobsługowy Monitor Obiegu (Background Daemon):</strong> Usługa systemowa działająca w tle, która stale nasłuchuje zdarzeń w bazie ERP, automatycznie przekształca faktury do formatu XML zgodnego ze strukturą FA(2), wysyła je do bramki KSeF i odbiera Urzędowe Poświadczenie Odbioru (UPO).</li>
-                <li><strong>Moduł Analizy Anomalii Cenowych:</strong> Zintegrowany algorytm dbający o rentowność sprzedaży. Przed wysłaniem dokumentu do KSeF, system w tle weryfikuje ceny pozycji faktury z cennikiem bazowym ERP i natychmiast blokuje wysyłkę w przypadku wykrycia nienaturalnego manka lub rozbieżności marży (np. czeski błąd przy wprowadzaniu rabatu).</li>
+                <li><strong>Setup Wizard:</strong> A simple graphical wizard for the initial installation. It allows employees without IT knowledge to quickly map fiscal and office printers and secure the KSeF authorization token in 4 steps.</li>
+                <li><strong>Zero-touch Flow Monitor (Background Daemon):</strong> A background system service that continuously listens for events in the ERP database, automatically converts invoices to FA(2) compliant XML, sends them to the KSeF gateway, and retrieves the Official Certificate of Receipt (UPO).</li>
+                <li><strong>Price Anomaly Analysis Module:</strong> An integrated algorithm safeguarding sales profitability. Before sending a document to KSeF, the system validates item prices against the ERP base price list and immediately blocks transmission if an unnatural shortage or margin discrepancy is detected (e.g. a typo when entering a discount).</li>
             </ul>
 
-            <h2>3. Mierzalny Efekt Biznesowy</h2>
+            <h2>3. Measurable Business Outcome</h2>
             <p>
-                Dzięki integracji, dobowe rozliczenia i wysyłka dokumentów handlowych zostały w pełni zautomatyzowane. Czas obsługi spadł do **zera sekund** dla personelu biurowego, a pomyłki w fakturowaniu zostały całkowicie wyeliminowane. Firma zyskała stabilny ekosystem niezależny od zewnętrznych, chmurowych platform pośredniczących, co eliminuje opłaty abonamentowe i gwarantuje bezpieczeństwo wrażliwych danych finansowych.
+                Thanks to the integration, daily invoicing and document transmission were fully automated. Handling time fell to **zero seconds** for office staff, and billing mistakes were completely eliminated. The company gained a stable ecosystem independent of third-party cloud middleware, eliminating subscription fees and guaranteeing the security of sensitive financial data.
             </p>
 
             <div style="text-align: center; margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 30px;">
-                <h3 style="font-family: var(--font-head); color: var(--text-pure); margin-bottom: 15px;">Planujesz integrację z KSeF lub optymalizację systemów ERP?</h3>
-                <p style="font-size: 0.95rem; color: var(--text-muted);">Zbuduję dla Twojej firmy dedykowaną wtyczkę integracyjną dopasowaną do Twoich unikalnych procesów.</p>
+                <h3 style="font-family: var(--font-head); color: var(--text-pure); margin-bottom: 15px;">Planning KSeF integration or ERP optimization?</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted);">I will build a custom integration plugin for your company tailored to your unique workflows.</p>
                 <a href="mailto:kbrz77@proton.me" class="btn-more" style="margin-top: 10px;">
-                    <i class="fa-solid fa-server"></i> Skonsultuj integrację ERP / KSeF
+                    <i class="fa-solid fa-server"></i> Consult ERP / KSeF integration
                 </a>
             </div>
         </main>
         
         <aside class="subpage-sidebar">
             <div class="sidebar-box">
-                <h3><i class="fa-solid fa-gears"></i> Usługi</h3>
+                <h3><i class="fa-solid fa-gears"></i> Services</h3>
                 <ul>
                     <li><a href="../fractional-cto.html"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
-                    <li><a href="../integracje-ai-automatyzacja.html"><i class="fa-solid fa-robot"></i> Integracja AI & Auto</a></li>
-                    <li><a href="../audyt-agencji.html"><i class="fa-solid fa-gauge-high"></i> Audyt Marketingu</a></li>
+                    <li><a href="../integracje-ai-automatyzacja.html"><i class="fa-solid fa-robot"></i> AI Integration & Auto</a></li>
+                    <li><a href="../audyt-agencji.html"><i class="fa-solid fa-gauge-high"></i> Marketing Audit</a></li>
                 </ul>
             </div>
             
@@ -214,21 +212,21 @@
                     <li><a href="aegis-seo-core.html"><i class="fa-solid fa-bolt"></i> SEO aIdeas</a></li>
                     <li><a href="ksef-integracja.html"><i class="fa-solid fa-server"></i> KsEF InterGracja</a></li>
                     <li><a href="stocks-tui.html"><i class="fa-solid fa-chart-line"></i> Stocks TUI Analyzer</a></li>
-                    <li><a href="voip-3cx.html"><i class="fa-solid fa-phone-volume"></i> Integracja VoIP 3CX</a></li>
+                    <li><a href="voip-3cx.html"><i class="fa-solid fa-phone-volume"></i> VoIP 3CX Integration</a></li>
                 </ul>
             </div>
             
             <div class="sidebar-box contact-box">
-                <h3><i class="fa-solid fa-comments"></i> Kontakt</h3>
-                <p>Porozmawiajmy o wyzwaniach technologicznych w Twoim biznesie.</p>
-                <a href="mailto:kbrz77@proton.me" class="btn-sidebar-cta">Darmowa Konsultacja</a>
+                <h3><i class="fa-solid fa-comments"></i> Contact</h3>
+                <p>Let's talk about the technology challenges in your business.</p>
+                <a href="mailto:kbrz77@proton.me" class="btn-sidebar-cta">Free Consultation</a>
             </div>
         </aside>
     </div>
 
     <!-- FOOTER -->
     <footer style="text-align: center; margin-top: 50px; padding: 20px 0; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-muted);">
-        &copy; 2026 Kamil Brzuszczak. Wszelkie prawa zastrzeżone. Fractional CTO & AI Integrator.
+        &copy; 2026 Kamil Brzuszczak. All rights reserved. Fractional CTO & AI Integrator.
     </footer>
 
 </div>
@@ -236,24 +234,7 @@
 <!-- Theme toggle & Mobile menu script -->
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const themeToggle = document.getElementById('theme-toggle');
-        const htmlEl = document.documentElement;
         
-        const updateIcon = () => {
-            const isDark = htmlEl.classList.contains('dark');
-            if (themeToggle && themeToggle.querySelector('i')) {
-                themeToggle.querySelector('i').className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
-            }
-        };
-        
-        if (themeToggle) {
-            themeToggle.addEventListener('click', () => {
-                htmlEl.classList.toggle('dark');
-                htmlEl.classList.toggle('light');
-                updateIcon();
-            });
-        }
-        updateIcon();
 
         // Mobile drawer toggle
         const mobileToggle = document.querySelector('.btn-mobile-toggle');

@@ -27,6 +27,10 @@
             --violet-light: #a78bfa;
             --violet-glow: rgba(139, 92, 246, 0.12);
 
+            --burgundy: #881337;
+            --burgundy-light: #9f1239;
+            --burgundy-glow: rgba(136, 19, 55, 0.15);
+
             --accent-glow: rgba(56, 189, 248, 0.08);
             
             --font-head: 'Plus Jakarta Sans', sans-serif;
@@ -64,6 +68,10 @@
             --violet: #7c3aed;
             --violet-light: #6d28d9;
             --violet-glow: rgba(124, 58, 237, 0.08);
+
+            --burgundy: #be123c;
+            --burgundy-light: #9f1239;
+            --burgundy-glow: rgba(190, 18, 60, 0.08);
 
             --accent-glow: rgba(2, 132, 199, 0.04);
         }
@@ -141,6 +149,43 @@
             color: var(--text-pure);
             background: var(--bg-card-hover);
             transform: translateY(-2px);
+        }
+
+        a.btn-control {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.8rem;
+            font-family: var(--font-head);
+        }
+
+        .btn-control.btn-pl {
+            background: var(--burgundy-glow);
+            border-color: rgba(136, 19, 55, 0.4);
+            color: #fda4af;
+            font-size: 0.95rem;
+            font-weight: 800;
+        }
+
+        .btn-pl:hover {
+            border-color: var(--burgundy-light) !important;
+            color: #fff !important;
+            background: var(--burgundy) !important;
+            box-shadow: 0 0 15px var(--burgundy-glow);
+        }
+
+        html.light .btn-control.btn-pl {
+            background: var(--burgundy-glow);
+            border-color: rgba(190, 18, 60, 0.3);
+            color: var(--burgundy);
+            font-size: 0.95rem;
+            font-weight: 800;
+        }
+
+        html.light .btn-pl:hover {
+            border-color: var(--burgundy-light) !important;
+            color: #fff !important;
+            background: var(--burgundy) !important;
+            box-shadow: 0 0 15px var(--burgundy-glow);
         }
 
         /* HERO HEADER BLOCK */
@@ -319,6 +364,7 @@
             font-weight: 400;
             color: #e2e8f0;
             line-height: 1.65;
+            text-align: justify;
         }
 
         .hook-container p strong {
@@ -1324,6 +1370,15 @@
             color: #94a3b8;
             margin-bottom: 12px;
             line-height: 1.6;
+        }
+
+        .timeline-lead {
+            font-size: 1.05rem !important;
+            color: var(--text-main);
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            line-height: 1.65;
         }
 
         .sub-roles {
