@@ -625,7 +625,7 @@
         }
 
         .deploy-fake-disclaimer {
-            display: none;
+            display: flex;
             position: absolute;
             bottom: 10px;
             left: 50%;
@@ -642,9 +642,6 @@
             z-index: 3;
             white-space: nowrap;
             pointer-events: none;
-        }
-        .deploy-visual-container.image-loaded .deploy-fake-disclaimer {
-            display: flex;
         }
 
         /* Mockup UI Stylings */
