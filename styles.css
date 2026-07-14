@@ -172,6 +172,11 @@
             background: linear-gradient(90deg, transparent, var(--cyan), var(--gold), transparent);
         }
 
+        .header-title {
+            flex: 1 1 380px;
+            min-width: 0;
+        }
+
         .header-title h1 {
             font-family: var(--font-head);
             font-size: 3rem;
@@ -213,6 +218,7 @@
         .contact-grid {
             display: flex;
             flex-direction: column;
+            flex-shrink: 0;
             gap: 10px;
         }
 
@@ -616,6 +622,29 @@
             font-size: 0.72rem;
             font-weight: 500;
             pointer-events: none;
+        }
+
+        .deploy-fake-disclaimer {
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 0, 0, 0.72);
+            color: #fca5a5;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(248, 113, 113, 0.3);
+            z-index: 3;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .deploy-visual-container.image-loaded .deploy-fake-disclaimer {
+            display: flex;
         }
 
         /* Mockup UI Stylings */
@@ -2140,6 +2169,19 @@
             color: var(--text-main);
             text-align: justify;
             text-justify: inter-word;
+        }
+        .article-card p a,
+        .article-card li a {
+            color: var(--text-main);
+            text-decoration: underline;
+            text-decoration-color: var(--border-hover);
+            text-underline-offset: 2px;
+            transition: var(--transition-fast);
+        }
+        .article-card p a:hover,
+        .article-card li a:hover {
+            color: var(--text-pure);
+            text-decoration-color: var(--cyan-light);
         }
         .article-card ul, .article-card ol {
             margin-bottom: 25px;
