@@ -7,7 +7,12 @@
       "Bash(grep -n \"^\\\\s*a[,{ ]\\\\|article-card\\\\s*{\\\\|main\\\\s*{\\\\|\\\\* {\" styles.css)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(curl -s \"https://kbrz77.pl/styles.css\")"
+      "Bash(curl -s \"https://kbrz77.pl/styles.css\")",
+      "Bash(set -e)",
+      "Bash(mkdir -p en en/projekty)",
+      "Bash(git mv *)",
+      "Bash(rmdir pl/projekty pl)",
+      "Bash(cd *)"
     ]
   }
 }

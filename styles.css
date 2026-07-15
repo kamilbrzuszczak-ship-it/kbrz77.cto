@@ -2225,11 +2225,11 @@
             color: var(--text-pure);
             margin-top: 25px;
             margin-bottom: 12px;
-            font-size: 1.25rem;
+            font-size: 1.15rem;
         }
         .article-card p {
             margin-bottom: 20px;
-            font-size: 1.05rem;
+            font-size: 0.9rem;
             line-height: 1.75;
             color: var(--text-main);
             text-align: justify;
@@ -2254,7 +2254,7 @@
         }
         .article-card li {
             margin-bottom: 10px;
-            font-size: 1.02rem;
+            font-size: 0.9rem;
             line-height: 1.65;
             color: var(--text-main);
         }

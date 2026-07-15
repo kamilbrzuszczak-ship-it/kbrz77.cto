@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="pl" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: Stocks TUI Analyzer – Retro Financial Terminal | Kamil Brzuszczak</title>
-    <meta name="description" content="Case study of a retro financial terminal for screening US public stocks (NASDAQ/NYSE) using yfinance and Claude AI.">
+    <title>Case Study: Stock Analyzer – Retro Terminal Finansowy | Kamil Brzuszczak</title>
+    <meta name="description" content="Studium przypadku (Case Study) retro terminala analitycznego do przesiewania spółek giełdowych w USA (NASDAQ/NYSE). Dowiedz się, jak połączono yfinance i Claude AI.">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     
     <!-- Open Graph SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kbrz77.pl/projekty/stocks-tui.html">
-    <meta property="og:title" content="Case Study: Stocks TUI Analyzer | Kamil Brzuszczak">
-    <meta property="og:description" content="Autonomous financial terminal with zero subscriptions. GPS rating score, Claude AI integration, and yfinance.">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Case Study: Stock Analyzer Terminal | Kamil Brzuszczak">
+    <meta property="og:description" content="Autonomiczne narzędzie analityczne o zerowym abonamencie. Wskaźnik punktacji GPS oraz integracja z Claude AI i yfinance.">
+    <meta property="og:locale" content="pl_PL">
     <meta property="og:image" content="https://kbrz77.pl/og-stocks.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Stocks TUI Analyzer – retro financial terminal (case study)">
+    <meta property="og:image:alt" content="Stock Analyzer – retro terminal finansowy (case study)">
 
     <!-- Twitter SEO -->
     <meta name="twitter:card" content="summary_large_image">
@@ -41,25 +41,27 @@
       {
         "@context": "https://schema.org",
         "@type": "CreativeWork",
-        "name": "Stocks TUI Analyzer — retro financial terminal (Case Study)",
-        "description": "Stocks TUI Analyzer integration case study: how US stocks are screened using yfinance and Claude AI in a retro terminal interface.",
+        "name": "Stock Analyzer — retro terminal finansowy (Case Study)",
+        "description": "Studium przypadku retro terminala do przesiewania spółek giełdowych w USA (NASDAQ/NYSE) z użyciem yfinance i Claude AI.",
         "url": "https://kbrz77.pl/projekty/stocks-tui.html",
         "author": {
           "@type": "Person",
           "name": "Kamil Brzuszczak",
-          "url": "https://kbrz77.pl/en"
+          "url": "https://kbrz77.pl"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://kbrz77.pl/" },
-          { "@type": "ListItem", "position": 2, "name": "Stocks TUI Analyzer — retro financial terminal", "item": "https://kbrz77.pl/projekty/stocks-tui.html" }
+          { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://kbrz77.pl/" },
+          { "@type": "ListItem", "position": 2, "name": "Stock Analyzer — retro terminal finansowy", "item": "https://kbrz77.pl/projekty/stocks-tui.html" }
         ]
       }
     ]
     </script>
+
+
 </head>
 <body style="--subpage-color: var(--cyan-light);">
     <!-- PREMIUM GLOBAL NAVBAR -->
@@ -72,22 +74,21 @@
             
             <!-- Desktop Navigation Menu -->
             <ul class="nav-menu">
-                <li><a href="../index.html" class="nav-link" id="nav-home">Home</a></li>
-                <li><a href="../uslugi.html" class="nav-link" id="nav-uslugi">Services</a></li>
+                <li><a href="../index.html" class="nav-link" id="nav-home">Główna</a></li>
+                <li><a href="../uslugi.html" class="nav-link" id="nav-uslugi">Usługi</a></li>
                 <li><a href="../fractional-cto.html" class="nav-link" id="nav-cto">Fractional CTO</a></li>
-                <li><a href="../integracje-ai-automatyzacja.html" class="nav-link" id="nav-ai">AI Integrations</a></li>
-                <li><a href="../audyt-agencji.html" class="nav-link" id="nav-audit">Agency Audit</a></li>
-                <li><a href="mailto:kbrz77@proton.me" class="nav-cta"><i class="fa-solid fa-calendar-days"></i> Consultation</a></li>
+                <li><a href="../integracje-ai-automatyzacja.html" class="nav-link" id="nav-ai">Integracje AI</a></li>
+                <li><a href="../audyt-agencji.html" class="nav-link" id="nav-audit">Audyt Agencji</a></li>
             </ul>
 
             <!-- Controls (Theme & Mobile Toggle) -->
             <div class="nav-controls">
                 
-                <a href="../pl/projekty/stocks-tui.html" class="btn-control btn-pl print-hide" title="Wersja polska">PL</a>
-                <button onclick="window.print()" class="btn-control print-hide" title="Save to PDF / Print">
+                <a href="../en/projekty/stocks-tui.html" class="btn-control print-hide" title="English version">EN</a>
+                <button onclick="window.print()" class="btn-control print-hide" title="Zapisz do PDF / Drukuj">
                     <i class="fa-solid fa-print"></i>
                 </button>
-                <button class="btn-mobile-toggle" aria-label="Open menu">
+                <button class="btn-mobile-toggle" aria-label="Otwórz menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
@@ -98,13 +99,12 @@
         <!-- Mobile Dropdown Drawer -->
         <div class="nav-mobile-drawer">
             <ul>
-                <li><a href="../index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="../uslugi.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Services</a></li>
+                <li><a href="../index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Główna</a></li>
+                <li><a href="../uslugi.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Usługi</a></li>
                 <li><a href="../fractional-cto.html" class="mobile-nav-link"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
-                <li><a href="../integracje-ai-automatyzacja.html" class="mobile-nav-link"><i class="fa-solid fa-robot"></i> AI Integrations</a></li>
-                <li><a href="../audyt-agencji.html" class="mobile-nav-link"><i class="fa-solid fa-gauge-high"></i> Agency Audit</a></li>
-                <li><a href="../pl/projekty/stocks-tui.html" class="mobile-nav-link"><i class="fa-solid fa-globe"></i> Polska wersja (PL)</a></li>
-                <li><a href="mailto:kbrz77@proton.me" class="mobile-nav-cta"><i class="fa-solid fa-calendar-days"></i> Free Consultation</a></li>
+                <li><a href="../integracje-ai-automatyzacja.html" class="mobile-nav-link"><i class="fa-solid fa-robot"></i> Integracje AI</a></li>
+                <li><a href="../audyt-agencji.html" class="mobile-nav-link"><i class="fa-solid fa-gauge-high"></i> Audyt Agencji</a></li>
+                <li><a href="../en/projekty/stocks-tui.html" class="mobile-nav-link"><i class="fa-solid fa-globe"></i> English (EN)</a></li>
             </ul>
         </div>
     </nav>
@@ -115,9 +115,9 @@
 <div class="container">
 
     <!-- BREADCRUMBS -->
-    <nav class="breadcrumb" aria-label="Breadcrumb navigation path">
+    <nav class="breadcrumb" aria-label="Ścieżka nawigacji">
         <ol>
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">Strona główna</a></li>
             <li><span class="sep">/</span> <span aria-current="page">Stock Analyzer</span></li>
         </ol>
     </nav>
@@ -125,25 +125,25 @@
     <!-- HERO HEADER -->
     <header>
         <div class="header-title">
-            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">Case Study: Stock Analyzer — Retro Financial Terminal</span></h1>
+            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">Case Study: Stock Analyzer — retro terminal finansowy</span></h1>
         </div>
         <div class="contact-grid">
-            <div class="contact-item" onclick="copyValue('+48 796 579 480', this)" title="Click to copy">
+            <div class="contact-item">
                 <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <strong>Phone</strong>
-                <a href="tel:+48796579480">+48 796 579 480</a>
-                <span class="contact-tooltip">Copied!</span>
+                <strong>Telefon</strong>
+                <a href="tel:+48796579480" onclick="copyValue('+48 796 579 480', this.closest('.contact-item'))" title="Kliknij, aby skopiować">+48 796 579 480</a>
+                <span class="contact-tooltip">Skopiowano!</span>
             </div>
-            <div class="contact-item" onclick="copyValue('kbrz77@proton.me', this)" title="Click to copy">
+            <div class="contact-item">
                 <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <strong>E-mail</strong>
-                <a href="mailto:kbrz77@proton.me">kbrz77@proton.me</a>
-                <span class="contact-tooltip">Copied!</span>
+                <a href="mailto:kbrz77@proton.me" onclick="copyValue('kbrz77@proton.me', this.closest('.contact-item'))" title="Kliknij, aby skopiować">kbrz77@proton.me</a>
+                <span class="contact-tooltip">Skopiowano!</span>
             </div>
             <div class="contact-item">
                 <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <strong>Location</strong>
-                <span>Poznań / Poland (Remote)</span>
+                <strong>Obszar</strong>
+                <span>Poznań / Cała Polska (Zdalnie)</span>
             </div>
         </div>
     </header>
@@ -151,64 +151,64 @@
     <!-- CONTENT -->
     <div class="subpage-layout">
         <main class="article-card">
-            <h2>Case Study: Stock Analyzer – Building an independent financial analysis workstation</h2>
+            <h2>Case Study: Stock Analyzer – Budowa niezależnego stanowiska analizy finansowej</h2>
             <p>
-                Fundamental analysis of US public companies listed on NYSE/NASDAQ requires access to advanced financial data and hundreds of hours spent reading annual (Form 10-K) and quarterly (10-Q) reports. Subscriptions to professional analytical services cost from several hundred to several thousand dollars per year.
+                Analiza fundamentalna spółek giełdowych notowanych na giełdach w USA (NYSE/NASDAQ) wymaga dostępu do zaawansowanych danych finansowych oraz setek godzin spędzonych na czytaniu sprawozdań rocznych (formularze 10-K) i kwartalnych (10-Q). Abonamenty na profesjonalne serwisy analityczne kosztują od kilkuset do kilku tysięcy dolarów rocznie.
             </p>
             
             <div class="highlight-box">
                 <p>
-                    <strong>Project Goal:</strong> Building a complete, autonomous, and ultra-fast analytical workstation with zero subscription costs for market data, reducing the verification time of a new company from 3 hours to under 45 seconds using AI language models.
+                    <strong>Cel projektu:</strong> Zbudowanie kompletnego, autonomicznego i ultraszybkiego stanowiska analitycznego o zerowych kosztach abonamentowych za dane giełdowe, skracającego czas weryfikacji nowej spółki z 3 godzin do poniżej 45 sekund z użyciem modeli językowych AI.
                 </p>
             </div>
 
-            <h2>1. Proprietary GPS Scoring Model (Growth Potential Scale)</h2>
+            <h2>1. Autorski Model Punktacji GPS (Growth Potential Scale)</h2>
             <p>
-                To structure the analysis, I designed and implemented an algorithm evaluating each company against 6 strategic, weighted factors:
+                Aby ustrukturyzować analizę, zaprojektowałem i zaimplementowałem algorytm oceniający każdą spółkę według 6 strategicznych, ważonych czynników:
             </p>
             <ul>
-                <li><strong>Revenue Dynamics and Margins (25% weight):</strong> Verifying revenue CAGR and stability of operating margins and Free Cash Flow (FCF).</li>
-                <li><strong>Backlog / Pipeline Coverage (20% weight):</strong> Analyzing contracted revenues and sales pipeline potential for subsequent quarters.</li>
-                <li><strong>TAM Market Expansion (20% weight):</strong> Investigating Total Addressable Market and geographical or product expansion paths.</li>
-                <li><strong>Growth Catalyst Strength (15% weight):</strong> Identifying key factors stimulating demand for products/services in the near term.</li>
-                <li><strong>Financial Liquidity and Runway (10% weight):</strong> Assessing cash reserves, net debt levels, and financial stability during economic downturns.</li>
-                <li><strong>Moat Competitive Advantage (10% weight):</strong> Identifying barriers to entry for competitors (e.g. switching costs, patents, economies of scale).</li>
+                <li><strong>Dynamika przychodów i marż (25% wagi):</strong> Weryfikacja tempa wzrostu (Revenue CAGR) oraz stabilności marży operacyjnej i wolnych przepływów pieniężnych (FCF).</li>
+                <li><strong>Pokrycie Backlogu / Pipeline (20% wagi):</strong> Analiza zakontraktowanych przychodów i potencjału zamówień na kolejne kwartały.</li>
+                <li><strong>Ekspansja rynku TAM (20% wagi):</strong> Badanie całkowitego rynku adresowalnego (Total Addressable Market) oraz kierunków ekspansji geograficznej i produktowej.</li>
+                <li><strong>Siła katalizatorów wzrostu (15% wagi):</strong> Identyfikacja kluczowych czynników stymulujących popyt na produkty/usługi w najbliższym czasie.</li>
+                <li><strong>Płynność finansowa i Runway (10% wagi):</strong> Ocena stanu gotówki, poziomu zadłużenia netto oraz stabilności finansowej w przypadku spowolnienia gospodarczego.</li>
+                <li><strong>Przewaga konkurencyjna Moat (10% wagi):</strong> Identyfikacja barier wejścia na rynek dla konkurencji (np. koszty zmiany dostawcy, patenty, efekt skali).</li>
             </ul>
 
-            <h2>2. yfinance and Claude AI Integration</h2>
+            <h2>2. Integracja yfinance i Claude AI</h2>
             <p>
-                The engine fetches real-time financial statements (balance sheet, income statement, cash flows) directly from Yahoo Finance servers using the `yfinance` library.
+                Silnik pobiera w czasie rzeczywistym sprawozdania finansowe (bilans, rachunek zysków i strat, przepływy pieniężne) bezpośrednio z serwerów Yahoo Finance za pomocą biblioteki `yfinance`.
             </p>
             <p>
-                Then, when the user provides a ticker (e.g. *MU.US* for Micron Technology), the system starts an AI agent connected to the Anthropic API. The agent retrieves the latest Earnings Call transcripts, analyzes management statements for risks, and automatically populates the GPS scorecard along with the investment thesis and risk notes.
-            </p>
-
-            <h2>3. Retro TUI (Terminal User Interface)</h2>
-            <p>
-                Instead of building heavy, slow web pages, I designed a lightweight, responsive console interface supporting the 256-color ANSI palette. This guarantees instant loading, zero latency, and the ability to run the terminal smoothly from any VPS. Data on analyzed companies is stored in a flat, customized JSON file (`stocks_extra.json`), which allows for easy exports and building a global investment leaderboard.
+                Następnie, gdy użytkownik podaje ticker spółki (np. „MU.US" dla Micron Technology), system uruchamia agenta AI połączonego z Anthropic API. Agent wyszukuje najświeższe transkrypcje z konferencji wynikowych (Earnings Calls), analizuje wypowiedzi zarządu pod kątem ryzyk oraz automatycznie uzupełnia kartę oceny GPS wraz z tezą inwestycyjną i notatką o ryzykach.
             </p>
 
-            <h2>4. Impact and Project Return</h2>
+            <h2>3. Retro Interfejs TUI (Terminal User Interface)</h2>
             <p>
-                The project was a huge success – financial analysis time fell **by 95%**, and the tool itself allowed for precise spotting of market anomalies and investment opportunities before they were covered in mainstream financial media. The results achieved using the program gained wide social support from individual investors, which translated into full project monetization.
+                Zamiast pisać ciężkie, wolne strony internetowe, zaprojektowałem lekki, responsywny interfejs konsolowy obsługujący paletę 256 barw ANSI. Zapewnia to natychmiastowe ładowanie, zero opóźnień oraz możliwość sprawnego działania terminala bezpośrednio z dowolnego serwera VPS. Dane o analizowanych spółkach są zapisywane w płaskiej i personalizowanej bazie JSON (`stocks_extra.json`), co pozwala na łatwy eksport i budowanie globalnego rankingu liderów inwestycyjnych.
+            </p>
+
+            <h2>4. Efekty i Zwrot z Projektu</h2>
+            <p>
+                Czas analizy finansowej spadł <strong>o 95%</strong>, a narzędzie pozwala wyłapywać rynkowe anomalie i okazje inwestycyjne, zanim trafią do mediów finansowych. Wyniki programu przekonały do niego innych inwestorów indywidualnych, co przełożyło się na jego pełną monetyzację.
             </p>
 
             <div style="text-align: center; margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 30px;">
-                <h3 style="font-family: var(--font-head); color: var(--text-pure); margin-bottom: 15px;">Want to implement intelligent financial data analysis in your company?</h3>
-                <p style="font-size: 0.95rem; color: var(--text-muted);">I will build a custom engine for collecting and analyzing data from public APIs for your enterprise.</p>
+                <h3 style="font-family: var(--font-head); color: var(--text-pure); margin-bottom: 15px;">Chcesz wdrożyć inteligentną analizę danych finansowych w swojej firmie?</h3>
+                <p style="font-size: 0.95rem; color: var(--text-muted);">Zbuduję dla Twojego przedsiębiorstwa dedykowany silnik zbierania i analizy danych z publicznych API.</p>
                 <a href="mailto:kbrz77@proton.me" class="btn-more" style="margin-top: 10px;">
-                    <i class="fa-solid fa-chart-pie"></i> Consult financial data integration
+                    <i class="fa-solid fa-chart-pie"></i> Skonsultuj integrację danych finansowych
                 </a>
             </div>
         </main>
         
         <aside class="subpage-sidebar">
             <div class="sidebar-box">
-                <h3><i class="fa-solid fa-gears"></i> Services</h3>
+                <h3><i class="fa-solid fa-gears"></i> Usługi</h3>
                 <ul>
                     <li><a href="../fractional-cto.html"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
-                    <li><a href="../integracje-ai-automatyzacja.html"><i class="fa-solid fa-robot"></i> AI Integration & Auto</a></li>
-                    <li><a href="../audyt-agencji.html"><i class="fa-solid fa-gauge-high"></i> Marketing Audit</a></li>
+                    <li><a href="../integracje-ai-automatyzacja.html"><i class="fa-solid fa-robot"></i> Integracja AI & Auto</a></li>
+                    <li><a href="../audyt-agencji.html"><i class="fa-solid fa-gauge-high"></i> Audyt Marketingu</a></li>
                 </ul>
             </div>
             
@@ -218,22 +218,22 @@
                     <li><a href="aegis-seo-core.html"><i class="fa-solid fa-bolt"></i> SEO aIdeas</a></li>
                     <li><a href="ksef-integracja.html"><i class="fa-solid fa-server"></i> KsEF InterGracja</a></li>
                     <li><a href="stocks-tui.html"><i class="fa-solid fa-chart-line"></i> Stocks TUI Analyzer</a></li>
-                    <li><a href="voip-3cx.html"><i class="fa-solid fa-phone-volume"></i> VoIP 3CX Integration</a></li>
+                    <li><a href="voip-3cx.html"><i class="fa-solid fa-phone-volume"></i> Integracja VoIP 3CX</a></li>
                 </ul>
             </div>
             
             <div class="sidebar-box contact-box">
-                <h3><i class="fa-solid fa-comments"></i> Contact</h3>
-                <p>Let's talk about the technology challenges in your business.</p>
-                <a href="mailto:kbrz77@proton.me" class="btn-sidebar-cta btn-sidebar-email"><i class="fa-solid fa-envelope"></i> Send an email</a>
-                <a href="tel:+48796579480" class="btn-sidebar-cta btn-sidebar-phone"><i class="fa-solid fa-phone"></i> Call me</a>
+                <h3><i class="fa-solid fa-comments"></i> Kontakt</h3>
+                <p>Porozmawiajmy o wyzwaniach technologicznych w Twoim biznesie.</p>
+                <a href="mailto:kbrz77@proton.me" class="btn-sidebar-cta btn-sidebar-email"><i class="fa-solid fa-envelope"></i> Napisz maila</a>
+                <a href="tel:+48796579480" class="btn-sidebar-cta btn-sidebar-phone"><i class="fa-solid fa-phone"></i> Zadzwoń</a>
             </div>
         </aside>
     </div>
 
     <!-- FOOTER -->
     <footer style="text-align: center; margin-top: 50px; padding: 20px 0; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-muted);">
-        &copy; 2026 Kamil Brzuszczak. All rights reserved. Fractional CTO & AI Integrator.
+        &copy; 2026 Kamil Brzuszczak. Wszelkie prawa zastrzeżone. AI Engineer & Integrator AI (MCP).
     </footer>
 
 </div>
