@@ -1,0 +1,21 @@
+# Kamil Brzuszczak — Specjalista SEO/GEO & Marketingu × AI Integrator
+
+> Poznań / zdalnie. Od 2018 roku jednoosobowo (bez agencji) prowadzi SEO premium e-commerce audioplaza.pl (hi-fi / high-end audio, salony w Poznaniu i Wrocławiu). Łączy ekosystem Google (Ads, GA4, GTM, Search Console, Merchant Center, Profil Firmy) z Claude/Anthropic API i protokołem MCP.
+
+## Wyniki (audioplaza.pl, źródła w nawiasach)
+- Frazy w TOP10 Google: 65 → 1 453, ×22 (Ahrefs, średnie roczne 2017 → 2025); TOP3: 39 → 493
+- Kliknięcia z Google: 49,5 tys. → 208,4 tys. rocznie, ×4,2 (Google Search Console, 2020 → 2025)
+- Porządki techniczne 2026 (mapa witryny 42 614 → ok. 12 tys. adresów, robots.txt): CTR 2,65% → 3,86% (+46% r/r) przy utrzymanym ruchu; śr. pozycja na komputerach 12,8 → 8,5
+- Local SEO: 671 opinii Google, średnia 4,8 (dwa salony); ok. 489 od 2019 r.
+- GEO: 239 cytowań strony w odpowiedziach AI (Google AI Mode, AI Overviews, Perplexity, Gemini, Copilot; Ahrefs, X 2026)
+- Google Ads: wykrycie ok. 17-krotnie zawyżonych konwersji i oparcie kampanii na jednym sygnale zakupu
+
+## Kompetencje
+SEO techniczne, GEO/AEO, Local SEO, dane strukturalne, Google Ads, GA4, GTM, Search Console, Merchant Center, MCP, Claude/Anthropic API, RAG, agentowe workflow, audyt agencji marketingowych.
+
+## Kontakt
+- E-mail: kamil@kbrz77.pl
+- Telefon: +48 796 579 480
+- LinkedIn: https://www.linkedin.com/in/kamil-brzuszczak
+- Strona: https://kbrz77.pl/
+- CV (PDF): https://kbrz77.pl/cv/Kamil_Brzuszczak_CV_SEO-GEO_2026.pdf

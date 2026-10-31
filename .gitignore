@@ -1,0 +1,4 @@
+# Prywatne notatki i lokalna konfiguracja narzędzi — nie publikować
+_private/
+.claude/
+.DS_Store

@@ -1,1324 +1,396 @@
-<!DOCTYPE html>
-<html lang="pl" class="dark">
+<!doctype html>
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamil Brzuszczak - AI Engineer & Integrator AI (MCP)</title>
-    <meta name="description" content="Kamil Brzuszczak – Fractional CTO w Polsce, integracje AI i automatyk AI dla MŚP: automatyzacja procesów, transformacja technologiczna i audyt agencji SEO/Google Ads.">
-    <meta name="keywords" content="CTO Polska, Fractional CTO, integracje AI, automatyk AI, AI Integrator, automatyzacja AI, audyt SEO, Google Ads, VoIP, RAG, Python, Docker, Poznań, kbrz77">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    
-    <!-- Open Graph / Facebook / LinkedIn SEO -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kbrz77.pl/">
-    <meta property="og:title" content="Kamil Brzuszczak - AI Engineer & Integrator AI (MCP)">
-    <meta property="og:description" content="Fractional CTO w Polsce – integracje AI, automatyk AI, audyt agencji marketingowych oraz optymalizacja procesów biznesowych i infrastruktury IT.">
-    <meta property="og:image" content="https://kbrz77.pl/og-home.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Kamil Brzuszczak – AI Engineer & Integrator AI (MCP)">
-    <meta property="og:site_name" content="Kamil Brzuszczak Portfolio">
-    <meta property="og:locale" content="pl_PL">
-
-    <!-- Twitter SEO -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://kbrz77.pl/">
-    <meta name="twitter:title" content="Kamil Brzuszczak - AI Engineer & Integrator AI (MCP)">
-    <meta name="twitter:description" content="Fractional CTO w Polsce – integracje AI, automatyk AI, audyt agencji marketingowych oraz optymalizacja procesów biznesowych i infrastruktury IT.">
-    <meta name="twitter:image" content="https://kbrz77.pl/og-home.png">
-
-    <link rel="canonical" href="https://kbrz77.pl/">
-
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://kbrz77.pl/#kamil-brzuszczak",
-        "name": "Kamil Brzuszczak",
-        "jobTitle": "AI Engineer & Integrator AI (MCP)",
-        "url": "https://kbrz77.pl",
-        "email": "kbrz77@proton.me",
-        "telephone": "+48796579480",
-        "description": "Doświadczony AI Engineer i Integrator AI (MCP) specjalizujący się w automatyzacji procesów AI, audytach agencji SEO/Ads oraz optymalizacji infrastruktury dla MŚP.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Poznań",
-          "addressCountry": "PL"
-        },
-        "knowsAbout": [
-          "Fractional CTO Advisory (CTO Polska)",
-          "Integracje AI",
-          "Automatyk AI / Automatyzacja procesów biznesowych",
-          "Artificial Intelligence Integration",
-          "E-commerce Strategy & System Integration",
-          "Search Engine Optimization (SEO) & Audits",
-          "Google Ads & Marketing Visibility Audits",
-          "VoIP & Telecommunications Infrastructure (3CX)",
-          "Software Engineering (Python, Docker, Git)",
-          "Business Process Automation"
-        ],
-        "sameAs": [
-          "https://github.com/kamilbrzuszczak-ship-it"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "@id": "https://kbrz77.pl/#uslugi",
-        "name": "Kamil Brzuszczak — AI Engineer & Integrator AI (MCP)",
-        "url": "https://kbrz77.pl",
-        "email": "kbrz77@proton.me",
-        "telephone": "+48796579480",
-        "description": "Usługi Fractional CTO na godziny, integracja AI i automatyzacja procesów oraz audyty agencji SEO/Google Ads dla MŚP i startupów.",
-        "areaServed": { "@type": "Country", "name": "Polska" },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Poznań",
-          "addressCountry": "PL"
-        },
-        "founder": { "@id": "https://kbrz77.pl/#kamil-brzuszczak" },
-        "knowsAbout": [
-          "Fractional CTO Polska",
-          "Integracje AI i automatyzacja procesów",
-          "Automatyk AI dla MŚP",
-          "Audyt agencji SEO i Google Ads"
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Czym różnią się integracje AI od zwykłego chatbota na stronie?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Integracje AI, które wdrażam, to nie kolejny chatbot-zabawka, tylko systemy podłączone bezpośrednio do danych firmy – bazy wiedzy RAG, automatyczny lead management i agenci AI wykonujący wieloetapowe zadania w tle, zintegrowane z pocztą, CRM i arkuszami." }
-          },
-          {
-            "@type": "Question",
-            "name": "Kim jest CTO w Polsce współpracujący z MŚP na godziny?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Jako CTO w Polsce (Fractional CTO) przejmuję odpowiedzialność za architekturę IT, nadzór nad wdrożeniami AI oraz kontrolę nad pracą zewnętrznych dostawców i agencji – zdalnie dla firm z całego kraju lub stacjonarnie w Poznaniu, bez kosztów zatrudnienia dyrektora technologicznego na pełen etat." }
-          },
-          {
-            "@type": "Question",
-            "name": "Kim jest automatyk AI i kiedy warto go zatrudnić?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Automatyk AI to specjalista łączący inżynierię oprogramowania z wdrażaniem modeli LLM, aby zautomatyzować konkretne, powtarzalne procesy w firmie – klasyfikację zapytań ofertowych, generowanie dokumentów czy wyszukiwanie informacji w dokumentach. Warto go zaangażować, gdy zespół traci czas na schematyczne zadania tekstowe lub administracyjne." }
-          },
-          {
-            "@type": "Question",
-            "name": "Ile trwa i kosztuje wdrożenie integracji AI lub automatyzacji?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Prosta automatyzacja (np. klasyfikacja zapytań i generowanie odpowiedzi) trwa zwykle 2–4 tygodnie, a rozliczenie jest projektowe lub godzinowe. Każde wdrożenie zaczynam od bezpłatnej analizy, dzięki której znasz zakres i koszt jeszcze przed startem prac." }
-          },
-          {
-            "@type": "Question",
-            "name": "Czy pracujesz tylko stacjonarnie w Poznaniu, czy zdalnie w całej Polsce?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Większość projektów – integracje AI, automatyzacje i wsparcie w roli CTO – realizuję zdalnie dla firm z całej Polski. Spotkania stacjonarne są możliwe w Poznaniu i okolicach, gdy wymaga tego charakter wdrożenia, np. infrastruktura VoIP." }
-          }
-        ]
-      }
-    ]
-    </script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Premium Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kamil Brzuszczak — Specjalista SEO/GEO &amp; Marketingu × AI | Poznań</title>
+<meta name="description" content="Kamil Brzuszczak — specjalista SEO/GEO i marketingu × AI z Poznania. 8 lat SEO premium e-commerce bez agencji: ×22 fraz w TOP10, ×4,2 kliknięć z Google, 239 cytowań w AI.">
+<link rel="canonical" href="https://kbrz77.pl/">
+<meta name="author" content="Kamil Brzuszczak">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1218" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/plus-jakarta-sans-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://kbrz77.pl/">
+<meta property="og:site_name" content="kbrz77.pl">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Kamil Brzuszczak — Specjalista SEO/GEO &amp; Marketingu × AI">
+<meta property="og:description" content="Kamil Brzuszczak — specjalista SEO/GEO i marketingu × AI z Poznania. 8 lat SEO premium e-commerce bez agencji: ×22 fraz w TOP10, ×4,2 kliknięć z Google, 239 cytowań w AI.">
+<meta property="og:image" content="https://kbrz77.pl/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kamil Brzuszczak — frazy w TOP10 Google ×22, kliknięcia ×4,2, 239 cytowań w AI">
+<meta property="profile:first_name" content="Kamil">
+<meta property="profile:last_name" content="Brzuszczak">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://kbrz77.pl/#strona",
+  "url": "https://kbrz77.pl/",
+  "name": "Kamil Brzuszczak — Specjalista SEO/GEO & Marketingu × AI Integrator",
+  "inLanguage": "pl-PL",
+  "dateModified": "2026-10-31",
+  "mainEntity": {
+   "@id": "https://kbrz77.pl/#kamil"
+  }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://kbrz77.pl/#kamil",
+  "name": "Kamil Brzuszczak",
+  "jobTitle": "Specjalista SEO/GEO & Marketingu × AI Integrator",
+  "description": "Od 2018 roku jednoosobowo prowadzi SEO marki premium e-commerce audioplaza.pl. Łączy ekosystem Google (Ads, GA4, GTM, Search Console) z Claude i protokołem MCP.",
+  "url": "https://kbrz77.pl/",
+  "email": "mailto:kamil@kbrz77.pl",
+  "telephone": "+48796579480",
+  "image": "https://kbrz77.pl/og.png",
+  "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Poznań",
+   "addressCountry": "PL"
+  },
+  "alumniOf": {
+   "@type": "CollegeOrUniversity",
+   "name": "Uniwersytet im. Adama Mickiewicza w Poznaniu"
+  },
+  "knowsLanguage": [
+   "pl",
+   "en"
+  ],
+  "knowsAbout": [
+   "SEO techniczne",
+   "Generative Engine Optimization (GEO)",
+   "Answer Engine Optimization (AEO)",
+   "Google AI Overviews",
+   "Local SEO",
+   "Dane strukturalne Schema.org",
+   "Google Ads",
+   "Google Analytics 4",
+   "Google Tag Manager",
+   "Google Search Console",
+   "Google Merchant Center",
+   "Google Business Profile",
+   "Model Context Protocol (MCP)",
+   "Claude / Anthropic API",
+   "RAG",
+   "Automatyzacja marketingu z LLM"
+  ],
+  "sameAs": [
+   "https://www.linkedin.com/in/kamil-brzuszczak"
+  ]
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://kbrz77.pl/#faq",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Czym GEO różni się od klasycznego SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "SEO walczy o pozycję w liście wyników Google. GEO (Generative Engine Optimization) dba o to, by marka była cytowana w odpowiedziach generowanych przez AI — w Google AI Overviews i AI Mode, Perplexity, Gemini czy ChatGPT. W praktyce to wspólny fundament: poprawna indeksacja, dane strukturalne, otwarty dostęp dla botów AI, czytelna encja marki i treści, które jasno odpowiadają na pytania klientów."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Jakie wyniki osiągnąłeś w SEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "W audioplaza.pl, którą prowadzę jednoosobowo od 2018 roku, liczba fraz w TOP10 Google wzrosła z 65 do 1 453 (Ahrefs, 2017 → 2025), a kliknięcia z Google z 49,5 tys. do 208,4 tys. rocznie (Search Console, 2020 → 2025). Po porządkach technicznych w 2026 roku CTR wzrósł o 46% rok do roku, a strona ma 239 cytowań w odpowiedziach AI."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Od czego zaczynasz audyt SEO/GEO?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Od pomiaru i stanu wyjściowego: Search Console, GA4 i cytowania w odpowiedziach AI. Potem diagnoza — indeksacja, mapa witryny, duplikaty, dane strukturalne, dostęp botów AI i encja marki — i plan z celami liczbowymi. Efekty porównuję przed i po, w tych samych oknach czasowych i z kontrolą sezonowości."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Gdzie pracujesz?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Mieszkam w Poznaniu. Pracuję stacjonarnie lub hybrydowo w Poznaniu oraz zdalnie z całą Polską."
+    }
+   }
+  ]
+ }
+]
+</script>
 </head>
 <body>
-    <!-- PREMIUM GLOBAL NAVBAR -->
-    <nav class="nav-bar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <span class="logo-kbd">KB</span>
-                <span class="logo-text">Kamil <span>Brzuszczak</span></span>
-            </a>
-            
-            <!-- Desktop Navigation Menu -->
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active" id="nav-home">Główna</a></li>
-                <li><a href="uslugi.html" class="nav-link" id="nav-uslugi">Usługi</a></li>
-                <li><a href="fractional-cto.html" class="nav-link" id="nav-cto">Fractional CTO</a></li>
-                <li><a href="integracje-ai-automatyzacja.html" class="nav-link" id="nav-ai">Integracje AI</a></li>
-                <li><a href="audyt-agencji.html" class="nav-link" id="nav-audit">Audyt Agencji</a></li>
-            </ul>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="kbrz77.pl — strona główna"><span class="dots"><i></i><i></i><i></i><i></i></span>Kamil Brzuszczak</a>
+    <nav aria-label="Sekcje strony"><ul>
+      <li><a href="#wyniki">Wyniki</a></li>
+      <li><a href="#doswiadczenie">Doświadczenie</a></li>
+      <li><a href="#realizacje">Realizacje</a></li>
+      <li><a href="#kompetencje">Kompetencje</a></li>
+      <li><a href="#wspolpraca">Współpraca</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul></nav>
+    <a class="btn btn-primary" href="cv/Kamil_Brzuszczak_CV_SEO-GEO_2026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CV (PDF)</a>
+  </div>
+</header>
 
-            <!-- Controls (Theme & Mobile Toggle) -->
-            <div class="nav-controls">
-                
-                <a href="en/index.html" class="btn-control print-hide" title="English version">EN</a>
-                <button onclick="window.print()" class="btn-control print-hide" title="Zapisz do PDF / Drukuj">
-                    <i class="fa-solid fa-print"></i>
-                </button>
-                <button class="btn-mobile-toggle" aria-label="Otwórz menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
-            </div>
-        </div>
-        
-        <!-- Mobile Dropdown Drawer -->
-        <div class="nav-mobile-drawer">
-            <ul>
-                <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Główna</a></li>
-                <li><a href="uslugi.html" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Usługi</a></li>
-                <li><a href="fractional-cto.html" class="mobile-nav-link"><i class="fa-solid fa-user-gear"></i> Fractional CTO</a></li>
-                <li><a href="integracje-ai-automatyzacja.html" class="mobile-nav-link"><i class="fa-solid fa-robot"></i> Integracje AI</a></li>
-                <li><a href="audyt-agencji.html" class="mobile-nav-link"><i class="fa-solid fa-gauge-high"></i> Audyt Agencji</a></li>
-                <li><a href="en/index.html" class="mobile-nav-link"><i class="fa-solid fa-globe"></i> English (EN)</a></li>
-            </ul>
-        </div>
-    </nav>
+<main id="tresc">
+<section class="hero" aria-labelledby="kto">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span class="dots"><i></i><i></i><i></i><i></i></span>SEO · GEO · Marketing · AI</div>
+      <h1 id="kto">Kamil Brzuszczak</h1>
+      <p class="role">Specjalista <span class="seo nw">SEO/GEO &amp; Marketingu</span> <span class="nw ai-line"><span class="x">×</span><span class="ai">AI Integrator</span></span></p>
+      <p class="lead"><em>8 lat samodzielnie prowadzę SEO marki premium <span class="nw">e-commerce</span> — bez agencji, z mierzalnym efektem.</em> Łączę ekosystem Google z Claude i protokołem MCP, by marka wygrywała w Google i w odpowiedziach AI.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="cv/Kamil_Brzuszczak_CV_SEO-GEO_2026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Pobierz CV (PDF)</a>
+        <a class="btn btn-ghost" href="mailto:kamil@kbrz77.pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>kamil@kbrz77.pl</a>
+      </div>
+      <ul class="contact-line">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.7-7-11a7 7 0 0 1 14 0c0 5.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Poznań / zdalnie</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:kamil@kbrz77.pl">kamil@kbrz77.pl</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+48796579480">+48 796 579 480</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/kamil-brzuszczak" rel="me noopener">linkedin.com/in/kamil-brzuszczak</a></li>
+      </ul>
+    </div>
+    <figure class="card chart" style="margin:0">
+      <div class="chart-hd">
+        <div><h2>Frazy audioplaza.pl w TOP10 Google</h2><small>średnio w roku · Ahrefs, trend potwierdzony w Search Console</small></div>
+        <div class="big">×22<small>2017 → 2025</small></div>
+      </div>
+      <svg class="bars bars-520" viewBox="0 0 520 200" role="img" aria-label="Średnia roczna liczba fraz audioplaza.pl w TOP10 Google: 2016 – 65, 2017 – 65, 2018 – 122, 2019 – 182, 2020 – 196, 2021 – 331, 2022 – 693, 2023 – 1151, 2024 – 1422, 2025 – 1453 (Ahrefs)."><defs><linearGradient id="g520" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#4285F4"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs><rect x="14.3" y="171.7" width="31.0" height="6.3" rx="3" class="pre"/><text class="val" x="29.8" y="165.7" font-size="12" text-anchor="middle">65</text><text class="yr" x="29.8" y="196" font-size="11.5" text-anchor="middle">2016</text><rect x="65.9" y="171.7" width="31.0" height="6.3" rx="3" class="pre"/><text class="val" x="81.4" y="165.7" font-size="12" text-anchor="middle">65</text><text class="yr" x="81.4" y="196" font-size="11.5" text-anchor="middle">2017</text><rect x="117.5" y="166.1" width="31.0" height="11.9" rx="3" fill="url(#g520)"/><text class="val" x="133.0" y="160.1" font-size="12" text-anchor="middle">122</text><text class="yr" x="133.0" y="196" font-size="11.5" text-anchor="middle">2018</text><rect x="169.1" y="160.2" width="31.0" height="17.8" rx="3" fill="url(#g520)"/><text class="val" x="184.6" y="154.2" font-size="12" text-anchor="middle">182</text><text class="yr" x="184.6" y="196" font-size="11.5" text-anchor="middle">2019</text><rect x="220.7" y="158.9" width="31.0" height="19.1" rx="3" fill="url(#g520)"/><text class="val" x="236.2" y="152.9" font-size="12" text-anchor="middle">196</text><text class="yr" x="236.2" y="196" font-size="11.5" text-anchor="middle">2020</text><rect x="272.3" y="145.7" width="31.0" height="32.3" rx="3" fill="url(#g520)"/><text class="val" x="287.8" y="139.7" font-size="12" text-anchor="middle">331</text><text class="yr" x="287.8" y="196" font-size="11.5" text-anchor="middle">2021</text><rect x="323.9" y="110.4" width="31.0" height="67.6" rx="3" fill="url(#g520)"/><text class="val" x="339.4" y="104.4" font-size="12" text-anchor="middle">693</text><text class="yr" x="339.4" y="196" font-size="11.5" text-anchor="middle">2022</text><rect x="375.5" y="65.7" width="31.0" height="112.3" rx="3" fill="url(#g520)"/><text class="val" x="391.0" y="59.7" font-size="12" text-anchor="middle">1 151</text><text class="yr" x="391.0" y="196" font-size="11.5" text-anchor="middle">2023</text><rect x="427.1" y="39.2" width="31.0" height="138.8" rx="3" fill="url(#g520)"/><text class="val" x="442.6" y="33.2" font-size="12" text-anchor="middle">1 422</text><text class="yr" x="442.6" y="196" font-size="11.5" text-anchor="middle">2024</text><rect x="478.7" y="36.2" width="31.0" height="141.8" rx="3" fill="url(#g520)"/><text class="val" x="494.2" y="30.2" font-size="12" text-anchor="middle">1 453</text><text class="yr" x="494.2" y="196" font-size="11.5" text-anchor="middle">2025</text><line class="mark" x1="106.2" y1="8" x2="106.2" y2="178" stroke-width="1.4" stroke-dasharray="4 3"/><text class="marktxt" x="112.2" y="18" font-size="12">przejmuję SEO (2018)</text></svg>
+    </figure>
+  </div>
+</section>
 
-    <!-- Matrix Rain Background Canvas -->
-    <canvas id="matrix-bg"></canvas>
+<section id="wyniki" aria-label="Wyniki w liczbach" style="padding-bottom:24px">
+  <div class="wrap">
+    <div class="stats">
+      <div class="card stat" style="--c:var(--green)"><div class="v">×4,2</div><div class="l">kliknięć z Google rocznie<br>49,5 tys. → 208 tys.</div><div class="s">2020 → 2025 · Search Console</div></div>
+      <div class="card stat" style="--c:var(--amber)"><div class="v">+46%</div><div class="l">CTR rok do roku po porządkach technicznych</div><div class="s">X 2026 vs X 2025 · Search Console</div></div>
+      <div class="card stat" style="--c:var(--red)"><div class="v">671</div><div class="l">opinii Google, średnia 4,8 — dwa salony</div><div class="s">X 2026 · Profil Firmy w Google</div></div>
+      <div class="card stat" style="--c:var(--purple)"><div class="v">239</div><div class="l">cytowań strony w odpowiedziach AI</div><div class="s">X 2026 · Ahrefs</div></div>
+    </div>
+    <p class="srcnote">Wszystkie liczby pochodzą z Google Search Console, Profilu Firmy w Google i Ahrefs — raport dowodowy z pełnymi danymi dostępny na życzenie.</p>
+  </div>
+</section>
 
-<div class="container">
+<section class="block" id="profil" aria-labelledby="h-profil">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Profil zawodowy</div><h2 id="h-profil">SEO, marketing i AI jako jeden system</h2></div>
+    <div class="profile">
+      <p>Od 2018 roku jednoosobowo odpowiadam za widoczność i konwersję premium marki <span class="nw">e-commerce</span> w pełnym ekosystemie Google: SEO techniczne i content, Local SEO, Google Ads i Merchant Center oraz pomiar w GTM, GA4 i Search Console. Traktuję te kanały jako jeden system, w którym dane z każdego zasilają decyzje w pozostałych.</p>
+      <p>Od dwóch lat dokładam do tego warsztat AI: integracje oparte o Model Context Protocol (MCP) i Claude/Anthropic API, które łączą dane z Google Ads, GA4 i GSC z modelami językowymi — automatyzując audyty SEO, analizę konkurencji i raportowanie. Wyszukiwanie przestaje być listą linków, dlatego optymalizuję markę równolegle pod klasyczny ranking i pod cytowania w Google AI Overviews, AI Mode, Perplexity i Gemini (GEO / AEO).</p>
+    </div>
+  </div>
+</section>
 
-    <!-- HERO HEADER -->
-    <header>
-        <div class="header-title">
-            <h1>Kamil <span>Brzuszczak</span> <span class="h1-sub">AI Engineer & Integrator AI (MCP)</span></h1>
-        </div>
-        <div class="contact-grid">
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <strong>Telefon</strong>
-                <a href="tel:+48796579480" onclick="copyValue('+48 796 579 480', this.closest('.contact-item'))" title="Kliknij, aby skopiować">+48 796 579 480</a>
-                <span class="contact-tooltip">Skopiowano!</span>
-            </div>
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <strong>E-mail</strong>
-                <a href="mailto:kbrz77@proton.me" onclick="copyValue('kbrz77@proton.me', this.closest('.contact-item'))" title="Kliknij, aby skopiować">kbrz77@proton.me</a>
-                <span class="contact-tooltip">Skopiowano!</span>
-            </div>
-            <div class="contact-item">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <strong>Obszar</strong>
-                <span>Poznań / Cała Polska (Zdalnie)</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- STRATEGIC VALUE PROPOSITION -->
-    <div class="hook-container">
-        <p>
-            <strong>Projektuję i wdrażam integracje AI, które realnie pracują w biznesie</strong> – agentowe automatyzacje oparte o protokół MCP, własne bramy AI (OpenClaw AI Gateway) oraz systemy RAG podłączone do wiedzy firmy, a nie kolejny chatbot-zabawka.
-            Tę samą dokładność stosuję jako CTO w Polsce (Fractional CTO): audytuję agencje marketingowe (SEO/Ads), które przepalają budżety bez efektów, i biorę odpowiedzialność za infrastrukturę IT tam, gdzie potrzebna jest realna kontrola, nie kolejny raport.
-        </p>
+<section class="block alt" id="doswiadczenie" aria-labelledby="h-dosw">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Doświadczenie zawodowe</div><h2 id="h-dosw">Od salonu do wyników w Google i AI</h2></div>
+    <div class="company">
+      <span class="logo"><img src="logo-audioplaza.png" alt="audioplaza.pl" width="420" height="66"></span>
+      <div class="meta"><b>czołowa polska marka <span class="nw">e-commerce</span> w segmencie premium (Hi-Fi / High-End Audio)</b><span>2015 – obecnie · Poznań / Wrocław</span></div>
     </div>
 
-    <!-- MAIN TWO-COLUMN LAYOUT -->
-    <div class="layout-grid">
-        
-        <!-- LEFT COLUMN: ARCHITECTURE AND EXPERIENCE -->
-        <main>
-            <!-- DOŚWIADCZENIE BIZNESOWE -->
-            <section>
-                <h2>Doświadczenie Biznesowe & Operacyjne</h2>
-                <div class="timeline">
+    <article class="job" style="--c:var(--blue)">
+      <h3>Marketing Lead, SEO &amp; Widoczność E-commerce<small>od 2018</small></h3>
+      <ul>
+        <li><b>Wzrost organiczny:</b> frazy w TOP10 Google z <span class="num">65 do 1 453</span>, w TOP3 z <span class="num">39 do 493</span> (Ahrefs, 2017 → 2025); kliknięcia z Google z <span class="num">49,5 tys. do 208,4 tys.</span> rocznie (Search Console, 2020 → 2025).</li>
+        <li><b>SEO techniczne 2026:</b> diagnoza spadku w Search Console i porządki — mapa witryny z <span class="num">42 614 do ok. 12 tys.</span> adresów, nowy robots.txt. Efekt r/r: CTR <span class="num">2,65% → 3,86%</span> przy utrzymanym ruchu, śr. pozycja na komputerach <span class="num">12,8 → 8,5</span>; „wzmacniacz stereo” 24,4 → 4,7, „odtwarzacz cd” 17,7 → 5,2.</li>
+        <li><b>Local SEO:</b> dwa Profile Firmy w Google — <span class="num">671 opinii, średnia 4,8</span>, ok. 489 z nich za mojej opieki (od 2019); salon w Poznaniu ma najwięcej opinii spośród 12 salonów hi-fi w Poznaniu i Wrocławiu.</li>
+        <li><b>GEO:</b> <span class="num">239 cytowań</span> w odpowiedziach AI (AI Mode, AI Overviews, Perplexity, Gemini, Copilot); otwarty dostęp dla botów AI, dane strukturalne produktów (cena, dostępność, opinie) i dane lokalne salonów.</li>
+        <li><b>Google Ads i pomiar:</b> wykryłem ok. <span class="num">17-krotnie zawyżone konwersje</span> (mikrokonwersje liczone jak zakupy, zdublowany import z GA4) i oparłem kampanie na jednym sygnale zakupu; nowe kampanie Search z trendów marek w GA4.</li>
+      </ul>
+    </article>
+    <article class="job" style="--c:var(--green)">
+      <h3>Doradca Klienta / Sprzedaż Bezpośrednia<small>od 2015</small></h3>
+      <ul>
+        <li>Sprzedaż i konfiguracja systemów stereo klasy premium — fundament wiedzy o ścieżce klienta w <span class="nw">e-commerce</span> premium.</li>
+        <li>Odpowiedzialność za otwarcie i rozwój nowego salonu (Wrocław): aspekty marketingowe, rekrutacyjne i szkoleniowe zespołu.</li>
+      </ul>
+    </article>
+    <article class="job" style="--c:var(--brown)">
+      <h3>Kluczowi Klienci B2B<small>od 2021</small></h3>
+      <ul>
+        <li>Długofalowe relacje z klientami w segmencie premium, doradztwo techniczne, wycena projektów i negocjacje kontraktów o dużej wartości.</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-                    <!-- ROLE AT AUDIOPLAZA -->
-                    <div class="timeline-block">
-                        <div class="time-badge">2015 - OBECNIE</div>
-                        <div class="company-name">
-                            <img src="logo-audioplaza.png" alt="audioplaza.pl" loading="lazy" decoding="async" class="company-logo company-logo-featured">
-                        </div>
-                        <p class="timeline-lead">Ponad dekada współtworzenia sukcesu rynkowego jednej z czołowych marek premium e-commerce w Polsce. Ewolucja od zaawansowanych strategii marketingowych opartych na danych Google do pełnej odpowiedzialności za technologię.</p>
-
-                        <div class="sub-roles">
-                            <div class="sub-role-item">
-                                <div class="sub-role-date">Od 01.2026</div>
-                                <div class="sub-role-header">Chief Technology Officer (CTO)</div>
-                                <div class="sub-role-desc">Nadzór nad całością architektury technologicznej przedsiębiorstwa. Zarządzanie infrastrukturą serwerową, bezpieczeństwem sieci, optymalizacją baz danych oraz wdrożeniami nowoczesnych systemów telekomunikacyjnych VoIP (3CX / SIP Trunking). Projektowanie i integracja wewnętrznych systemów automatyzacji operacji i przepływu danych z użyciem Google API oraz narzędzi AI.</div>
-                                <div class="tech-logo-row" style="margin-top: 8px;">
-                                    <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Docker"></span>
-                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg');" title="Google API"></span>
-                                    <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg');" title="3CX VoIP"></span>
-                                    <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Python Backend"></span>
-                                </div>
-                            </div>
-                            <div class="sub-role-item">
-                                <div class="sub-role-date">Od 2021</div>
-                                <div class="sub-role-header">Specjalista ds. Kluczowych Klientów (B2B / VIP)</div>
-                                <div class="sub-role-desc">Budowanie i utrzymywanie długofalowych relacji biznesowych z najbardziej wymagającymi klientami w segmencie premium. Doradztwo techniczne i technologiczne, negocjacje kontraktów o wysokiej wartości.</div>
-                            </div>
-                            <div class="sub-role-item">
-                                <div class="sub-role-date">Od 2018</div>
-                                <div class="sub-role-header">Kreator Marketingu, SEO & E-commerce Visibility</div>
-                                <div class="sub-role-desc">Odpowiedzialność za strategiczną widoczność sklepu internetowego w wyszukiwarkach. Kompleksowe zarządzanie ekosystemem Google (Ads, Merchant Center, profil Google Moja Firma). Architektura analityki konwersji i śledzenia ruchu w oparciu o Google Tag Manager, Analytics oraz Search Console w celu maksymalizacji ROI.</div>
-                                <div class="tech-logo-row" style="margin-top: 8px;">
-                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg');" title="Google Ads"></span>
-                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg');" title="Google Analytics"></span>
-                                    <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg');" title="Google Tag Manager"></span>
-                                </div>
-                            </div>
-                            <div class="sub-role-item">
-                                <div class="sub-role-date">2015 - 2018</div>
-                                <div class="sub-role-header">Doradca Klienta (Direct Sales), Specjalista Hi-Fi & High-End Audio</div>
-                                <div class="sub-role-desc">Bezpośrednie doradztwo i sprzedaż w segmencie elektroniki premium. Specjalizacja w doborze i konfiguracji zaawansowanych systemów stereo oraz kina domowego klasy High-End. Budowanie bazy wiedzy o produktach audio premium.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FRACTIONAL CTO ROLE -->
-                    <div class="timeline-block">
-                        <div class="time-badge">2025 - OBECNIE</div>
-                        <div class="role-title">AI Engineer & Integrator AI (MCP)</div>
-                        <div class="company-name">
-                            <i class="fa-solid fa-user-gear" style="color: var(--cyan); margin-right: 6px;"></i>
-                            <span>Działalność Doradcza i Wdrożeniowa dla Sektora MŚP</span>
-                        </div>
-                        <p>Dostarczanie kompetencji Dyrektora Technologicznego na żądanie. Tworzenie i wdrażanie lokalnych bram AI (OpenClaw AI Gateway), konfiguracja ekosystemów opartych o standardy MCP oraz dostarczanie dedykowanych automatyzacji, które realnie eliminują zbędne koszty etatów biurowych.</p>
-                        <div class="tech-logo-row">
-                            <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg');" title="OpenAI API"></span>
-                            <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="Claude Code & Anthropic API"></span>
-                            <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Docker Containerization"></span>
-                            <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Python FastAPI"></span>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section>
-                <h2>Przykładowe obszary moich działań</h2>
-
-                <div class="card">
-                    <h3><i class="fa-solid fa-magnifying-glass-chart"></i> Audyt Agencji SEO i Google Ads – Stop Przepalaniu Budżetów</h3>
-                    <p>Większość małych firm płaci abonamenty agencjom za generowanie generycznych raportów. Ja to zmieniam:</p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Przejmuję nadzór nad Twoimi kontami Google Ads i Merchant Center – optymalizuję budżety i eliminuję przepalanie stawek.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Weryfikuję realne efekty pracy zewnętrznych firm za pomocą zaawansowanej analityki (Google Analytics 4, Tag Manager, Search Console) – koniec z pozorowanymi działaniami.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Wdrażam nowoczesną automatyzację contentu SEO i struktur słów kluczowych w oparciu o modele LLM oraz analizę trendów rynkowych.
-                        </li>
-                    </ul>
-                    <a href="audyt-agencji.html" class="btn-more">Więcej o audycie agencji SEO i Google Ads <i class="fa-solid fa-arrow-right"></i></a>
-                    
-                    <!-- Integrated Tech Logos for SEO/Ads Card -->
-                    <div class="tech-logo-row">
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg');" title="Google Ads"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg');" title="Google Analytics"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg');" title="Google Tag Manager"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg');" title="Google Search Console & Merchant Center"></span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3><i class="fa-solid fa-robot"></i> Integracje AI i Automatyzacja Biura (Automatyk AI)</h3>
-                    <p>Jako automatyk AI buduję gotowe, autonomiczne systemy dopasowane do Twoich pracowników, nie do korporacji:</p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Automatyczny Lead Management:</strong> Natychmiastowa klasyfikacja zapytań ofertowych (np. z portali nieruchomości) i automatyczne generowanie spersonalizowanych ofert w kilka minut przy użyciu Google API i modeli LLM.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Wewnętrzne bazy wiedzy (RAG):</strong> Przekształcam umowy deweloperskie, regulaminy i procedury w inteligentny system, w którym pracownik dostaje odpowiedź w 3 sekundy.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            <strong>Agenci AI i automatyzacja wieloetapowa:</strong> Projektuję przepływy, w których agent AI samodzielnie odczytuje maila, pobiera dane z CRM/ERP i generuje gotowy dokument – bez ręcznego przepisywania danych między systemami.
-                        </li>
-                    </ul>
-                    <a href="integracje-ai-automatyzacja.html" class="btn-more">Więcej o integracjach AI i automatyzacji <i class="fa-solid fa-arrow-right"></i></a>
-                    
-                    <!-- Integrated Tech Logos for AI Card -->
-                    <div class="tech-logo-row">
-                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg');" title="OpenAI API"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="Claude / Anthropic API"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg');" title="Google API"></span>
-                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Python 3"></span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3><i class="fa-solid fa-user-gear"></i> CTO Polska – Dyrektor Technologiczny na godziny dla MŚP & Startupów</h3>
-                    <p>Jako CTO w Polsce zapewniam strategiczne wsparcie technologiczne i kontrolę infrastruktury IT zdalnie dla firm z całego kraju, bez kosztów pełnego etatu:</p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Zarządzanie architekturą systemową, migracje do chmury i konteneryzacja aplikacji (Docker).
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Wdrożenia stabilnych systemów komunikacji VoIP (3CX) zintegrowanych z analityką i CRM.
-                        </li>
-                    </ul>
-                    <a href="fractional-cto.html" class="btn-more">Więcej o usłudze Fractional CTO <i class="fa-solid fa-arrow-right"></i></a>
-                    
-                    <!-- Integrated Tech Logos for Infra Card -->
-                    <div class="tech-logo-row">
-                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Docker"></span>
-                        <span class="tech-logo-item logo-linux" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg');" title="Zorin OS / Linux"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg');" title="3CX VoIP System"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/raspberrypi.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/raspberrypi.svg');" title="Raspberry Pi Hardware"></span>
-                    </div>
-                </div>
-
-                <p style="text-align: center; margin-top: 10px;">
-                    <a href="uslugi.html" class="btn-more">Zobacz wszystkie usługi – konsulting technologiczny i doradztwo IT dla MŚP <i class="fa-solid fa-arrow-right"></i></a>
-                </p>
-            </section>
-
-        </main>
-
-        <!-- RIGHT COLUMN: SKILLS, WARSZTAT, EDU -->
-        <aside>
-            <section>
-                <h2>Mój Warsztat Technologiczny</h2>
-                
-                <div class="aside-box" style="padding: 24px;">
-                    <div class="tech-category">
-                        <h4 class="google-cat">Ekosystem Analityczno-Reklamowy Google</h4>
-                        <div class="badge-container">
-                            <span class="badge google-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleads.svg');"></span>
-                                Google Ads
-                            </span>
-                            <span class="badge google-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg');"></span>
-                                Google Analytics (GA4)
-                            </span>
-                            <span class="badge google-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googletagmanager.svg');"></span>
-                                Google Tag Manager
-                            </span>
-                            <span class="badge google-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg');"></span>
-                                Google Search Console
-                            </span>
-                            <span class="badge google-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg');"></span>
-                                Google Merchant Center
-                            </span>
-                            <span class="badge google-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlemaps.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlemaps.svg');"></span>
-                                Google Moja Firma
-                            </span>
-                            <span class="badge google-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlecloud.svg');"></span>
-                                Google API
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="tech-category">
-                        <h4 class="ai-cat">Sztuczna Inteligencja</h4>
-                        <div class="badge-container">
-                            <span class="badge ai-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg');"></span>
-                                OpenAI API
-                            </span>
-                            <span class="badge ai-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');"></span>
-                                Claude Code
-                            </span>
-                            <span class="badge ai-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opentelemetry.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opentelemetry.svg');"></span>
-                                OpenClaw
-                            </span>
-                            <span class="badge ai-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/json.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/json.svg');"></span>
-                                FastMCP
-                            </span>
-                            <span class="badge ai-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/databricks.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/databricks.svg');"></span>
-                                RAG
-                            </span>
-                            <span class="badge ai-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/target.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/target.svg');"></span>
-                                AI Agents
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="tech-category">
-                        <h4 class="it-cat">Inżynieria Oprogramowania & IT</h4>
-                        <div class="badge-container">
-                            <span class="badge it-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visualstudio.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visualstudio.svg');"></span>
-                                Visual Studio
-                            </span>
-                            <span class="badge it-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg');"></span>
-                                GitHub / Git
-                            </span>
-                            <span class="badge it-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dependabot.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dependabot.svg');"></span>
-                                Antigravity
-                            </span>
-                            <span class="badge it-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');"></span>
-                                Python 3.13
-                            </span>
-                            <span class="badge it-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');"></span>
-                                Docker
-                            </span>
-                            <span class="badge it-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg');"></span>
-                                Linux (Zorin OS)
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="tech-category">
-                        <h4 class="telecom-cat">Infrastruktura & Telekomunikacja</h4>
-                        <div class="badge-container">
-                            <span class="badge telecom-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/webex.svg');"></span>
-                                3CX VoIP
-                            </span>
-                            <span class="badge telecom-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twilio.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twilio.svg');"></span>
-                                SIP Trunking
-                            </span>
-                            <span class="badge telecom-badge">
-                                <span class="badge-icon" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/raspberrypi.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/raspberrypi.svg');"></span>
-                                Raspberry Pi Hardware
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>Dlaczego ten profil Cię urządza?</h2>
-                <div class="aside-box">
-                    <p>
-                        Mój stos technologiczny nie wynika z teorii, ale z ponad dekady budowania marki <strong>audioplaza.pl</strong> krok po kroku – od pozycjonowania i optymalizacji budżetów <strong>Google Ads</strong>, przez zarządzanie e-commerce, po pełną inżynierię oprogramowania.
-                        <br><br>
-                        Dzięki wykształceniu dziennikarskiemu tłumaczę skomplikowane pojęcia IT na prosty język korzyści biznesowych. Doskonale wiem, jak działają lejki sprzedażowe, dlatego zamiast pisać kod dla samego kodowania, **spinam marketing z możliwościami sztucznej inteligencji (AI)**.
-                        <br><br>
-                        Korzystając z architektur agentowych i nowoczesnych LLM (<strong>Claude Code, OpenAI API, Antigravity</strong>), wdrażam gotowe systemy i automatyzacje biurowe <strong>w kilka dni, a nie miesięcy</strong>. Otrzymujesz rozwiązania, które bezpośrednio wspierają konwersję i generują zyski.
-                    </p>
-                    <p style="margin-top: 16px;">
-                        <a href="o-mnie.html" class="btn-more">Poznaj moją historię – o mnie <i class="fa-solid fa-arrow-right"></i></a>
-                    </p>
-                    <div class="tech-logo-row" style="margin-top: 15px; justify-content: flex-end;">
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg');" title="Google Search Console"></span>
-                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/openai.svg');" title="OpenAI"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="Claude / Anthropic"></span>
-                        <span class="tech-logo-item logo-github" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg');" title="GitHub"></span>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>Wykształcenie & Edukacja</h2>
-                <div class="aside-box">
-                    <!-- Wykształcenie 1 -->
-                    <div class="edu-item">
-                        <div class="edu-school">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <span>Uniwersytet im. Adama Mickiewicza w Poznaniu</span>
-                        </div>
-                        <div class="edu-degree">Licencjat: Dziennikarstwo i Komunikacja Społeczna (2012)</div>
-                        <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">
-                            Wykształcenie dające potężną przewagę nad typowymi inżynierami. Gwarantuje unikalną zdolność precyzyjnego przekładania skomplikowanych pojęć IT na zrozumiały język biznesowych korzyści dla Zarządu oraz doskonałe kompetencje negocjacyjne.
-                        </p>
-                    </div>
-                    
-                    <!-- Wykształcenie 2 (Filologia czeska) -->
-                    <div class="edu-item">
-                        <div class="edu-school">
-                            <i class="fa-solid fa-language"></i>
-                            <span>Uniwersytet im. Adama Mickiewicza w Poznaniu</span>
-                        </div>
-                        <div class="edu-degree">Studia uzupełniające: Filologia czeska</div>
-                        <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">
-                            <strong>Ahoj!</strong> Unikalny, lingwistyczny icebreaker w relacjach biznesowych (zwłaszcza z partnerami z Europy Środkowej). Kształtuje nieszablonowe myślenie i dystans – czeskie podejście do rozwiązywania problemów: <em>„to se vysvětlí”</em> ułatwia zachowanie spokoju w kryzysowych momentach technicznych.
-                        </p>
-                    </div>
-
-                    <!-- Wykształcenie 3 (Filmoznawstwo) -->
-                    <div class="edu-item">
-                        <div class="edu-school">
-                            <i class="fa-solid fa-film"></i>
-                            <span>Uniwersytet im. Adama Mickiewicza w Poznaniu</span>
-                        </div>
-                        <div class="edu-degree">Studia uzupełniające: Filmoznawstwo</div>
-                        <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">
-                            Trening <strong>analitycznego myślenia, kompozycji i narracji</strong>. W świecie technologii ułatwia budowanie spójnych architektur systemowych – projektowanie systemów to jak reżyseria, gdzie każda linia kodu musi wspierać główny cel biznesowy.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-        
-        </aside>
+<section class="block" id="case-study" aria-labelledby="h-case">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Case study · audioplaza.pl</div><h2 id="h-case">Od stagnacji do stałego wzrostu widoczności</h2>
+      <p>W latach 2016–2017 widoczność stała w miejscu: ok. 65 fraz w TOP10. Od przejęcia SEO w 2018 roku rośnie co roku — w Google i w odpowiedziach AI.</p></div>
+    <div class="case">
+      <div class="card case-wide">
+        <div>
+          <span class="tag" style="--c:var(--green)">Ruch z Google</span>
+          <h3>×4,2 kliknięć w pięć lat</h3>
+          <p>Search Console przechowuje dane tylko przez 16 miesięcy, więc zebrałem 79 miesięcznych raportów Google (XII 2019 – IX 2026) w jedną serię. To dane bezpośrednio od Google, nie szacunki narzędzi. Branża ma silny szczyt w listopadzie–styczniu, a każdy kolejny szczyt jest wyższy od poprzedniego.</p>
+        </div>
+        <figure style="margin:0"><svg class="bars bars-460" viewBox="0 0 460 190" role="img" aria-label="Kliknięcia z wyszukiwarki Google rocznie: 2020 – 49,5 tys., 2021 – 76 tys., 2022 – 86 tys., 2023 – 135 tys., 2024 – 182 tys., 2025 – 208,4 tys. (Google Search Console)."><defs><linearGradient id="g460" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#4285F4"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs><rect x="19.2" y="136.5" width="45.6" height="31.5" rx="3" fill="url(#g460)"/><text class="val" x="42.0" y="130.5" font-size="12" text-anchor="middle">49,5 tys.</text><text class="yr" x="42.0" y="186" font-size="11.5" text-anchor="middle">2020</text><rect x="95.2" y="119.6" width="45.6" height="48.4" rx="3" fill="url(#g460)"/><text class="val" x="118.0" y="113.6" font-size="12" text-anchor="middle">76 tys.</text><text class="yr" x="118.0" y="186" font-size="11.5" text-anchor="middle">2021</text><rect x="171.2" y="113.2" width="45.6" height="54.8" rx="3" fill="url(#g460)"/><text class="val" x="194.0" y="107.2" font-size="12" text-anchor="middle">86 tys.</text><text class="yr" x="194.0" y="186" font-size="11.5" text-anchor="middle">2022</text><rect x="247.2" y="82.0" width="45.6" height="86.0" rx="3" fill="url(#g460)"/><text class="val" x="270.0" y="76.0" font-size="12" text-anchor="middle">135 tys.</text><text class="yr" x="270.0" y="186" font-size="11.5" text-anchor="middle">2023</text><rect x="323.2" y="52.1" width="45.6" height="115.9" rx="3" fill="url(#g460)"/><text class="val" x="346.0" y="46.1" font-size="12" text-anchor="middle">182 tys.</text><text class="yr" x="346.0" y="186" font-size="11.5" text-anchor="middle">2024</text><rect x="399.2" y="35.3" width="45.6" height="132.7" rx="3" fill="url(#g460)"/><text class="val" x="422.0" y="29.3" font-size="12" text-anchor="middle">208,4 tys.</text><text class="yr" x="422.0" y="186" font-size="11.5" text-anchor="middle">2025</text></svg><figcaption class="sr-only">Kliknięcia z Google rocznie, 2020–2025</figcaption></figure>
+      </div>
+      <div class="card" style="--c:var(--amber)">
+        <span class="tag" style="--c:var(--amber)">SEO techniczne · 2026</span>
+        <h3>Mniej pustych wyświetleń, więcej kliknięć</h3>
+        <p>Google pokazywał tysiące zbędnych adresów: duplikaty kart produktów i stare warianty linków. 14.07.2026 uporządkowałem mapę witryny i robots.txt.</p>
+        <table class="ba"><caption class="sr-only">Efekt porządków, październik 2026 vs październik 2025</caption>
+          <tr><th scope="row">Adresy w mapie witryny</th><td>42 614</td><td class="after">ok. 12 tys.</td></tr>
+          <tr><th scope="row">CTR z Google</th><td>2,65%</td><td class="after">3,86%</td></tr>
+          <tr><th scope="row">Śr. pozycja (komputery)</th><td>12,8</td><td class="after">8,5</td></tr>
+          <tr><th scope="row">Kliknięcia r/r</th><td colspan="2" class="after">bez zmian</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <span class="tag" style="--c:var(--red)">Local SEO · od 2019</span>
+        <h3>Salon z największą liczbą opinii</h3>
+        <p>Dwa Profile Firmy w Google: <b>671 opinii ze średnią 4,8</b>, z czego ok. 489 przybyło za mojej opieki. Salon w Poznaniu ma najwięcej opinii spośród 12 salonów hi-fi w Poznaniu i Wrocławiu.</p>
+      </div>
+      <div class="card">
+        <span class="tag" style="--c:var(--purple)">GEO · wyszukiwanie AI</span>
+        <h3>239 cytowań w odpowiedziach AI</h3>
+        <p>Strona jest cytowana w Google AI Mode, AI Overviews, Perplexity, Gemini i Copilot. Fundament: otwarty dostęp dla botów AI (GPTBot, ClaudeBot, PerplexityBot), dane strukturalne produktów i dane lokalne salonów.</p>
+      </div>
     </div>
+    <p class="method">Metodologia: kliknięcia i CTR — Google Search Console; opinie — Profil Firmy w Google; frazy w TOP3/TOP10 i cytowania AI — Ahrefs (szacunki narzędzia, których trend zweryfikowałem na danych Google: korelacja 0,95 na 79 miesiącach). Efekty porządków porównuję rok do roku, w tych samych tygodniach.</p>
+  </div>
+</section>
 
-    <!-- EXAMPLES OF DEPLOYMENTS (PRZYKŁADY WDROŻEŃ AI/IT) -->
-    <section class="deploy-section-full">
-        <h2>Przykłady wdrożeń AI/IT</h2>
-        
-        <!-- Tabs Navigation -->
-        <div class="deploy-tabs">
-            <button class="deploy-tab deploy-tab-it active" onclick="switchTabIT(0)">
-                <i class="fa-solid fa-robot"></i> SEO aIdeas
-            </button>
-            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(1)">
-                <i class="fa-solid fa-chart-line"></i> Stock analyzer
-            </button>
-            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(2)">
-                <i class="fa-solid fa-server"></i> KsEF InterGracja
-            </button>
-            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(3)">
-                <i class="fa-solid fa-file-invoice"></i> Offer Maker
-            </button>
-            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(4)">
-                <i class="fa-solid fa-cubes"></i> Web Tools Portal
-            </button>
-            <button class="deploy-tab deploy-tab-it" onclick="switchTabIT(5)">
-                <i class="fa-solid fa-cash-register"></i> Integrator Kasowy
-            </button>
-        </div>
+<section class="block alt" id="realizacje" aria-labelledby="h-real">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Wybrane realizacje</div><h2 id="h-real">AI × SEO w praktyce</h2>
+      <p>Narzędzia, które buduję, gdy gotowe rozwiązania nie wystarczają — każde rozwiązuje konkretny problem w pracy SEO i marketingu.</p></div>
+    <div class="proj">
+      <article class="card pc" style="--c:var(--purple)">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 13v1M15 13v1M9 17h6"/></svg>Wieloagentowy pipeline opisów produktów</h3>
+        <p>Trzy agenty Claude dla katalogu audioplaza.pl: klasyfikator (Sonnet) → copywriter SEO (Opus) → recenzent jakości (Opus). Kontrakt JSON, ponawianie błędów i osobne reguły dla kategorii produktów.</p>
+        <p class="res">Standard jakości opisów pilnowany przez agenta-recenzenta</p>
+      </article>
+      <article class="card pc" style="--c:var(--blue)">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0zM12 17v5"/></svg>Audyt SEO przez MCP</h3>
+        <p>Dane z Search Console podpięte do Claude przez MCP (serwer GSC, Windsor.ai): analiza indeksacji, duplikatów i mapy witryny w rozmowie z modelem zamiast ręcznych eksportów.</p>
+        <p class="res">Z tej diagnozy wyszły porządki 2026 i CTR +46% r/r</p>
+      </article>
+      <article class="card pc" style="--c:var(--green)">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg>Monitoring pozycji i konkurencji</h3>
+        <p>Własny tracker w Pythonie (Serper.dev) dla fraz hi-fi i marek z oferty: pozycje audioplaza.pl na tle konkurencji i wykrywanie luk treściowych.</p>
+        <p class="res">Np. wykryta luka na frazach producenta Nagaoka</p>
+      </article>
+      <article class="card pc" style="--c:var(--amber)">
+        <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 15l2 2 4-4"/></svg>Raport dowodowy SEO/GEO</h3>
+        <p>79 miesięcznych raportów Search Console (XII 2019 – IX 2026) złożonych w jedną serię i zweryfikowanych z historią Ahrefs; każda teza z podanym źródłem.</p>
+        <p class="res">Wyniki, które da się sprawdzić — nie deklaracje</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <!-- Cards Wrapper -->
-        <div class="deploy-cards">
-            
-            <!-- CARD 1: SEO aIdeas (Projekt własny) -->
-            <div class="deploy-card card deploy-card-it active">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> SEO aIdeas — autonomiczny audytor widoczności marki <span class="badge-project-own">Projekt własny</span></h3>
-                    <p>
-                        Bezbazowy silnik analityczny, który zastępuje ręczną kontrolę pracy agencji SEO i Google Ads. Pobiera rzeczywiste pozycje w Google przez Serper API, porównuje je z konkurencją i przy pomocy modelu Claude generuje priorytetową listę działań: co pisać, co linkować, które frazy domknąć.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Wykrywa luki brandowe — frazy główne, na których marka powinna być w TOP 10, a nie jest.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Wyłapuje frazy z pozycji 11–20, które da się szybko przesunąć na pierwszą stronę wyników.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Działa na plikach CSV/JSON — bez bazy danych do utrzymania.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Interfejs terminalowy (TUI) z leaderboardem widoczności marek w czasie rzeczywistym.
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Audyt pozycjonowania, który wcześniej zajmował <strong>16 godzin</strong>, teraz trwa <strong>12 sekund</strong> i wychwycił 248 fraz z niewykorzystanym potencjałem zakupowym.
-                    </p>
-                    <a href="projekty/aegis-seo-core.html" class="btn-more">Zobacz pełne Case Study <i class="fa-solid fa-arrow-right"></i></a>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Język Python 3"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="API Anthropic (Claude)"></span>
-                        <span class="tech-logo-item logo-pandas" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg');" title="Biblioteka Pandas"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/google.svg');" title="Serper API (Google Search Data)"></span>
-                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <div class="deploy-mockup-ui mockup-aegisseo">
-                            <div class="mock-cli-panel">
-                                <div class="mock-cli-header">
-                                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                                    <span class="mock-cli-title">kamil@terminal: ~/aegis-seo-core</span>
-                                </div>
-                                <div class="mock-cli-body">
-                                    <div class="mock-cli-line cmd">python seo_intelligence_engine.py</div>
-                                    <div class="mock-cli-line" style="color: #64748b; font-size: 0.55rem;">=== AUDYT INTELLIGENCE ENGINE  —  Uruchamianie silnika ===</div>
-                                    <div class="mock-cli-line" style="color: #38bdf8; font-size: 0.55rem;">Znaleziono 53 plików raportów summary. Przetwarzanie...</div>
-                                    <div class="mock-cli-line title" style="color: #f59e0b; margin-top: 5px; font-size: 0.55rem;">=== LEADERBOARD WIDOCZNOŚCI MAREK ===</div>
-                                    <div class="mock-cli-line" style="font-size: 0.52rem; color: #10b981;">
-                                        Accuphase &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-> Widoczność: 95% | TOP3: 33 | TOP10: 36
-                                    </div>
-                                    <div class="mock-cli-line" style="font-size: 0.52rem; color: #38bdf8;">
-                                        Harbeth &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-> Widoczność: 88% | TOP3: 24 | TOP10: 26
-                                    </div>
-                                    <div class="mock-cli-line" style="font-size: 0.52rem; color: #a78bfa;">
-                                        Chario &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -> Widoczność: 84% | TOP3: 17 | TOP10: 21
-                                    </div>
-                                    <div class="mock-cli-line title" style="color: #f59e0b; margin-top: 5px; font-size: 0.55rem;">=== KLUCZOWE REKOMENDACJE (INSIGHTS) ===</div>
-                                    <div class="mock-cli-line" style="font-size: 0.52rem; color: #cbd5e1;">
-                                        * Szybkie wygrane (11-20): 258 fraz gotowych do wypchnięcia
-                                    </div>
-                                    <div class="mock-cli-line" style="font-size: 0.52rem; color: #cbd5e1;">
-                                        * Luki strukturalne (poza TOP10): 248 fraz brandowych
-                                    </div>
-                                    <div class="mock-cli-line" style="font-size: 0.52rem; color: #ef4444;">
-                                        * Wróg SEO (Nemezis): planetadzwieku.com (wyprzedza nas na 268 frazach)
-                                    </div>
-                                    <div class="mock-cli-line" style="color: #10b981; margin-top: 4px; font-weight: bold; font-size: 0.55rem;">✔ Zapisano globalny raport do: SEO_Global_Action_Plan.md</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deploy-visual-label">
-                            <i class="fa-solid fa-terminal"></i>
-                            <span>Podgląd interfejsu TUI silnika SEO aIdeas</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="block" id="kompetencje" aria-labelledby="h-komp">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Kompetencje</div><h2 id="h-komp">Na pograniczu SEO × AI</h2></div>
+    <div class="skills">
+      <div class="card grp"><h3>SEO &amp; GEO</h3><p>Widoczność budowana równolegle w klasycznym wyszukiwaniu i w odpowiedziach generowanych przez AI.</p>
+        <ul class="chips" style="--c:var(--chip-seo)"><li>SEO techniczne</li><li>GEO / Answer Engine Optimization</li><li>Optymalizacja pod AI Overviews</li><li>Local SEO</li><li>Indeksacja i mapy witryny</li><li>Dane strukturalne (Schema.org)</li><li>Core Web Vitals</li><li>Content &amp; Link Building</li><li>CRO</li><li>Audyt widoczności marki</li><li>Strategia <span class="nw">e-commerce</span></li></ul></div>
+      <div class="card grp"><h3>Ekosystem Google &amp; Analityka</h3><p>Codzienna praca operacyjna: od kampanii, przez feed produktowy, po architekturę pomiaru konwersji.</p>
+        <ul class="chips" style="--c:var(--chip-g)"><li>Google Ads</li><li>Google Analytics 4</li><li>Google Tag Manager</li><li>Google Search Console</li><li>Google Merchant Center</li><li>Google Business Profile</li><li>Google API</li><li>Ahrefs</li></ul></div>
+      <div class="card grp"><h3>AI &amp; Integracje</h3><p>Łączenie danych marketingowych z modelami językowymi w realnie działające systemy.</p>
+        <ul class="chips" style="--c:var(--chip-ai)"><li>MCP (Model Context Protocol)</li><li>Claude / Anthropic API</li><li>OpenAI API</li><li>RAG</li><li>Agentowe workflow</li><li>FastMCP</li><li>Windsor.ai</li><li>Automatyzacja LLM × dane</li></ul></div>
+      <div class="card grp"><h3>Biznes &amp; Zarządzanie</h3><p>Zaplecze, dzięki któremu rekomendacje SEO/marketingowe od razu przekładają się na decyzje biznesowe.</p>
+        <ul class="chips" style="--c:var(--chip-biz)"><li>Relacje B2B</li><li>Negocjacje kontraktów</li><li>Zarządzanie zespołem</li><li>Rekrutacja i szkolenia</li><li>Audyt agencji marketingowych</li></ul></div>
+    </div>
+  </div>
+</section>
 
-            <!-- CARD 2: Stock analyzer (Projekt własny) -->
-            <div class="deploy-card card deploy-card-it">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Stock Analyzer — retro terminal do analizy amerykańskich spółek wzrostowych <span class="badge-project-own">Projekt własny</span></h3>
-                    <p>
-                        Własny projekt od koncepcji po wdrożenie: terminal (TUI) do przesiewania spółek notowanych na NASDAQ/NYSE, zbudowany jako zamiennik płatnych platform analitycznych.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Autorski model punktacji GPS — ocena spółki na 6 ważonych czynnikach: przychody, backlog, TAM, katalizatory wzrostu, cash runway, przewaga konkurencyjna.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Integracja z Claude i biblioteką <code>yfinance</code> — wpisujesz ticker (np. MU.US), system sam pobiera sprawozdania i newsy, i generuje tezę inwestycyjną z oceną ryzyka.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Interfejs UTF-8/ANSI działający identycznie na Windows, macOS i Linux.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Baza w prostym pliku JSON (<code>stocks_extra.json</code>) do własnych analiz i ręcznych korekt ocen.
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Czas dogłębnej analizy nowej spółki spadł <strong>z 2-3 godzin do poniżej 45 sekund</strong>.
-                    </p>
-                    <a href="projekty/stocks-tui.html" class="btn-more">Zobacz pełne Case Study <i class="fa-solid fa-arrow-right"></i></a>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Język Python"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/anthropic.svg');" title="API Anthropic (Claude)"></span>
-                        <span class="tech-logo-item logo-pandas" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg');" title="Biblioteka Pandas"></span>
-                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="project-screenshots" style="display: flex; flex-direction: column; gap: 15px; width: 100%;">
-                        <div>
-                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 600; font-family: var(--font-head);">Zrzut 1: Leaderboard giełdowy (TUI)</p>
-                            <img src="stock1.webp" alt="Stock analyzer - Leaderboard" loading="lazy" decoding="async" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: block;">
-                        </div>
-                        <div>
-                            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 6px; font-weight: 600; font-family: var(--font-head);">Zrzut 2: Szczegółowa analiza i teza AI</p>
-                            <img src="stock2.webp" alt="Stock analyzer - Szczegóły" loading="lazy" decoding="async" style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 4px 15px rgba(0,0,0,0.5); display: block;">
-                        </div>
-                    </div>
-                    <div style="margin-top: 15px; text-align: center; font-size: 0.8rem; color: #94a3b8; line-height: 1.4; font-family: var(--font-head); font-weight: 500; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; width: 100%;">
-                        <i class="fa-solid fa-circle-check" style="color: var(--cyan-light); margin-right: 4px;"></i>
-                        Wyniki programu przełożyły się na realne stopy zwrotu i zbudowały wokół niego społeczność użytkowników.
-                    </div>
-                </div>
-            </div>
+<section class="block alt" id="jak-pracuje" aria-labelledby="h-jak">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Co wnoszę do zespołu</div><h2 id="h-jak">Strateg, który konfiguruje jak inżynier</h2></div>
+    <div class="values">
+      <div class="card"><h3>Podwójna perspektywa</h3><p>Patrzę na SEO i marketing jak strateg biznesowy, a konfiguruję to jak inżynier — gdy gotowe narzędzie nie wystarcza, buduję własne.</p></div>
+      <div class="card"><h3>Tłumacz między światami</h3><p>Rozumiem język zarządu (ROI, marża, kontrakt B2B) i język danych (zdarzenia GA4, API, MCP) — i potrafię przełożyć jeden na drugi.</p></div>
+      <div class="card"><h3>Odpowiedzialność za efekt, nie za demo</h3><p>Zaczynam od pomiaru i stanu wyjściowego, a efekt pokazuję na danych — tak jak liczby na tej stronie.</p></div>
+    </div>
+    <ol class="steps" aria-label="Jak pracuję">
+      <li><b>Pomiar</b><span>Stan wyjściowy w Search Console, GA4 i cytowaniach AI.</span></li>
+      <li><b>Diagnoza</b><span>Indeksacja, mapa witryny, dane strukturalne, dostęp botów AI, encja marki.</span></li>
+      <li><b>Wdrożenie</b><span>Najpierw szybkie poprawki, potem plan treści i stron z celami liczbowymi.</span></li>
+      <li><b>Raport</b><span>Porównanie przed/po w tych samych oknach czasu, z kontrolą sezonu.</span></li>
+    </ol>
+  </div>
+</section>
 
-            <!-- CARD 2: KsEF InterGracja -->
-            <div class="deploy-card card deploy-card-it">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> KSeF InterGracja — automatyzacja obiegu dokumentów</h3>
-                    <p>
-                        System na indywidualne zamówienie klienta, łączący ERP (Subiekt GT) z Krajowym Systemem e-Faktur — zastępujący ręczne wysyłanie faktur przez portal rządowy.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Kreator konfiguracji: podłączenie drukarek i autoryzacja KSeF w kilku krokach, bez wiedzy IT.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Usługa działająca w tle generuje, wysyła i rozlicza dokumenty automatycznie — bez ręcznej pracy.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Moduł kontroli cen blokuje wysyłkę faktury przy nietypowej marży albo błędzie w rabacie, zanim trafi do KSeF.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Cały system spakowany w jeden instalator dla Windows.
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Uruchomienie nowego stanowiska spadło <strong>z kilku godzin do 30 minut</strong>, a błędy w fakturach zostały wyeliminowane.
-                    </p>
-                    <a href="projekty/ksef-integracja.html" class="btn-more">Zobacz pełne Case Study <i class="fa-solid fa-arrow-right"></i></a>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg');" title="System Windows"></span>
-                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/fastapi.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/fastapi.svg');" title="FastAPI Backend"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg');" title="Interfejs React"></span>
-                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Konteneryzacja Docker"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <!-- High-fidelity CSS Mockup -->
-                        <div class="deploy-mockup-ui mockup-ksmil">
-                            <div class="mock-window-header">
-                                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                                <span class="mock-window-title">ksef-intergracja-service.exe</span>
-                            </div>
-                            <div class="mock-window-body">
-                                <div class="mock-line"><span class="mock-lbl">Status:</span> <span class="mock-val val-green">Uruchomiony</span></div>
-                                <div class="mock-line"><span class="mock-lbl">KSeF:</span> <span class="mock-val val-cyan">Połączono (Prod)</span></div>
-                                <div class="mock-line"><span class="mock-lbl">Drukarki:</span> <span class="mock-val">Magazyn_Główny</span></div>
-                                <div class="mock-line"><span class="mock-lbl">Monitor cen:</span> <span class="mock-val val-gold">Skanowanie...</span></div>
-                                <div class="mock-line"><span class="mock-lbl">Alerty:</span> <span class="mock-val val-emerald">0 Anomalii</span></div>
-                            </div>
-                        </div>
-                        <div class="deploy-visual-label">
-                            <i class="fa-regular fa-image"></i>
-                            <span>Podgląd interfejsu</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="block" id="wspolpraca" aria-labelledby="h-wsp">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Współpraca</div><h2 id="h-wsp">W czym mogę pomóc</h2>
+      <p>Pracuję z Poznania, stacjonarnie lub zdalnie. Najchętniej przy projektach, w których SEO, dane i AI trzeba spiąć w jeden działający system.</p></div>
+    <div class="offer">
+      <div class="card"><h3>Audyt SEO/GEO</h3><p>Sprawdzam, co blokuje widoczność w Google i w odpowiedziach AI, i układam plan z mierzalnymi celami.</p>
+        <ul><li>indeksacja, mapa witryny, duplikaty</li><li>dane strukturalne i encja marki</li><li>dostęp botów AI i treści cytowane przez AI</li></ul></div>
+      <div class="card"><h3>Audyt agencji SEO / Google Ads</h3><p>Niezależnie weryfikuję, czy budżet na agencję pracuje na sprzedaż, a nie na ładny raport.</p>
+        <ul><li>poprawność konwersji w GA4 i Google Ads</li><li>frazy z intencją zakupową vs. „puste” wzrosty</li><li>dostępy właścicielskie do kont</li></ul></div>
+      <div class="card"><h3>AI w marketingu (MCP)</h3><p>Podłączam dane z Google Ads, GA4 i Search Console do modeli językowych, żeby audyty i raporty robiły się szybciej.</p>
+        <ul><li>integracje Claude / MCP z danymi Google</li><li>agentowe workflow treści produktowych</li><li>automatyzacja raportowania</li></ul></div>
+    </div>
+  </div>
+</section>
 
-            <!-- CARD 2: Offer Maker (Generator Ofert) -->
-            <div class="deploy-card card deploy-card-it">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Offer Maker — generator ofert PDF dla handlowców premium</h3>
-                    <p>
-                        Narzędzie synchronizowane z katalogiem produktów, dzięki któremu jedna spersonalizowana oferta handlowa powstaje w kilkadziesiąt sekund, nie kwadrans.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Wklejasz link do produktu (albo jego nazwę) — system sam pobiera zdjęcia, opis, cenę i specyfikację.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Automatyczna obróbka zdjęć w tle: kadrowanie i kompresja bez utraty jakości, plik gotowy do wysłania mailem.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Panel live-edit — zmiana ceny czy rabatu jest widoczna w podglądzie od razu.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Gotowe szablony pod wydruk A4 i prezentację na tablecie, zgodne z identyfikacją wizualną marki.
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Przygotowanie spersonalizowanej oferty premium spadło <strong>z kilkunastu minut do 30 sekund</strong>.
-                    </p>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg');" title="Środowisko Node.js"></span>
-                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg');" title="Silnik JavaScript"></span>
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg');" title="Interfejs HTML5"></span>
-                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <!-- High-fidelity CSS Mockup -->
-                        <div class="deploy-mockup-ui mockup-offermaker">
-                            <div class="mock-pdf-page">
-                                <div class="mock-pdf-header">
-                                    <span class="mock-pdf-logo">audioplaza.pl</span>
-                                    <span class="mock-pdf-doc-title">OFERTA HANDLOWA</span>
-                                </div>
-                                <div class="mock-pdf-divider"></div>
-                                <div class="mock-pdf-product">
-                                    <div class="mock-pdf-img-placeholder"></div>
-                                    <div class="mock-pdf-text-lines">
-                                        <div class="mock-pdf-line long"></div>
-                                        <div class="mock-pdf-line short"></div>
-                                    </div>
-                                </div>
-                                <div class="mock-pdf-price-box">
-                                    <div class="mock-pdf-price-row"><span>Cena katalogowa:</span><span>24 990 zł</span></div>
-                                    <div class="mock-pdf-price-row highlight"><span>Oszczędzasz:</span><span>-3 500 zł</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deploy-visual-label">
-                            <i class="fa-regular fa-image"></i>
-                            <span>Podgląd interfejsu</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="block alt" id="faq" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Pytania</div><h2 id="h-faq">Najczęściej zadawane pytania</h2></div>
+    <div class="faq">
+      <details><summary>Czym GEO różni się od klasycznego SEO?</summary><p>SEO walczy o pozycję w liście wyników Google. GEO (Generative Engine Optimization) dba o to, by marka była cytowana w odpowiedziach generowanych przez AI — w Google AI Overviews i AI Mode, Perplexity, Gemini czy ChatGPT. W praktyce to wspólny fundament: poprawna indeksacja, dane strukturalne, otwarty dostęp dla botów AI, czytelna encja marki i treści, które jasno odpowiadają na pytania klientów.</p></details><details><summary>Jakie wyniki osiągnąłeś w SEO?</summary><p>W audioplaza.pl, którą prowadzę jednoosobowo od 2018 roku, liczba fraz w TOP10 Google wzrosła z 65 do 1 453 (Ahrefs, 2017 → 2025), a kliknięcia z Google z 49,5 tys. do 208,4 tys. rocznie (Search Console, 2020 → 2025). Po porządkach technicznych w 2026 roku CTR wzrósł o 46% rok do roku, a strona ma 239 cytowań w odpowiedziach AI.</p></details><details><summary>Od czego zaczynasz audyt SEO/GEO?</summary><p>Od pomiaru i stanu wyjściowego: Search Console, GA4 i cytowania w odpowiedziach AI. Potem diagnoza — indeksacja, mapa witryny, duplikaty, dane strukturalne, dostęp botów AI i encja marki — i plan z celami liczbowymi. Efekty porównuję przed i po, w tych samych oknach czasowych i z kontrolą sezonowości.</p></details><details><summary>Gdzie pracujesz?</summary><p>Mieszkam w Poznaniu. Pracuję stacjonarnie lub hybrydowo w Poznaniu oraz zdalnie z całą Polską.</p></details>
+    </div>
+  </div>
+</section>
 
-            <!-- CARD 3: Web Tools (Portal Integracji) -->
-            <div class="deploy-card card deploy-card-it">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Web Tools — centralny portal integracji wewnętrznych narzędzi</h3>
-                    <p>
-                        Jeden dashboard spinający rozproszone narzędzia firmy (oferty, akustyka, kasa, KSeF), dostępny z telefonu czy tabletu przez szyfrowany VPN.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Wszystkie wewnętrzne aplikacje pod jednym adresem i jednym logowaniem.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Dostęp z terenu przez Tailscale VPN — bez wystawiania niczego publicznie do internetu.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Panel personalizacji (motyw, kontrast, tryb OLED) propagowany na cały portal.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Bieżący status sklepu, VPN i API KSeF widoczny od razu w nagłówku.
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Diagnoza problemów z łącznością spadła do zera, a wdrożenie nowego pracownika jest <strong>o 50% szybsze</strong>.
-                    </p>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-linux" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zorinos.svg');" title="System Zorin OS / Linux"></span>
-                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailscale.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailscale.svg');" title="Sieć Tailscale VPN"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg');" title="Express.js Gateway"></span>
-                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Konteneryzacja Docker"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <!-- High-fidelity CSS Mockup -->
-                        <div class="deploy-mockup-ui mockup-webtools">
-                            <div class="mock-dash-header">
-                                <span class="mock-dash-dot"></span>
-                                <span class="mock-dash-title">Audioplaza Portal</span>
-                                <span class="mock-dash-badge">VPN Active</span>
-                            </div>
-                            <div class="mock-dash-grid">
-                                <div class="mock-dash-card active">
-                                    <i class="fa-solid fa-file-invoice"></i>
-                                    <span>OfferMaker</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-cash-register"></i>
-                                    <span>Rozliczenia</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-calculator"></i>
-                                    <span>AcousticLab</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-envelope-open"></i>
-                                    <span>KSeF Gov</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deploy-visual-label">
-                            <i class="fa-regular fa-image"></i>
-                            <span>Podgląd interfejsu</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="block" id="wyksztalcenie" aria-labelledby="h-edu">
+  <div class="wrap">
+    <div class="sec-hd"><div class="kicker">Wykształcenie i języki</div><h2 id="h-edu">Komunikacja jako fundament</h2></div>
+    <div class="edu">
+      <div class="card"><h3>Dziennikarstwo i Komunikacja Społeczna</h3><div class="sub">UAM Poznań, 2012 — Licencjat</div>
+        <p style="margin:0">Warsztat komunikacji i przekładania technicznych zagadnień na język biznesu. Google Ads, analitykę, Python, API i MCP rozwijam przez ciągłą naukę i wdrożenia produkcyjne.</p></div>
+      <div class="card"><h3>Języki</h3><div class="sub" style="margin-bottom:6px">&nbsp;</div>
+        <p style="margin:0"><b>Polski</b> — ojczysty<br><b>Angielski</b> — B2</p></div>
+    </div>
+  </div>
+</section>
 
+<section class="contact alt" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap">
+    <h2 id="h-kontakt">Porozmawiajmy</h2>
+    <p>Najszybciej odpowiadam na e-mail. Pełne CV z wynikami i źródłami jest do pobrania jako PDF.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:kamil@kbrz77.pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>Napisz: kamil@kbrz77.pl</a>
+      <a class="btn btn-ghost" href="cv/Kamil_Brzuszczak_CV_SEO-GEO_2026.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Pobierz CV (PDF)</a>
+    </div>
+    <ul class="contact-line">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-5.7-7-11a7 7 0 0 1 14 0c0 5.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Poznań / zdalnie</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:kamil@kbrz77.pl">kamil@kbrz77.pl</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="tel:+48796579480">+48 796 579 480</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/kamil-brzuszczak" rel="me noopener">linkedin.com/in/kamil-brzuszczak</a></li>
+      </ul>
+  </div>
+</section>
+</main>
 
-
-            <!-- CARD 5: Integrator Kasowy -->
-            <div class="deploy-card card deploy-card-it">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> Raport Kasowy — rozliczanie kasy dla dwóch oddziałów</h3>
-                    <p>
-                        System łączący dane z ERP (Subiekt GT) z faktyczną gotówką w kasetkach i sejfach — konsola CLI dla kasjerów i panel webowy dla zarządu, dla Oddziału Głównego i Wrocławia.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Kasjerzy logują się PIN-em i zamykają zmianę w konsoli CLI; każdy wpis jest przypisany do osoby.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            System sam przelicza stany kasy i sejfu i wykrywa manko lub nadpłatę.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Panel webowy (Gradio) z analizą wydatków, pogrupowanych automatycznie przez Pandas.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Działa bez serwera i bazy danych — tylko pliki CSV.
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Dobowe rozliczenie kasy w obu oddziałach jest <strong>o 75% szybsze</strong>, a błędy z ręcznego przepisywania do Excela zniknęły.
-                    </p>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg');" title="System Windows / start.bat"></span>
-                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Język Python 3"></span>
-                        <span class="tech-logo-item logo-pandas" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/pandas.svg');" title="Biblioteka Pandas"></span>
-                        <span class="tech-logo-item logo-git" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg');" title="Wersjonowanie Git"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <!-- High-fidelity CSS Mockup -->
-                        <div class="deploy-mockup-ui mockup-cashintegrator">
-                            <!-- Web Panel (Gradio Mockup) -->
-                            <div class="mock-web-panel">
-                                <div class="mock-web-header">
-                                    <span class="mock-web-dot" style="background:#f59e0b; width:6px; height:6px; border-radius:50%; display:inline-block;"></span>
-                                    <span class="mock-web-title">Gradio: System Kasowy</span>
-                                    <span class="mock-web-badge">Wrocław</span>
-                                </div>
-                                <div class="mock-web-body">
-                                    <div class="mock-web-form">
-                                        <div class="mock-web-field">
-                                            <span style="font-size:0.45rem; color:rgba(255,255,255,0.4);">Typ</span>
-                                            <span class="mock-web-val">Wydatek</span>
-                                        </div>
-                                        <div class="mock-web-field">
-                                            <span style="font-size:0.45rem; color:rgba(255,255,255,0.4);">Kwota</span>
-                                            <span class="mock-web-val val-bold">120.00 PLN</span>
-                                        </div>
-                                    </div>
-                                    <div class="mock-web-chart">
-                                        <div class="mock-chart-bar" style="width: 80%; background: #38bdf8;"><span>Biuro (80%)</span></div>
-                                        <div class="mock-chart-bar" style="width: 20%; background: #fbbf24;"><span>Transport (20%)</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- CLI Panel (Terminal Mockup) -->
-                            <div class="mock-cli-panel">
-                                <div class="mock-cli-header">
-                                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                                    <span class="mock-cli-title">kamil@terminal: ~/raport-kasowy</span>
-                                </div>
-                                <div class="mock-cli-body">
-                                    <div class="mock-cli-line cmd">python raport_kasowy.py</div>
-                                <div class="mock-cli-line title">RAPORT KASOWY | ODDZIAŁ: WROCŁAW</div>
-                                <div class="mock-cli-row header">
-                                    <span>DATA</span><span>USER</span><span>ROZNICA</span><span>STAN</span>
-                                </div>
-                                <div class="mock-cli-row ok" style="display:flex; justify-content:space-between; width:100%;">
-                                    <span>30.05</span><span>KB</span><span class="val-green">0.00</span><span>700.00</span>
-                                </div>
-                                <div class="mock-cli-row manko" style="display:flex; justify-content:space-between; width:100%;">
-                                    <span>29.05</span><span>AZ</span><span class="val-red">-20.00</span><span>480.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="deploy-visual-label">
-                            <i class="fa-solid fa-code"></i>
-                            <span>Podgląd interfejsów (TUI / Web)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EXAMPLES OF SITES (PRZYKŁADY STRON) -->
-    <section class="deploy-section-full" style="margin-top: 50px;">
-        <h2>Przykłady stron</h2>
-        
-        <!-- Tabs Navigation -->
-        <div class="deploy-tabs">
-            <button class="deploy-tab deploy-tab-web active" onclick="switchTabWeb(0)">
-                <i class="fa-solid fa-headphones"></i> audiozorro.pl
-            </button>
-            <button class="deploy-tab deploy-tab-web" onclick="switchTabWeb(1)">
-                <i class="fa-solid fa-sliders"></i> kalibracjadirac.pl
-            </button>
-        </div>
-
-        <!-- Cards Wrapper -->
-        <div class="deploy-cards">
-
-            <!-- CARD 6: audiozorro.pl (Projekt własny) -->
-            <div class="deploy-card card deploy-card-web active">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> audiozorro.pl — niezależny agent zakupowy hi-fi <span class="badge-project-own">Projekt własny</span></h3>
-                    <p>
-                        Serwis dla kupujących sprzęt audio premium, który pomaga wybrać sprzęt i wynegocjować ceny dealerskie bez konfliktu interesów — od koncepcji, przez makietę, po wdrożenie produkcyjne i zautomatyzowany backend zamówień.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Strona ładuje się natychmiastowo — WebP, asynchroniczne zasoby, zminifikowany kod.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Płatności i etykiety kurierskie (InPost) generowane automatycznie po złożeniu zamówienia.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Ceny i dostępność aktualizowane cyklicznym importem danych dostawców (XML/JSON).
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Czas realizacji zamówienia spadł <strong>o 60%</strong> (z 15 do poniżej 6 minut), błędy adresowe spadły do zera.
-                    </p>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-python" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg');" title="Skrypty Python Backend"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg');" title="Google Analytics & Tag Manager"></span>
-                        <span class="tech-logo-item logo-docker" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg');" title="Konteneryzacja Docker"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <!-- High-fidelity CSS Mockup -->
-                        <div class="deploy-mockup-ui mockup-webtools" style="border-color: rgba(220, 38, 38, 0.15); background: #0b0c10;">
-                            <div class="mock-dash-header" style="border-bottom-color: rgba(220, 38, 38, 0.1);">
-                                <span class="mock-dash-dot" style="background: #b91c1c;"></span>
-                                <span class="mock-dash-title">audiozorro.pl Dashboard</span>
-                                <span class="mock-dash-badge" style="background: rgba(220,38,38,0.1); color: #f87171; border-color: rgba(220,38,38,0.2);">Active</span>
-                            </div>
-                            <div class="mock-dash-grid">
-                                <div class="mock-dash-card active" style="border-color: rgba(220,38,38,0.3); background: rgba(220,38,38,0.02);">
-                                    <i class="fa-solid fa-cart-shopping" style="color: #f87171;"></i>
-                                    <span style="color: var(--text-pure);">Sklep Live</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-truck-fast"></i>
-                                    <span>InPost API</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-wallet"></i>
-                                    <span>Płatności OK</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-arrows-spin"></i>
-                                    <span>XML Import</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Real screenshot image -->
-                        <img class="deploy-actual-screenshot" loading="lazy" decoding="async" src="audiozorro_screenshot.webp" alt="audiozorro.pl - niezależny agent zakupowy hi-fi, strona główna" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
-                        <div class="deploy-visual-label">
-                            <i class="fa-solid fa-desktop"></i>
-                            <span>Podgląd panelu audiozorro.pl</span>
-                        </div>
-                    </div>
-                    <div style="text-align: center;">
-                        <a href="https://audiozorro.pl" target="_blank" class="deploy-live-link">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Zobacz stronę na żywo: audiozorro.pl
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CARD 7: kalibracjadirac.pl (Projekt własny) -->
-            <div class="deploy-card card deploy-card-web">
-                <div class="deploy-text-col">
-                    <h3><i class="fa-solid fa-square-check" style="color: var(--cyan-light);"></i> kalibracjadirac.pl — strona autoryzowanego resellera Dirac Live <span class="badge-project-own">Projekt własny</span></h3>
-                    <p>
-                        Landing page dla polskiego kanału dystrybucji Dirac Live — od pomysłu wypełnienia niszy w kalibracji akustycznej po pełną realizację kodu.
-                    </p>
-                    <ul>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Ciemny, premium design ze złotymi akcentami i elegancką typografią.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Prosta ścieżka: technologia → oferta → kontakt, bez rozpraszaczy.
-                        </li>
-                        <li>
-                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Czysty HTML/CSS/JS, szybkie ładowanie na mobile.
-                        </li>
-                    </ul>
-                    <p style="margin-top: 15px; margin-bottom: 0;">
-                        Strona generuje organiczny ruch (SEO) i konwertuje zapytania o licencje na sprzedaż.
-                    </p>
-                    
-                    <div class="tech-logo-row" style="margin-top: 15px;">
-                        <span class="tech-logo-item logo-anthropic" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg');" title="Struktura HTML5"></span>
-                        <span class="tech-logo-item logo-google" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg');" title="Stylizacja CSS3"></span>
-                        <span class="tech-logo-item logo-openai" style="-webkit-mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg'); mask-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg');" title="Interaktywność JavaScript"></span>
-                    </div>
-                </div>
-                <div class="deploy-visual-col">
-                    <div class="deploy-visual-container">
-                        <!-- High-fidelity CSS Mockup -->
-                        <div class="deploy-mockup-ui mockup-webtools" style="border-color: rgba(212, 168, 67, 0.15); background: #080808;">
-                            <div class="mock-dash-header" style="border-bottom-color: rgba(212, 168, 67, 0.15);">
-                                <span class="mock-dash-dot" style="background: #d4a843;"></span>
-                                <span class="mock-dash-title">kalibracjadirac.pl Dashboard</span>
-                                <span class="mock-dash-badge" style="background: rgba(212,168,67,0.1); color: #e8c46a; border-color: rgba(212,168,67,0.2);">Active</span>
-                            </div>
-                            <div class="mock-dash-grid">
-                                <div class="mock-dash-card active" style="border-color: rgba(212,168,67,0.3); background: rgba(212,168,67,0.02);">
-                                    <i class="fa-solid fa-sliders" style="color: #e8c46a;"></i>
-                                    <span style="color: var(--text-pure);">Dirac Live API</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-credit-card"></i>
-                                    <span>Płatności PL</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-mobile-screen"></i>
-                                    <span>Responsive</span>
-                                </div>
-                                <div class="mock-dash-card">
-                                    <i class="fa-solid fa-gauge-high"></i>
-                                    <span>PageSpeed 99</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Real screenshot image -->
-                        <img class="deploy-actual-screenshot" loading="lazy" decoding="async" src="kalibracja_screenshot.webp" alt="Wdrożenie platformy resellerskiej kalibracjadirac.pl z automatyzacją sprzedaży kluczy licencyjnych" onload="this.closest('.deploy-visual-container').classList.add('image-loaded')" onerror="this.style.display='none';">
-                        <div class="deploy-visual-label">
-                            <i class="fa-solid fa-desktop"></i>
-                            <span>Podgląd panelu kalibracjadirac.pl</span>
-                        </div>
-                    </div>
-                    <div style="text-align: center;">
-                        <a href="https://kalibracjadirac.pl" target="_blank" class="deploy-live-link">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Zobacz stronę na żywo: kalibracjadirac.pl
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="efficiency-section-full" style="margin-top: 30px;">
-        <h2>Efektywność Pracy (AI Co-pilot)</h2>
-        <div class="aside-box efficiency-box" style="border-left: 3px solid #b91c1c; margin-bottom: 0;">
-            <p>
-                <strong>Ciekawostka:</strong> Nad stworzeniem, oprogramowaniem wdrożeń i dopracowaniem wizualnym tego CV pracowałem w duecie z AI przez łącznie <strong>17 godzin i 6 minut</strong> w ciągu zaledwie <strong>31 godzin</strong> od startu projektu.
-                <br><br>
-                To namacalny dowód na moją skuteczność – potrafię błyskawicznie wdrażać i wykorzystywać zaawansowane narzędzia AI w codziennej pracy projektowej, oszczędzając czas i optymalizując procesy.
-            </p>
-        </div>
-    </section>
-
-    <section class="deploy-section-full" style="margin-top: 30px;">
-        <h2>Integracje AI, CTO Polska, Automatyk AI – najczęściej zadawane pytania</h2>
-        <div class="use-case-grid">
-            <div class="use-case-item">
-                <h3><i class="fa-solid fa-robot" style="color: var(--cyan-light);"></i> Czym różnią się integracje AI od zwykłego chatbota?</h3>
-                <p>
-                    Integracje AI, które wdrażam, to nie kolejny chatbot-zabawka, tylko systemy podłączone bezpośrednio do danych firmy – bazy wiedzy RAG, automatyczny lead management i agenci AI wykonujący wieloetapowe zadania w tle, zintegrowane z pocztą, CRM i arkuszami.
-                </p>
-            </div>
-            <div class="use-case-item">
-                <h3><i class="fa-solid fa-user-gear" style="color: var(--cyan-light);"></i> Kim jest CTO w Polsce współpracujący z MŚP na godziny?</h3>
-                <p>
-                    Jako CTO w Polsce (Fractional CTO) przejmuję odpowiedzialność za architekturę IT, nadzór nad wdrożeniami AI i kontrolę nad pracą zewnętrznych dostawców – zdalnie dla firm z całego kraju lub stacjonarnie w Poznaniu, bez kosztów pełnego etatu. <a href="fractional-cto.html">Więcej o usłudze Fractional CTO</a>.
-                </p>
-            </div>
-            <div class="use-case-item">
-                <h3><i class="fa-solid fa-gears" style="color: var(--cyan-light);"></i> Kim jest automatyk AI i kiedy warto go zatrudnić?</h3>
-                <p>
-                    Automatyk AI to specjalista łączący inżynierię oprogramowania z wdrażaniem modeli LLM, aby zautomatyzować powtarzalne procesy w firmie – klasyfikację zapytań, generowanie dokumentów czy przeszukiwanie firmowej wiedzy. Warto go zaangażować, gdy zespół traci czas na schematyczne zadania tekstowe.
-                </p>
-            </div>
-            <div class="use-case-item">
-                <h3><i class="fa-solid fa-clock" style="color: var(--cyan-light);"></i> Ile trwa i kosztuje wdrożenie integracji AI?</h3>
-                <p>
-                    Prosta automatyzacja trwa zwykle 2–4 tygodnie, a rozliczenie jest projektowe lub godzinowe. Każde wdrożenie zaczynam od bezpłatnej analizy, dzięki której znasz zakres i koszt jeszcze przed startem prac.
-                </p>
-            </div>
-            <div class="use-case-item">
-                <h3><i class="fa-solid fa-earth-europe" style="color: var(--cyan-light);"></i> Czy pracujesz tylko w Poznaniu, czy w całej Polsce?</h3>
-                <p>
-                    Większość projektów – integracje AI, automatyzacje i wsparcie w roli CTO – realizuję zdalnie dla firm z całej Polski. Spotkania stacjonarne są możliwe w Poznaniu i okolicach, gdy wymaga tego charakter wdrożenia, np. infrastruktura VoIP.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Kamil Brzuszczak. Wszelkie prawa zastrzeżone.</p>
-    </footer>
-
-</div>
-
-<script>
-    // Copy clipboard utility
-    function copyValue(text, element) {
-        navigator.clipboard.writeText(text).then(() => {
-            const tooltip = element.querySelector('.contact-tooltip');
-            tooltip.style.opacity = '1';
-            tooltip.style.transform = 'translateX(-50%) translateY(0)';
-            setTimeout(() => {
-                tooltip.style.opacity = '0';
-                tooltip.style.transform = 'translateX(-50%) translateY(5px)';
-            }, 1500);
-        });
-    }
-
-    // Tabs switcher utility
-    function switchTabIT(idx) {
-        const tabs = document.querySelectorAll('.deploy-tab-it');
-        const cards = document.querySelectorAll('.deploy-card-it');
-        
-        tabs.forEach((tab, i) => {
-            if (i === idx) {
-                tab.classList.add('active');
-                cards[i].classList.add('active');
-            } else {
-                tab.classList.remove('active');
-                cards[i].classList.remove('active');
-            }
-        });
-    }
-
-    function switchTabWeb(idx) {
-        const tabs = document.querySelectorAll('.deploy-tab-web');
-        const cards = document.querySelectorAll('.deploy-card-web');
-        
-        tabs.forEach((tab, i) => {
-            if (i === idx) {
-                tab.classList.add('active');
-                cards[i].classList.add('active');
-            } else {
-                tab.classList.remove('active');
-                cards[i].classList.remove('active');
-            }
-        });
-    }
-
-    // Modern theme toggle & mobile menu toggle logic
-    document.addEventListener('DOMContentLoaded', () => {
-        
-
-        // Mobile drawer toggle
-        const mobileToggle = document.querySelector('.btn-mobile-toggle');
-        const mobileDrawer = document.querySelector('.nav-mobile-drawer');
-        
-        if (mobileToggle && mobileDrawer) {
-            mobileToggle.addEventListener('click', () => {
-                mobileToggle.classList.toggle('active');
-                const isOpen = mobileToggle.classList.contains('active');
-                mobileDrawer.style.display = isOpen ? 'block' : 'none';
-            });
-            
-            const mobileLinks = mobileDrawer.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileToggle.classList.remove('active');
-                    mobileDrawer.style.display = 'none';
-                });
-            });
-        }
-    });
-</script>
-
-<!-- Premium 3D Parallax Matrix Rain Background Animation -->
-<script src="matrix.js"></script>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kamil Brzuszczak · kbrz77.pl</span>
+    <span>Dane: Google Search Console, Profil Firmy w Google, Ahrefs · stan na X 2026</span>
+  </div>
+</footer>
 </body>
 </html>
