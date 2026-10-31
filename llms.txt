@@ -2,12 +2,12 @@
 
 > Poznań / zdalnie. Od 2018 roku jednoosobowo (bez agencji) prowadzi SEO premium e-commerce audioplaza.pl (hi-fi / high-end audio, salony w Poznaniu i Wrocławiu). Łączy ekosystem Google (Ads, GA4, GTM, Search Console, Merchant Center, Profil Firmy) z Claude/Anthropic API i protokołem MCP.
 
-## Wyniki (audioplaza.pl, źródła w nawiasach)
-- Frazy w TOP10 Google: 65 → 1 453, ×22 (Ahrefs, średnie roczne 2017 → 2025); TOP3: 39 → 493
-- Kliknięcia z Google: 49,5 tys. → 208,4 tys. rocznie, ×4,2 (Google Search Console, 2020 → 2025)
-- Porządki techniczne 2026 (mapa witryny 42 614 → ok. 12 tys. adresów, robots.txt): CTR 2,65% → 3,86% (+46% r/r) przy utrzymanym ruchu; śr. pozycja na komputerach 12,8 → 8,5
-- Local SEO: 671 opinii Google, średnia 4,8 (dwa salony); ok. 489 od 2019 r.
-- GEO: 239 cytowań strony w odpowiedziach AI (Google AI Mode, AI Overviews, Perplexity, Gemini, Copilot; Ahrefs, X 2026)
+## Wyniki (audioplaza.pl, zmiany procentowe, źródła w nawiasach)
+- Frazy w TOP10 Google: +2 135% (Ahrefs, średnie roczne 2017 → 2025); frazy w TOP3: +1 164%
+- Roczna liczba kliknięć z Google: +321% (Google Search Console, 2020 → 2025)
+- Porządki techniczne 2026 (mapa witryny odchudzona o ok. 70%, nowy robots.txt): CTR +46% r/r przy utrzymanym ruchu; średnia pozycja na komputerach lepsza o 34%
+- Local SEO: liczba opinii Google +269% od 2019 r., średnia ocen 4,8 (dwa salony)
+- GEO: strona cytowana przez 6 asystentów AI (Google AI Mode i AI Overviews, Perplexity, Gemini, Copilot, ChatGPT)
 - Google Ads: wykrycie ok. 17-krotnie zawyżonych konwersji i oparcie kampanii na jednym sygnale zakupu
 
 ## Kompetencje

@@ -235,7 +235,7 @@ footer a{color:var(--faint)}
   .big{font-size:36px}
   .steps{grid-template-columns:1fr}
   .lead{font-size:16.5px}
-  .bars-520 .val{font-size:17px}.bars-520 .yr{font-size:15px}.bars-520 .marktxt{font-size:17px}
+  .bars-520 .val{font-size:13px}.bars-520 .yr{font-size:15px}.bars-520 .marktxt{font-size:17px}
   .bars-460 .val{font-size:14.5px}.bars-460 .yr{font-size:15px}
   .chart{padding:16px 14px 10px}
 }
