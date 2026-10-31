@@ -1,3 +1,4 @@
+# kbrz77.pl — wszystkie roboty, w tym boty AI (GPTBot, ClaudeBot, PerplexityBot, Google-Extended), mają pełny dostęp.
 User-agent: *
 Allow: /
 
