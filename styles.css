@@ -25,6 +25,7 @@
     --chip-seo:#3b4a5f; --chip-g:#2f5fc4; --chip-ai:#6a45c2; --chip-biz:#8a4513;
     --bar-pre:#3a4352;
     --shadow:none;
+  --gi-bg:28%;
     color-scheme:dark;
   }
 }
@@ -157,10 +158,16 @@ section.alt{background:var(--bg-soft);border-top:1px solid var(--line);border-bo
 /* Kompetencje */
 .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .grp{padding:20px 22px}
-.grp h3{font-size:16px;text-transform:uppercase;letter-spacing:.04em}
+.grp h3{font-size:16px;text-transform:uppercase;letter-spacing:.04em;display:flex;align-items:center;gap:11px}
+.gi{width:34px;height:34px;border-radius:10px;flex:none;display:grid;place-items:center;background:color-mix(in srgb,var(--c) var(--gi-bg,13%),transparent);color:color-mix(in srgb,var(--c) 62%,var(--ink));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c) 22%,transparent)}
+.gi .fa{width:17px;height:17px}
 .grp p{font-size:14.5px;color:var(--muted);margin:6px 0 12px}
 .chips{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin:0;padding:0}
-.chips li{background:var(--c);color:#fff;font-size:13.5px;font-weight:600;padding:5px 12px;border-radius:999px;line-height:1.3}
+.chips li{display:inline-flex;align-items:center;gap:7px;background:var(--c);color:#fff;font-size:13.5px;font-weight:600;padding:4px 13px 4px 4px;border-radius:999px;line-height:1.3;transition:transform .15s ease,box-shadow .15s ease}
+.chips li:hover{transform:translateY(-1px);box-shadow:0 6px 14px -4px color-mix(in srgb,var(--c) 70%,transparent)}
+.chips .ic{width:23px;height:23px;border-radius:50%;flex:none;display:grid;place-items:center;background:rgba(255,255,255,.2);box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+.chips .fa{width:12px;height:12px}
+.fa{fill:currentColor;display:block}
 
 /* Jak pracuję */
 .values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
@@ -231,5 +238,5 @@ footer a{color:var(--faint)}
   .bars-460 .val{font-size:14.5px}.bars-460 .yr{font-size:15px}
   .chart{padding:16px 14px 10px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.chips li{transition:none}.chips li:hover{transform:none}}
 @media print{.nav,.cta,footer{display:none}section.block{padding:24px 0}}
