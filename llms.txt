@@ -19,7 +19,7 @@ Wyniki audioplaza.pl (zmiany procentowe; wartości bezwzględne udostępniane na
 - [Realizacje AI × SEO](https://kbrz77.pl/#realizacje): wieloagentowy pipeline opisów produktów (Claude), audyt SEO przez MCP, monitoring pozycji w Pythonie, raport dowodowy SEO/GEO
 - [Kompetencje](https://kbrz77.pl/#kompetencje): SEO techniczne, GEO/AEO, Local SEO, dane strukturalne, Google Ads, GA4, GTM, Search Console, Merchant Center, MCP, Claude/Anthropic API, RAG, agentowe workflow
 - [Współpraca](https://kbrz77.pl/#wspolpraca): audyt SEO/GEO, audyt agencji SEO / Google Ads, AI w marketingu (MCP)
-- [FAQ](https://kbrz77.pl/#faq): czym GEO różni się od SEO, wyniki, przebieg audytu, tryb pracy
+- [FAQ](https://kbrz77.pl/#faq): czym GEO różni się od SEO, wyniki, przebieg audytu, audyt agencji, co potrzebne na start, branże, współpraca z agencją, realistyczne efekty, llms.txt, tryb pracy
 
 ## Dokumenty
 
