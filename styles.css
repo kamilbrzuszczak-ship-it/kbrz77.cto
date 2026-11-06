@@ -8,9 +8,9 @@
 
 /* ---------- Tokeny ---------- */
 :root{
-  --bg:#ffffff; --bg-soft:#f7f8fa; --card:#ffffff; --ink:#111827; --text:#1f2937; --muted:#5b6472; --faint:#8a93a0;
+  --bg:#ffffff; --bg-soft:#f7f8fa; --card:#ffffff; --ink:#111827; --text:#1f2937; --muted:#5b6472; --faint:#646d7a;
   --line:#e5e7eb; --line-strong:#d1d5db;
-  --blue:#2f6fe4; --green:#1e8e3e; --amber:#b77800; --red:#d93025; --purple:#7c4ddb; --brown:#9a4a12;
+  --blue:#2a63d6; --green:#1a7d37; --amber:#946000; --red:#c92a1f; --purple:#7c4ddb; --brown:#9a4a12;
   --chip-seo:#334155; --chip-g:#2f6fe4; --chip-ai:#7c4ddb; --chip-biz:#9a4a12;
   --bar-pre:#cbd5e1; --bar-a:#4285F4; --bar-b:#8B5CF6;
   --shadow:0 1px 2px rgba(17,24,39,.04),0 4px 16px rgba(17,24,39,.05);
@@ -19,7 +19,7 @@
 }
 @media (prefers-color-scheme:dark){
   :root{
-    --bg:#0f1218; --bg-soft:#151a22; --card:#171c25; --ink:#f3f4f6; --text:#d6dae1; --muted:#9aa3b2; --faint:#7b8494;
+    --bg:#0f1218; --bg-soft:#151a22; --card:#171c25; --ink:#f3f4f6; --text:#d6dae1; --muted:#9aa3b2; --faint:#8a93a3;
     --line:#262d39; --line-strong:#323a48;
     --blue:#7aa7ff; --green:#5cc77c; --amber:#f2b84b; --red:#ff7b6e; --purple:#b49aff; --brown:#e09a6a;
     --chip-seo:#3b4a5f; --chip-g:#2f5fc4; --chip-ai:#6a45c2; --chip-biz:#8a4513;
