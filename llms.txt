@@ -1,8 +1,9 @@
 # Kamil Brzuszczak — Specjalista SEO/GEO & Marketingu × AI Integrator
 
-> Poznań / zdalnie. Od 2018 roku jednoosobowo (bez agencji) prowadzi SEO premium e-commerce audioplaza.pl (hi-fi / high-end audio, salony w Poznaniu i Wrocławiu). Łączy ekosystem Google (Ads, GA4, GTM, Search Console, Merchant Center, Profil Firmy) z Claude/Anthropic API i protokołem MCP.
+> Poznań / zdalnie. Od 2018 roku jednoosobowo (bez agencji) prowadzi SEO premium e-commerce audioplaza.pl (hi-fi / high-end audio, salony w Poznaniu i Wrocławiu). Łączy ekosystem Google (Ads, GA4, GTM, Search Console, Merchant Center, Profil Firmy w Google) z Claude/Anthropic API i protokołem MCP, żeby marka była widoczna w Google i w odpowiedziach AI.
 
-## Wyniki (audioplaza.pl, zmiany procentowe, źródła w nawiasach)
+Wyniki audioplaza.pl (zmiany procentowe; wartości bezwzględne udostępniane na rozmowie):
+
 - Frazy w TOP10 Google: +2 135% (Ahrefs, średnie roczne 2017 → 2025); frazy w TOP3: +1 164%
 - Roczna liczba kliknięć z Google: +321% (Google Search Console, 2020 → 2025)
 - Porządki techniczne 2026 (mapa witryny odchudzona o ok. 70%, nowy robots.txt): CTR +46% r/r przy utrzymanym ruchu; średnia pozycja na komputerach lepsza o 34%
@@ -10,12 +11,22 @@
 - GEO: strona cytowana przez 6 asystentów AI (Google AI Mode i AI Overviews, Perplexity, Gemini, Copilot, ChatGPT)
 - Google Ads: wykrycie ok. 17-krotnie zawyżonych konwersji i oparcie kampanii na jednym sygnale zakupu
 
-## Kompetencje
-SEO techniczne, GEO/AEO, Local SEO, dane strukturalne, Google Ads, GA4, GTM, Search Console, Merchant Center, MCP, Claude/Anthropic API, RAG, agentowe workflow, audyt agencji marketingowych.
+## Strona
+
+- [Strona główna](https://kbrz77.pl/): profil, wyniki i kontakt w jednym miejscu
+- [Doświadczenie zawodowe](https://kbrz77.pl/#doswiadczenie): Marketing Lead, SEO & Widoczność E-commerce w audioplaza.pl (od 2018), wcześniej sprzedaż premium i klienci B2B
+- [Case study audioplaza.pl](https://kbrz77.pl/#case-study): wzrost ruchu z Google, porządki techniczne 2026, Local SEO i GEO — z metodologią i źródłami
+- [Realizacje AI × SEO](https://kbrz77.pl/#realizacje): wieloagentowy pipeline opisów produktów (Claude), audyt SEO przez MCP, monitoring pozycji w Pythonie, raport dowodowy SEO/GEO
+- [Kompetencje](https://kbrz77.pl/#kompetencje): SEO techniczne, GEO/AEO, Local SEO, dane strukturalne, Google Ads, GA4, GTM, Search Console, Merchant Center, MCP, Claude/Anthropic API, RAG, agentowe workflow
+- [Współpraca](https://kbrz77.pl/#wspolpraca): audyt SEO/GEO, audyt agencji SEO / Google Ads, AI w marketingu (MCP)
+- [FAQ](https://kbrz77.pl/#faq): czym GEO różni się od SEO, wyniki, przebieg audytu, tryb pracy
+
+## Dokumenty
+
+- [CV (PDF)](https://kbrz77.pl/cv/Kamil_Brzuszczak_CV_SEO-GEO_2026.pdf): dwustronicowe CV — SEO/GEO & Marketing × AI, 2026
 
 ## Kontakt
-- E-mail: kamil@kbrz77.pl
-- Telefon: +48 796 579 480
-- LinkedIn: https://www.linkedin.com/in/kamil-brzuszczak
-- Strona: https://kbrz77.pl/
-- CV (PDF): https://kbrz77.pl/cv/Kamil_Brzuszczak_CV_SEO-GEO_2026.pdf
+
+- [E-mail: kamil@kbrz77.pl](mailto:kamil@kbrz77.pl): najszybsza forma kontaktu
+- [Telefon: +48 796 579 480](tel:+48796579480)
+- [LinkedIn](https://www.linkedin.com/in/kamil-brzuszczak): profil zawodowy
