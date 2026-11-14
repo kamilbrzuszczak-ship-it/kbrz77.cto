@@ -1,0 +1,68 @@
+[
+ {
+  "date": "2026-11-14",
+  "macrostructure": "Marquee Hero + wykres-wieża na całe hero",
+  "theme": "custom (Brzytwa v3)",
+  "theme_axes": "light→dark split / geometric-sans / cool (blue→purple)",
+  "vibe": "linia danych tnie hero, czarna masa wyrasta pod nazwiskiem",
+  "enrichment": "Tier-B hand-built SVG, pełne hero od krawędzi do krawędzi + wipe + count-up + scrubber",
+  "nav": "N1b (bez zmian)",
+  "footer": "Ft2 (bez zmian)",
+  "brief": "kbrz77.pl · redesign etap 1 v3: wykres na całe hero, liczba +2 135% w masie, układ pod tekstem poniżej 1180 px"
+ },
+ {
+  "date": "2026-11-14",
+  "macrostructure": "Marquee Hero",
+  "theme": "custom (Brzytwa v2)",
+  "theme_axes": "light→dark split / geometric-sans / cool (blue→purple)",
+  "vibe": "linia danych tnie stronę na światło i masę",
+  "enrichment": "Tier-B hand-built SVG + wipe (transform) + count-up + scrubber",
+  "nav": "N1b (bez zmian)",
+  "footer": "Ft2 (bez zmian)",
+  "brief": "kbrz77.pl · redesign etap 1 v2: masa pod linią, skala, znacznik 2018, bez kratek"
+ },
+ {
+  "date": "2026-11-14",
+  "macrostructure": "Marquee Hero",
+  "theme": "custom (Brzytwa)",
+  "theme_axes": "light / geometric-sans / cool",
+  "vibe": "ostre jak brzytwa, dane jako grafika",
+  "enrichment": "Tier-B hand-built SVG (wykres-ostrze, dane Ahrefs)",
+  "nav": "N1b (bez zmian)",
+  "footer": "Ft2 (bez zmian)",
+  "brief": "kbrz77.pl · redesign etap 1: hero + pasek dowodów"
+ },
+ {
+  "date": "2026-11-14",
+  "macrostructure": "Marquee Hero → ciemna płyta z ukośnym cięciem (Realizacje)",
+  "theme": "custom (Brzytwa)",
+  "theme_axes": "light / geometric-sans / cool",
+  "vibe": "ostre jak brzytwa; cięcie równoległe do krzywej wzrostu, schemat MCP jako obwód",
+  "enrichment": "CSS: węzły z poświatą, impuls na łączach (>=981 px, bez reduced-motion), liczba 16,7 → 5,7 w mono",
+  "nav": "N1b (bez zmian)",
+  "footer": "Ft2 (bez zmian)",
+  "brief": "kbrz77.pl · redesign etap 2a: system nagłówków (numer + mono-etykieta + linia, h2 do 60 px) i scena Realizacji; reszta sekcji w starym stylu"
+ },
+ {
+  "date": "2026-11-14",
+  "macrostructure": "Rytm sekcji: tabela specyfikacji (Kompetencje) → niebieska płyta (Jak pracuję) → czarne bloki ofert (Współpraca)",
+  "theme": "custom (Brzytwa)",
+  "theme_axes": "light / geometric-sans / cool",
+  "vibe": "ostre jak brzytwa; etykiety prostokątne zamiast pigułek, schodkowe kreski kroków jak rosnący słupek",
+  "enrichment": "CSS: kwadratowe ikony grup, etykiety z lewą krawędzią, liczby 01–04 do 96 px, bloki z kolorową krawędzią i listą w mono",
+  "nav": "N1b (bez zmian)",
+  "footer": "Ft2 (bez zmian)",
+  "brief": "kbrz77.pl · redesign etap 2b: Kompetencje, Jak pracuję, Współpraca; zostają Profil, Doświadczenie, Case study, FAQ, Wykształcenie, Kontakt"
+ },
+ {
+  "date": "2026-11-14",
+  "macrostructure": "Rytm sekcji dokończony: Profil (lead 28 px + notka), Doświadczenie (oś lat), Case study (szary arkusz danych), FAQ (przyklejony nagłówek), Wykształcenie (kolumny z linią), Kontakt (ciemny finał ze skosem)",
+  "theme": "custom (Brzytwa)",
+  "theme_axes": "light / geometric-sans / cool",
+  "vibe": "ostre jak brzytwa; skos finału odpowiada skosowi Realizacji, nagłówek Kontakt w rozmiarze nazwiska z hero",
+  "enrichment": "CSS: duże „od 2018/2015/2021” jako oś, zakreślacz na liczbach, numerowane pytania z kwadratowym przełącznikiem, stopka w kolorze finału",
+  "nav": "N1b (bez zmian)",
+  "footer": "Ft2 (ciemna, jedna płyta z finałem)",
+  "brief": "kbrz77.pl · redesign etap 2c: wszystkie sekcje przebudowane; do decyzji commit/PR"
+ }
+]
