@@ -2,14 +2,14 @@
 
 > Poznań / zdalnie. Od 2018 roku jednoosobowo (bez agencji) prowadzi SEO premium e-commerce audioplaza.pl (hi-fi / high-end audio, salony w Poznaniu i Wrocławiu). Łączy ekosystem Google (Ads, GA4, GTM, Search Console, Merchant Center, Profil Firmy w Google) z Claude/Anthropic API i protokołem MCP, żeby marka była widoczna w Google i w odpowiedziach AI.
 
-Wyniki audioplaza.pl (zmiany procentowe; wartości bezwzględne udostępniane na rozmowie):
+Wyniki audioplaza.pl (zmiany procentowe; wartości bezwzględne to poufne dane pracodawcy):
 
 - Frazy w TOP10 Google: +2 135% (Ahrefs, średnie roczne 2017 → 2025); frazy w TOP3: +1 164%
 - Roczna liczba kliknięć z Google: +321% (Google Search Console, 2020 → 2025)
-- Porządki techniczne 2026 (mapa witryny odchudzona o ok. 70%, nowy robots.txt): CTR +46% r/r przy podobnym ruchu (skorelowane z porządkami, nie dowiedzione przyczynowo); średnia pozycja na komputerach lepsza o 34%
+- Porządki techniczne 2026 po audycie indeksacji przez MCP (mapa witryny odchudzona o ok. 70%, nowy robots.txt): fraza kategorii „odtwarzacz cd” z 2. strony Google do TOP10 (śr. pozycja 16,7 → 5,7; sie–paź 2026 vs 2025, Search Console); przy podobnym ruchu wyświetlenia −32% i CTR +46% r/r (skorelowane z porządkami, nie dowiedzione przyczynowo)
 - Local SEO: liczba opinii Google +269% od 2019 r., średnia ocen 4,8 (dwa salony)
 - GEO: strona cytowana przez 6 asystentów AI (Google AI Mode i AI Overviews, Perplexity, Gemini, Copilot, ChatGPT)
-- Google Ads: wykrycie ok. 17-krotnie zawyżonych konwersji i oparcie kampanii na jednym sygnale zakupu
+- Google Ads: przebudowa pomiaru konwersji w GA4 i Google Ads — kampanie oparte na jednym sygnale zakupu
 
 ## Strona
 
