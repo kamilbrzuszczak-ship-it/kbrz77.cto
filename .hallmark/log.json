@@ -1,5 +1,16 @@
 [
  {
+  "date": "2026-11-15",
+  "macrostructure": "Marquee Hero (bez zmian) + kolejność sekcji pod B2B",
+  "theme": "custom (Brzytwa v3, bez zmian)",
+  "theme_axes": "light→dark split / geometric-sans / cool (blue→purple)",
+  "vibe": "ta sama brzytwa, nowy cel: firma KBRZ77 zamiast CV",
+  "enrichment": "og.png przerysowany w stylu hero (masa + linia, dane Ahrefs)",
+  "nav": "N1b: marka KBRZ77 + CTA mailto zamiast CV",
+  "footer": "Ft2 + dane firmy (address)",
+  "brief": "kbrz77.pl · pozycjonowanie B2B: usunięte CV i wykształcenie, oferta jako sekcja 01, O mnie zamiast osi czasu, schema ProfessionalService"
+ },
+ {
   "date": "2026-11-14",
   "macrostructure": "Marquee Hero + wykres-wieża na całe hero",
   "theme": "custom (Brzytwa v3)",
